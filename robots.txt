@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /hadopi/
+Disallow: /admin/
+Disallow: /new/
+Disallow: /euler/
+Disallow: /42
+Disallow: /papa/

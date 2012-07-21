@@ -1,0 +1,56 @@
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	background:url(http://p-w.fr/6zvau) fixed;
+	background-position:top center;
+	background-repeat:no-repeat;
+	color:#FFF;
+	font-family:'Ubuntu',sans-serif;
+	list-style:inside;
+	font-size:12px;
+	line-height:16px;
+}
+#content {
+	background:url(images/blacktrans2.png);
+	margin:170px auto 10px auto;
+	width:460px;
+	padding:20px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	min-height:245px;
+}
+a {
+	color:#FFF;
+	text-decoration:none
+}
+a:hover {
+	text-decoration:underline
+}
+#footer {
+	width:490px;
+	margin:0 auto;
+	text-align:right;
+	padding-right:10px
+}
+h1,h2,h3,h4,h5,h6 {
+	text-transform:uppercase;
+}
+.photo {
+	background:url(images/blacktrans2.png);
+	padding:8px 9px;
+	float:right;
+	margin-left:10px
+}
+.icone {
+	height:16px;
+	width:16px;
+	margin-right:10px;
+	vertical-align:middle;
+	margin-bottom:3px
+}
+#content,#footer,.photo,.contact {
+	display: none
+}
