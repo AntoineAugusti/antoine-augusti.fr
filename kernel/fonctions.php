@@ -56,7 +56,8 @@ function display_projets ($style = NULL)
 			<li> Forte intégration des réseaux sociaux.</li>
 		</ul>
 		<br />
-		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.teen-quotes.com" target="_blank" title="Teen Quotes">www.teen-quotes.com</a>
+		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.teen-quotes.com" target="_blank" title="Teen Quotes">www.teen-quotes.com</a><br>
+		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.kotado.fr" target="_blank" title="Kotado">www.kotado.fr</a>
 	</div>
 
 	<div class="'.$class.'">
