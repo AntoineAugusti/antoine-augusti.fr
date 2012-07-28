@@ -1,0 +1,4 @@
+.DS_STORE
+kernel/config.php
+sftp-config.json
+*sublime*
