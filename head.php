@@ -13,6 +13,7 @@ require "kernel/fonctions.php";
 	<meta name="author" content="Antoine Augusti"/> 
 	<meta name="revisit-after" content="2 days"/> 
 	<meta name="Robots" content="all"/>
+	<link href='http://fonts.googleapis.com/css?family=Nunito|Open+Sans:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php echo DOMAINE; ?>css/style.css" />
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo IMAGE_PROFIL; ?>">
 	<link rel="image_src" href="<?php echo IMAGE_PROFIL; ?>" />
