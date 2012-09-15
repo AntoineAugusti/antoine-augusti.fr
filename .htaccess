@@ -1,0 +1,37 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^antoine-augusti.fr [NC]
+RewriteRule (.*) http://www.antoine-augusti.fr/$1 [QSA,R=301,L]
+RewriteRule ^([a-z]+)\-terminale$ devoirs.php?matiere=$1&annee=terminale [L,QSA]
+RewriteRule ^devoirs-([a-z]+)\-terminale.html$ devoirs.php?matiere=$1&annee=terminale [L,QSA]
+RewriteRule ^bac-([a-z]+)\.html$ bac.php?matiere=$1 [L,QSA]
+RewriteRule ^([a-z]+)$ $1.php [L,QSA]
+RewriteRule ^([0-9]+)$ $1.php [L,QSA]
+RewriteRule projets/([a-z]+)$ ./projets.php?projet=$1 [L,QSA]
+RewriteRule distance/([a-z]+)$ ./distance.php?mode=$1 [L,QSA]
+RedirectPermanent /ango/ http://lycees.ac-rouen.fr/ango/
+
+redirect 301 /favicon.ico http://www.antoine-augusti.fr/images_site/favicon.png 
+
+ErrorDocument 404 http://www.antoine-augusti.fr/404
+ErrorDocument 403 http://www.antoine-augusti.fr/404
+
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+ <FilesMatch "\\.(ico|jpe?g|png|gif|swf|gz|ttf)$">
+ Header set Cache-Control "max-age=2592000, public"
+ </FilesMatch>
+ <FilesMatch "\\.(css)$">
+ Header set Cache-Control "max-age=2592000, public"
+ </FilesMatch>
+ <FilesMatch "\\.(js)$">
+ Header set Cache-Control "max-age=2592000, private"
+ </FilesMatch>
+<filesMatch "\\.(html|htm)$">
+Header set Cache-Control "max-age=7200, public"
+</filesMatch>
+# Disable caching for scripts and other dynamic files
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</FilesMatch>
+</IfModule>
+# END Cache-Control Headers
