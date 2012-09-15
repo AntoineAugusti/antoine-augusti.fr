@@ -30,7 +30,6 @@ table {
 	border-collapse:collapse;
 	border-spacing:0
 }
-@import "uniform.css";
 body {
 	font-family:'Nunito',sans-serif;
 	color:#353537;
