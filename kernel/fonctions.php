@@ -227,6 +227,32 @@ function lit_rss($fichier,$objets) {
 	}
 }
 
+function age($naiss)  
+{
+	list($jour, $mois, $annee) = split('[/]', $naiss);
+	$today['mois'] = date('n');
+	$today['jour'] = date('j');
+	$today['annee'] = date('Y');
+	$annees = $today['annee'] - $annee;
+
+	if ($today['mois'] <= $mois) 
+	{
+		if ($mois == $today['mois']) 
+		{
+			if ($jour > $today['jour'])
+			{
+				$annees--;
+			}	
+		}
+		else
+		{
+			$annees--;
+		}
+	}
+
+	return $annees;
+}
+
 function obtenirDateRelative ($date) 
 {
 	if(is_numeric($date))

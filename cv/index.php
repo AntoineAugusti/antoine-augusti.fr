@@ -92,7 +92,7 @@ require "../kernel/fonctions.php";
 			<h2>Antoine AUGUSTI</h2>
 			<span class="italic">Élève ingénieur à l'INSA de Rouen</span><br>
 			76000 Rouen<br>
-			18 ans - Français<br>
+			<?php echo age('01/12/1993'); ?> ans - Français<br>
 			<br />
 			antoine@augusti.fr<br>
 			+33 6 87 09 98 92<br>
