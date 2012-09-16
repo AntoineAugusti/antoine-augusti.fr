@@ -4,17 +4,17 @@ function display_page_title ()
 	$name_page = ucfirst(substr($_SERVER['PHP_SELF'],1,strlen($name_page)-4));
 	$projet = ucfirst($_GET['projet']);
 	if ($name_page != 'Index' AND empty($projet)) 
-		{
+	{
 		echo '<title>'.$name_page.' | Antoine Augusti</title>';
-		}
+	}
 	elseif (!empty($projet)) 
-		{
+	{
 		echo '<title>'.$name_page.' : '.$projet.' | Antoine Augusti</title>';
-		}
+	}
 	else 
-		{
+	{
 		echo "<title>Antoine Augusti</title>";
-		}
+	}
 }
 
 function display_icon_social_network ($alt,$link)
@@ -56,8 +56,8 @@ function display_projets ($style = NULL)
 			<li> Forte intégration des réseaux sociaux.</li>
 		</ul>
 		<br />
-		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.teen-quotes.com" target="_blank" title="Teen Quotes">www.teen-quotes.com</a><br>
-		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.kotado.fr" target="_blank" title="Kotado">www.kotado.fr</a>
+		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//teen-quotes.com" target="_blank" title="Teen Quotes">teen-quotes.com</a><br>
+		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//kotado.fr" target="_blank" title="Kotado">kotado.fr</a>
 	</div>
 
 	<div class="'.$class.'">
