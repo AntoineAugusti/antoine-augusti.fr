@@ -98,6 +98,10 @@ require "../kernel/fonctions.php";
 			+33 6 87 09 98 92<br>
 			<u>www.antoine-augusti.fr</u>
 		</div>
+
+		<div class="texte">
+			<img src="/images/pdf.png" class="download_pdf"> Vous pouvez consulter mon CV en version PDF en <a href="/cv.pdf" title="CV PDF">cliquant ici</a>.
+		</div>
 	</div>
 	<!-- END INFOS -->
 	<div id="div_experiences" class="hide" style="display:none">
