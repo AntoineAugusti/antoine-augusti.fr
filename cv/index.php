@@ -100,7 +100,7 @@ require "../kernel/fonctions.php";
 		</div>
 
 		<div class="texte">
-			<img src="/images/pdf.png" class="download_pdf"> Vous pouvez consulter mon CV en version PDF en <a href="/cv.pdf" title="CV PDF">cliquant ici</a>.
+			<img src="/images/pdf.png" class="download_pdf" title="CV au format PDF"> Vous pouvez consulter mon CV en version PDF en <a href="/cv.pdf" title="CV PDF">cliquant ici</a>.
 		</div>
 	</div>
 	<!-- END INFOS -->
