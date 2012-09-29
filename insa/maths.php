@@ -184,11 +184,11 @@ else
 		Par exemple : insa.antoine-augusti.fr/maths/<b>2</b>/<b>20</b>/<b>1000</b> testera le script avec racine de 2, sur 20 intervalles et avec 1 000 valeurs.<br/>
 	</div>
 	<br/>
-	<a href="http://insa.antoine-augusti.fr/maths/source/" title="Code source">Cliquez ici</a> pour voir le code source.<br/>
-	<br/>
-	&copy; 2012 Antoine AUGUSTI';
+	<a href="http://insa.antoine-augusti.fr/maths/source/" title="Code source">Cliquez ici</a> pour voir le code source.<br/>';
 }
 echo '
+<br/>
+&copy; 2012 Antoine AUGUSTI
 </body>
 </html>';
 ?>
