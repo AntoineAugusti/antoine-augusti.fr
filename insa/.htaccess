@@ -1,0 +1,32 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^antoine-augusti.fr [NC]
+RewriteRule (.*) http://www.antoine-augusti.fr/$1 [QSA,R=301,L]
+RewriteRule ^maths$ /maths.php?nb=2&intervalle=10&nbtests=10000 [L]
+RewriteRule ^maths/source$ /maths.php?source=true [L]
+RewriteRule ^maths/source/$ /maths.php?source=true [L]
+RewriteRule ^maths/([0-9]+)/([0-9]+)/([0-9]+)$ /maths.php?nb=$1&intervalle=$2&nbtests=$3 [L]
+RewriteRule ^maths/([0-9]+)/([0-9]+)/([0-9]+)/$ /maths.php?nb=$1&intervalle=$2&nbtests=$3 [L]
+
+ErrorDocument 404 http://www.antoine-augusti.fr/404
+ErrorDocument 403 http://www.antoine-augusti.fr/404
+
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+ <FilesMatch "\\.(ico|jpe?g|png|gif|swf|gz|ttf)$">
+ Header set Cache-Control "max-age=2592000, public"
+ </FilesMatch>
+ <FilesMatch "\\.(css)$">
+ Header set Cache-Control "max-age=2592000, public"
+ </FilesMatch>
+ <FilesMatch "\\.(js)$">
+ Header set Cache-Control "max-age=2592000, private"
+ </FilesMatch>
+<filesMatch "\\.(html|htm)$">
+Header set Cache-Control "max-age=7200, public"
+</filesMatch>
+# Disable caching for scripts and other dynamic files
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</FilesMatch>
+</IfModule>
+# END Cache-Control Headers
