@@ -14,8 +14,8 @@ echo '
 		background:#EFEFEF url(http://www.thibaud-dauce.fr/images/fond.png);
 		color:#555;
 		font-size:13px;
-		width:90%;
-		margin:0 auto;
+		width:80%;
+		margin:5% auto;
 		line-height:20px;
 	}
 	h3 {
@@ -179,10 +179,12 @@ else
 	echo '<h3>Statistiques</h3>';
 	echo 'Calculs exécutés en '.$temps_execution.' s. '.number_space($nb_instructions).' instructions exécutées. Soit '.number_space($instructions_par_seconde).' instructions par seconde.<br/>
 	<div class="grey-post">
-		Instructions pour personnaliser : www.antoine-augusti.fr/maths/<b>chiffre_test</b>/<b>nb_intervalles</b>/<b>nb_tests</b><br/>
+		Instructions pour personnaliser : insa.antoine-augusti.fr/maths/<b>chiffre_test</b>/<b>nb_intervalles</b>/<b>nb_tests</b><br/>
+		<br/>
+		Par exemple : insa.antoine-augusti.fr/maths/<b>2</b>/<b>20</b>/<b>1000</b> testera le script avec racine de 2, sur 20 intervalles et avec 1 000 valeurs.<br/>
 	</div>
 	<br/>
-	<a href="http://www.antoine-augusti.fr/maths/source/" title="Code source">Cliquez ici</a> pour voir le code source.<br/>
+	<a href="http://insa.antoine-augusti.fr/maths/source/" title="Code source">Cliquez ici</a> pour voir le code source.<br/>
 	<br/>
 	&copy; 2012 Antoine AUGUSTI';
 }
