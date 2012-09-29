@@ -136,7 +136,7 @@ function display_contact_by_email($style = NULL)
 			echo captcha(); echo ' =<br>
 			<input type="text" name="captcha" size="20" maxlength="30"><br> 
 			<br />
-			<textarea rows="10" cols="70" name="message" onblur="javascript:if(this.value==\'\'){this.value=\'Entrez votre mot doux ici.\'}" onFocus="javascript:if(this.value==\'Entrez votre mot doux ici.\'){this.value=\'\'}"></textarea><br>
+			<textarea rows="10" cols="70" name="message" placeholder="Entrez votre moux doux ici."></textarea><br>
 			<br /> 
 			Recevoir une copie de cet email ? : <input type="checkbox" value="1" name="copie" checked/>
 			<br />
