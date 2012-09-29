@@ -5,3 +5,4 @@ Disallow: /new/
 Disallow: /euler/
 Disallow: /42
 Disallow: /papa/
+Disallow: /maths
