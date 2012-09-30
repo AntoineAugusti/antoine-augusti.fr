@@ -70,12 +70,38 @@ h5.margin_title {
 	height:100px;
 	width:100px;
 }
-.icone {
+span.icone {
 	height:16px;
 	width:16px;
-	margin-right:10px;
+	background:url(images/icones/sprite.png);
+	margin:0 10px 3px 0;
 	vertical-align:-7px;
-	margin-bottom:3px
+	display: inline-block;
+	content: '';
+}
+span.icone.email {
+	background-position: 0 0;
+}
+span.icone.facebook {
+	background-position:-16px 0;
+}
+span.icone.frog {
+	background-position:-32px 0;
+}
+span.icone.iphone {
+	background-position:-48px 0;
+}
+span.icone.skills {
+	background-position:-64px 0;
+}
+span.icone.skype {
+	background-position:-80px 0;
+}
+span.icone.twitter {
+	background-position:-96px 0;
+}
+span.icone.website {
+	background-position:-112px 0;
 }
 #content,#footer,.photo,.contact {
 	display: none
