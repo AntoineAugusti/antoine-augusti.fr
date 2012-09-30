@@ -69,6 +69,13 @@ h5.margin_title {
 .photo img {
 	height:100px;
 	width:100px;
+	-webkit-transition:opacity 0.5s ease;
+	-moz-transition:opacity 0.5s ease;
+	-o-transition:opacity 0.5s ease;
+	transition:opacity 0.5s ease;
+}
+.photo img:hover {
+	opacity: 0.6;
 }
 span.icone {
 	height:16px;
