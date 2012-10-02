@@ -6,17 +6,20 @@ echo '
 <head>
 	<title>Antoine Augusti</title>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
 	<meta name="description" content="Antoine Augusti : développement web, actualité technologique et projets en tout genres."/>
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 	<style>
 	body {
 		font-family:"Open Sans";
-		background:#EFEFEF url(http://www.thibaud-dauce.fr/images/fond.png);
+		background:#EFEFEF url(http://p-w.fr/s9xlf);
 		color:#555;
 		font-size:13px;
-		width:80%;
+		width:90%;
+		max-width:950px;
 		margin:5% auto;
 		line-height:20px;
+		word-wrap: break-word;
 	}
 	h3 {
 		color:#3D79D0;
@@ -39,6 +42,9 @@ echo '
 		color:#009952;
 		font-weight:bold;
 	}
+	.justify {
+		text-align:justify;
+	}
 	a {
 		color:#1155CC;
 		text-decoration:none;
@@ -55,10 +61,16 @@ if ($_GET['source'] == 'true')
 {
 	echo '
 	<div style="margin:20px 10px">
+		<h3>Quelques explications</h3>
+		<div class="justify">
+			Il n\'est pas possible pour un ordinateur de savoir instinctivement dans quel intervalle ranger un nombre. Pour savoir dans quel intervalle ranger une valeur, un ordinateur est obligé de tester intervalle par intervalle, jusqu\'à trouver le bon intervalle. On utilise une boucle pour réaliser ceci. Le temps de calcul peut être très long s\'il y a beaucoup de données.<br/>
+			<br/>
+			Une autre approche consiste à stocker toutes les parties décimales dans un tableau, puis de s\'occuper des intervalles ensuite. Pour éviter de faire une boucle pour chaque valeur du tableau (pour déterminer son intervalle), on va ranger les éléments (les parties fractionnaires) dans un ordre croissant. Ainsi, on va parcourir les intervalles dans le sens ascendant, et changer d\'intervalle dès lors qu\' on rencontre une valeur qui n\'est plus dans l\'intervalle en cours.<br/>
+		</div>
 		<h3>Pseudo code</h3>
 		<script src="https://gist.github.com/3795005.js"> </script>
 		<hr/>
-		<h3>Code PHP (utilis&eacute; sur le site)</h3>
+		<h3>Code PHP (utilisé sur le site)</h3>
 		<script src="https://gist.github.com/3790316.js"></script>
 	</div>';
 }
@@ -179,12 +191,12 @@ else
 	echo '<h3>Statistiques</h3>';
 	echo 'Calculs exécutés en '.$temps_execution.' s. '.number_space($nb_instructions).' instructions exécutées. Soit '.number_space($instructions_par_seconde).' instructions par seconde.<br/>
 	<div class="grey-post">
-		Instructions pour personnaliser : insa.antoine-augusti.fr/maths/<b>chiffre_test</b>/<b>nb_intervalles</b>/<b>nb_tests</b><br/>
+		Instructions pour personnaliser : insa.antoine-augusti.fr/<b>chiffre_test</b>/<b>nb_intervalles</b>/<b>nb_tests</b><br/>
 		<br/>
-		Par exemple : insa.antoine-augusti.fr/maths/<b>2</b>/<b>20</b>/<b>1000</b> testera le script avec racine de 2, sur 20 intervalles et avec 1 000 valeurs.<br/>
+		Par exemple : insa.antoine-augusti.fr/<b>2</b>/<b>20</b>/<b>1000</b> testera le script avec racine de 2, sur 20 intervalles et avec 1 000 valeurs.<br/>
 	</div>
 	<br/>
-	<a href="http://insa.antoine-augusti.fr/maths/source/" title="Code source">Cliquez ici</a> pour voir le code source.<br/>';
+	<a href="http://insa.antoine-augusti.fr/source" title="Code source">Cliquez ici</a> pour voir le code source.<br/>';
 }
 echo '
 <br/>

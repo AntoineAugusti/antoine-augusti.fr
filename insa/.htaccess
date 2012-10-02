@@ -2,8 +2,10 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^antoine-augusti.fr [NC]
 RewriteRule (.*) http://www.antoine-augusti.fr/$1 [QSA,R=301,L]
 RewriteRule ^maths$ /maths.php?nb=2&intervalle=10&nbtests=10000 [L]
+RewriteRule ^source$ /maths.php?source=true [L]
 RewriteRule ^maths/source$ /maths.php?source=true [L]
 RewriteRule ^maths/source/$ /maths.php?source=true [L]
+RewriteRule ^([0-9]+)/([0-9]+)/([0-9]+)$ /maths.php?nb=$1&intervalle=$2&nbtests=$3 [L]
 RewriteRule ^maths/([0-9]+)/([0-9]+)/([0-9]+)$ /maths.php?nb=$1&intervalle=$2&nbtests=$3 [L]
 RewriteRule ^maths/([0-9]+)/([0-9]+)/([0-9]+)/$ /maths.php?nb=$1&intervalle=$2&nbtests=$3 [L]
 
