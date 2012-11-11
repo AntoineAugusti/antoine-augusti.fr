@@ -164,7 +164,7 @@ function display_header ()
 				display_icon_social_network('Facebook', '//www.facebook.com/AntoineAugusti');
 				display_icon_social_network('Twitter', '//www.twitter.com/AntoineAugusti');
 				display_icon_social_network('Github', 'https://www.github.com/AntoineAug');
-				display_icon_social_network('Instagram', '//statigr.am/antoineaugusti');
+				display_icon_social_network('Instagram', '//instagram.com/antoineaugusti');
 				display_icon_social_network('Feed','//www.antoine-augusti.fr/blog/feed/');
 	echo '
 			</div>
@@ -182,7 +182,7 @@ function display_full_contact ()
 	display_icon_contact('Blog', '//blog.antoine-augusti.fr', 'blog.antoine-augusti.fr');
 	display_icon_contact('Facebook', '//www.facebook.com/AntoineAugusti', 'www.facebook.com/AntoineAugusti');
 	display_icon_contact('Twitter', '//www.twitter.com/AntoineAugusti', '@AntoineAugusti');
-	display_icon_contact('Instagram', '//statigr.am/antoineaugusti', 'statigr.am/antoineaugusti');
+	display_icon_contact('Instagram', '//instagram.com/antoineaugusti', '@antoineaugusti');
 	display_icon_contact('GitHub', 'https://github.com/AntoineAug', 'github.com/AntoineAug');
 	display_icon_contact('YouTube', '//www.youtube.com/AugustiAntoine', 'www.youtube.com/AugustiAntoine');
 	display_icon_contact('Skype', '#', 'AntoineAugusti');
