@@ -1,5 +1,6 @@
 .DS_STORE
 /blog
+/twitter
 kernel/config.php
 sftp-config.json
 *sublime*

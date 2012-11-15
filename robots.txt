@@ -6,3 +6,4 @@ Disallow: /euler/
 Disallow: /42
 Disallow: /papa/
 Disallow: /maths
+Disallow: /twitter
