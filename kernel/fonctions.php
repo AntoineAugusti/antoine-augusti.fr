@@ -45,15 +45,16 @@ function display_projets ($style = NULL)
 		Teen Quotes est un site regroupant des citations du quotidien, que l\'on considère comme "vraies". Il est intégralement en anglais, sa version française s\'appelle Kotado.<br>
 		<br />
 		<ul class="inside-square">
-			<li> Inscription d\'utilisateurs.</li>
-			<li> Ajout de citations gérées par un panel d\'administration.</li>
-			<li> Interface français / anglais.</li>
-			<li> Site optimisé pour les mobiles.</li>
-			<li> Système de commentaires.</li>
-			<li> Système de newsletter.</li>
-			<li> Système de profil.</li>
-			<li> Système de citations favorites.</li>
-			<li> Forte intégration des réseaux sociaux.</li>
+			<li>Inscription d\'utilisateurs.</li>
+			<li>Ajout de citations gérées par un panel d\'administration.</li>
+			<li>Interface français / anglais.</li>
+			<li>Site optimisé pour les mobiles.</li>
+			<li>Application iOS : <a href="//teen-quotes.com/apps" title="Application Teen Quotes">teen-quotes.com/apps</a>.</li>
+			<li>Système de commentaires.</li>
+			<li>Système de newsletter.</li>
+			<li>Système de profil.</li>
+			<li>Système de citations favorites.</li>
+			<li>Forte intégration des réseaux sociaux.</li>
 		</ul>
 		<br />
 		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//teen-quotes.com" target="_blank" title="Teen Quotes">teen-quotes.com</a><br>
