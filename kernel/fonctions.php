@@ -66,7 +66,7 @@ function display_projets ($style = NULL)
 		<h2>Quantic Télécom</h2>
 		Quantic Télécom est le fournisseur d\'accès à Internet des étudiants INSA. Fondée en 2011 par une dizaine d\'élèves-ingénieurs de l\'INSA de Rouen, l\'association Quantic Télécom dispose du statut d\'opérateur de télécommunications déclaré ARCEP.<br>
 		<br />
-		L\'objectif premier du projet est la fourniture d\'accès Internet libre et performant à un prix extrèmement compétitif aux étudiants des INSA qui logent en résidence ou en ville. Le site web comprend l\'intégralité des paramètres de gestion d\'un FAI, une interface d\'administration et est disponible en français et en anglais.<br>
+		L\'objectif premier du projet est la fourniture d\'accès Internet libre et performant à un prix extrèmement compétitif aux étudiants qui logent en résidence ou en ville. Le site web comprend l\'intégralité des paramètres de gestion d\'un FAI, une interface d\'administration et est disponible en français et en anglais.<br>
 		<br />
 		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.quantic-telecom.net" target="_blank" title="Quantic Télécom">www.quantic-telecom.net</a>
 	</div>
