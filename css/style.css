@@ -62,6 +62,11 @@ a {
 	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c8c8c',endColorstr='#353537',GradientType=0 );
 	display:block;
 	height:60px;
+	position: relative;
+	z-index: 2;
+	-moz-box-shadow:0 5px 15px #999;
+	-wekbit-box-shadow:0 5px 15px #999;
+	box-shadow:0 5px 15px #999;
 }
 #header #header-content {
 	width:802px;
@@ -164,6 +169,8 @@ a {
 }
 #wrap {
 	background:#F0F0F0 url(/images/tile.gif) repeat -70% 0;
+	position: relative;
+	z-index: 1;
 }
 #wrap-inner {
 	background:url(/images/big-fade.png) repeat-x -70% 0;
