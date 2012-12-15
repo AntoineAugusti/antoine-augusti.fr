@@ -78,13 +78,13 @@ a {
 	height:30px;
 	background:url(/images/logo.png) no-repeat 0 0;
 }
-#header #logo a,#header #social-networks a span.icon,.fade,#corps a,#footer .plan a,#footer .logo_footer a {
+#header #logo a,.fade,#corps a,#footer .plan a,#footer .logo_footer a {
 	-webkit-transition:opacity 0.5s ease;
 	-moz-transition:opacity 0.5s ease;
 	-o-transition:opacity 0.5s ease;
 	transition:opacity 0.5s ease;
 }
-#header #logo a:hover,#header #social-networks a:hover span.icon,.fade:hover,#corps a:hover,#footer .plan a:hover,#footer .logo_footer a:hover {
+#header #logo a:hover,.fade:hover,#corps a:hover,#footer .plan a:hover,#footer .logo_footer a:hover {
 	opacity:0.6;
 }
 #header #logo a img {
@@ -98,58 +98,69 @@ a {
 	border-radius:6px;
 	padding:5px 0px 5px 10px;
 }
+#header #social-networks a span.icon {
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
 #header #social-networks a span.icon,span.icon-contact,span.icon-corps {
 	height:24px;
 	width:24px;
 	margin-right:12px;
 	vertical-align:middle;
 	display:inline-block;
-	background:url(/images/icones/sprite.png);
+	background:url(/images/icones/sprite_double.png);
+	background-position-y: 0;
+}
+#header #social-networks a span.icon:hover {
+	background-position-y: -24px;
 }
 #header #social-networks a span.icon.blog,span.icon-contact.blog,span.icon-corps.blog {
-	background-position:0 0;
+	background-position-x:0;
 }
 #header #social-networks a span.icon.contact,span.icon-contact.contact,span.icon-corps.contact {
-	background-position:-25px 0;
+	background-position-x:-25px;
 }
 #header #social-networks a span.icon.cv,span.icon-contact.cv,span.icon-corps.cv {
-	background-position:-50px 0;
+	background-position-x:-50px;
 }
 #header #social-networks a span.icon.email,span.icon-contact.email,span.icon-corps.email {
-	background-position:-75px 0;
+	background-position-x:-75px;
 }
 #header #social-networks a span.icon.facebook,span.icon-contact.facebook,span.icon-corps.facebook {
-	background-position:-100px 0;
+	background-position-x:-100px;
 }
 #header #social-networks a span.icon.feed,span.icon-contact.feed,span.icon-corps.feed {
-	background-position:-125px 0;
+	background-position-x:-125px;
 }
 #header #social-networks a span.icon.github,span.icon-contact.github,span.icon-corps.github {
-	background-position:-150px 0;
+	background-position-x:-150px;
 }
 #header #social-networks a span.icon.gmail,span.icon-contact.gmail,span.icon-corps.gmail {
-	background-position:-175px 0;
+	background-position-x:-175px;
 }
 #header #social-networks a span.icon.instagram,span.icon-contact.instagram,span.icon-corps.instagram {
-	background-position:-200px 0;
+	background-position-x:-200px;
 }
 #header #social-networks a span.icon.portable,span.icon-contact.portable,span.icon-corps.portable {
-	background-position:-225px 0;
+	background-position-x:-225px;
 }
 #header #social-networks a span.icon.skype,span.icon-contact.skype,span.icon-corps.skype {
-	background-position:-250px 0;
+	background-position-x:-250px;
 }
 #header #social-networks a span.icon.success,span.icon-contact.success,span.icon-corps.success {
-	background-position:-275px 0;
+	background-position-x:-275px;
 }
 #header #social-networks a span.icon.twitter,span.icon-contact.twitter,span.icon-corps.twitter {
-	background-position:-300px 0;
+	background-position-x:-300px;
 }
 #header #social-networks a span.icon.work,span.icon-contact.work,span.icon-corps.work {
-	background-position:-325px 0;
+	background-position-x:-325px;
 }
 #header #social-networks a span.icon.youtube,span.icon-contact.youtube,span.icon-corps.youtube {
-	background-position:-350px 0;
+	background-position-x:-350px;
 }
 #wrap {
 	background:#F0F0F0 url(/images/tile.gif) repeat -70% 0;
