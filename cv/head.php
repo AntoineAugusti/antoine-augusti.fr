@@ -1,19 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-	<?php if (isset($_GET['english']))
-{
-setcookie("french", 1 , time() -700);
-setcookie("english", 1 , time() + (((3600*24)*30)*12));
-echo "<meta http-equiv=\"refresh\" content=\"1;url=index.php\" />";
-}
-
-if (isset($_GET['french']))
-{
-setcookie("english", 1 , time() -700);
-setcookie("french", 1 , time() + (((3600*24)*30)*12));
-echo "<meta http-equiv=\"refresh\" content=\"1;url=index.php\" />";
-}
+<?php
+ini_set('session.cookie_domain', substr($_SERVER['SERVER_NAME'], strpos($_SERVER['SERVER_NAME'], "."), 100));
+session_start();
 ?>
+<!DOCTYPE html>
 <?php if (isset($_COOKIE['french']) OR !isset($_COOKIE['english'])) {$language="french";}else{$language="english";} ?>
 	<head> 
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 

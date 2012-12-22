@@ -51,6 +51,46 @@ a {
 	color:#064b74;
 	text-decoration:none
 }
+#translate_transition {
+	background: url(/images/fond_translate.jpeg);
+	background-repeat: repeat;
+	top: 0;
+	z-index: 10000;
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	line-height: 0;
+}
+
+#translate_transition .translate_img{
+	background: url(/images/mayalabeille.png) no-repeat;
+	margin: auto;
+	width: 200px;
+	height: 510px;
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+}
+
+#translate_transition .translate_text{
+	text-align: right;
+	text-transform: uppercase;
+	position: absolute;
+	right: 10%;
+	top:25%;
+	font-size: 25px;
+	font-weight: bold;
+	text-shadow: 0 2px 0px #f8f8f8;
+}
+#translate_transition .caption {
+	position: absolute;
+	bottom: 100px;
+	left: 30%;
+	font-size: 12px;
+	font-style: italic;
+	text-shadow: 0 2px 0px #f8f8f8;
+}
 #header {
 	background:#8c8c8c;
 	background:-moz-linear-gradient(top,#8c8c8c 0%,#353537 100%);
@@ -466,6 +506,27 @@ a {
 	background:#FAFAFA;
 	padding:4px;
 	border:1px solid #DDD;
+	-moz-box-shadow:5px 5px 7px #999;
+	box-shadow:5px 5px 7px #999;
+	-webkit-box-shadow:5px 5px 7px #999;
+	height:150px;
+	width:150px;
+	float:right;
+	margin-left:20px;
+	-webkit-transition:-webkit-transform .8s ease;
+	-moz-transition:-moz-transform .8s ease;
+	-ms-transition:-ms-transform .8s ease;
+	-o-transition:-o-transform .8s ease;
+	transition:transform .8s ease
+}
+.avatar:hover {
+	-webkit-transform:rotate(7deg);
+	-moz-transform:rotate(7deg);
+	transform:rotate(7deg);
+}
+#wrap,#logo,#header,#content,#footer {
+	display: none
+}px solid #DDD;
 	-moz-box-shadow:5px 5px 7px #999;
 	box-shadow:5px 5px 7px #999;
 	-webkit-box-shadow:5px 5px 7px #999;

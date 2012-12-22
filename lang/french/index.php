@@ -76,3 +76,11 @@ $lang['contact_email'] = 'Votre email :';
 $lang['contact_placeholder'] = 'Entez votre mot doux ici.';
 $lang['contact_copy'] = 'Recevoir une copie de cet email ? :';
 $lang['contact_send'] = 'Envoyer!';
+
+// FOOTER
+$lang['footer_who_am_i'] = 'Qui suis-je ?';
+$lang['footer_description'] = 'Je m\'appelle Antoine AUGUSTI (vous l\'auriez deviné je pense) et je suis étudiant à l\'INSA de Rouen. Je développe des sites webs et participe à plusieurs projets ambitieux. J\'étudie pour faire de ma passion pour l\'informatique mon métier.';
+$lang['footer_few_links'] = 'Quelques liens';
+$lang['footer_home'] = 'Accueil';
+$lang['footer_website_antoine_augusti'] = 'Site web d\'Antoine Augusti';
+$lang['footer_website_insa_rouen'] = 'Site web de l\'INSA Rouen';

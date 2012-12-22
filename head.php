@@ -53,6 +53,7 @@ require WEBSITE_PATH."/kernel/fonctions.php";
 				<div class="linear-gray justify">
 					<img src="<?php echo IMAGE_PROFIL; ?>" class="avatar" alt="Antoine Augusti" />
 					<?php echo $lang['header_presentation_self']; ?>
+					<div class="clear"></div>
 				</div>
 				<?php
 				}
