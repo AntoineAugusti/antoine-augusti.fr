@@ -52,7 +52,7 @@ a {
 	text-decoration:none
 }
 #translate_transition {
-	background: url(/images/fond_translate.jpeg);
+	background: url(/images/bg_translate.jpg);
 	background-repeat: repeat;
 	top: 0;
 	z-index: 10000;
