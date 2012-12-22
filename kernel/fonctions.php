@@ -1,4 +1,12 @@
 <?php
+// English by default
+if (!isset($_SESSION['lang']) OR empty($_SESSION['lang']))
+{
+	$_SESSION['lang'] = 'french';
+}
+
+require WEBSITE_PATH."/lang/".$_SESSION['lang']."/index.php";
+
 function display_page_title ()
 {
 	$name_page = ucfirst(substr($_SERVER['PHP_SELF'],1,strlen($name_page)-4));
@@ -30,6 +38,8 @@ function display_icon_social_network ($alt,$link)
 }
 function display_projets ($style = NULL)
 {
+	global $lang;
+
 	if ($style == 'cv')
 	{
 		$class = 'texte margin_xp justify';
@@ -40,21 +50,21 @@ function display_projets ($style = NULL)
 	}
 	echo '
 	<div class="'.$class.'">
-		<img src="'.DOMAINE.'images/teen-quotes.png" class="icon-website-tq fade" alt="Teen Quotes" />
-		<h2>Teen Quotes</h2>
-		Teen Quotes est un site regroupant des citations du quotidien, que l\'on considère comme "vraies". Il est intégralement en anglais, sa version française s\'appelle Kotado.<br>
+		<img src="'.DOMAINE.'images/teen-quotes.png" class="icon-website-tq fade" alt="'.$lang['teen_quotes_title'].'" />
+		<h2>'.$lang['teen_quotes_title'].'</h2>
+		'.$lang['teen_quotes_description'].'<br>
 		<br />
 		<ul class="inside-square">
-			<li>Inscription d\'utilisateurs.</li>
-			<li>Ajout de citations gérées par un panel d\'administration.</li>
-			<li>Interface français / anglais.</li>
-			<li>Site optimisé pour les mobiles.</li>
-			<li>Application iOS : <a href="//teen-quotes.com/apps" title="Application Teen Quotes">teen-quotes.com/apps</a>.</li>
-			<li>Système de commentaires.</li>
-			<li>Système de newsletter.</li>
-			<li>Système de profil.</li>
-			<li>Système de citations favorites.</li>
-			<li>Forte intégration des réseaux sociaux.</li>
+			<li>'.$lang['tq_signup'].'</li>
+			<li>'.$lang['tq_add_quotes'].'</li>
+			<li>'.$lang['tq_french_english'].'</li>
+			<li>'.$lang['tq_mobile'].'</li>
+			<li>'.$lang['tq_ios_app'].'<a href="//teen-quotes.com/apps" title="Application Teen Quotes">teen-quotes.com/apps</a>.</li>
+			<li>'.$lang['tq_comments'].'</li>
+			<li>'.$lang['tq_newsletter'].'</li>
+			<li>'.$lang['tq_profiles'].'</li>
+			<li>'.$lang['tq_favorites_quotes'].'</li>
+			<li>'.$lang['tq_social_networks'].'</li>
 		</ul>
 		<br />
 		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//teen-quotes.com" target="_blank" title="Teen Quotes">teen-quotes.com</a><br>
@@ -64,56 +74,44 @@ function display_projets ($style = NULL)
 	<div class="'.$class.'">
 		<img src="'.DOMAINE.'images/quantic-telecom.png" class="icon-website-it fade" alt="Quantic Télécom" />
 		<h2>Quantic Télécom</h2>
-		Quantic Télécom est le fournisseur d\'accès à Internet des étudiants INSA. Fondée en 2011 par une dizaine d\'élèves-ingénieurs de l\'INSA de Rouen, l\'association Quantic Télécom dispose du statut d\'opérateur de télécommunications déclaré ARCEP.<br>
-		<br />
-		L\'objectif premier du projet est la fourniture d\'accès Internet libre et performant à un prix extrèmement compétitif aux étudiants qui logent en résidence ou en ville. Le site web comprend l\'intégralité des paramètres de gestion d\'un FAI, une interface d\'administration et est disponible en français et en anglais.<br>
-		<br />
+		'.$lang['qt_description'].'
 		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.quantic-telecom.net" target="_blank" title="Quantic Télécom">www.quantic-telecom.net</a>
 	</div>
 
 	<div class="'.$class.'">
 		<img src="'.DOMAINE.'images/pretty-web.png" class="icon-website-pretty-web fade" alt="Pretty Web" />
 		<h2>Pretty Web</h2>
-		Pretty Web est une petite agence web qui s\'attache à créer de jolis sites et à monter d\'ambitieux projets. Nous aimons le web, nous aimons développer, nous sommes des passionnés qui s\'attachent à réaliser des projets toujours meilleurs.<br>
+		'.$lang['pretty_web_description'].'<br>
 		<br />
 		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.pretty-web.com" target="_blank" title="Pretty Web">www.pretty-web.com</a>
 	</div>
 	
 	<div class="'.$class.'">
-		<img src="'.DOMAINE.'images/jehan-ango.jpg" class="icon-website-ango fade" alt="Jehan Ango" />
-		<h2>Lycée Jehan Ango</h2>
-		Refonte générale du site de mon ancien lycée. J\'ai choisi d\'utiliser le CMS SPIP pour que les professeurs et l\'administration puissent ajouter des articles facilement et rapidement. Le design du site a été totalement revu pour suivre les tendances actuelles.<br>
-		<br />
-		Le déploiement de ce site a été l\'occasion pour le lycée de changer sa manière de communiquer. Les réseaux sociaux ont été intégrés au site et j\'ai créé une page Facebook pour que les élèves soient facilement informés des dernières nouveautés de leur lycée.<br>
-		<br />
-		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//lycees.ac-rouen.fr/ango/" target="_blank" title="Jehan Ango">lycees.ac-rouen.fr/ango/</a>
+		<img src="'.DOMAINE.'images/jehan-ango.jpg" class="icon-website-ango fade" alt="'.$lang['jehan_ango_title'].'" />
+		<h2>'.$lang['jehan_ango_title'].'</h2>
+		'.$lang['jehan_ango_description'].'
+		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//lycees.ac-rouen.fr/ango/" target="_blank" title="'.$lang['jehan_ango_title'].'">lycees.ac-rouen.fr/ango/</a>
 	</div>
 	
 	<div class="'.$class.'">
 		<img src="'.DOMAINE.'images/pls.png" class="icon-website-pls fade" alt="PLS Fluid Dynamics" />
 		<h2>PLS Fluid Dynamics</h2>
-		PLS Fluid Dynamics est une entreprise spécialisée dans la simulation numérique en mécanique des fluides (CFD). Comme toute entreprise, PLS Fluid Dynamics avait besoin d\'une visibilité sur internet pour pouvoir toucher de nouveaux clients et présenter son activité en ligne.<br>
-		<br />
-		Le design du site est sobre, toujours dans l\'optique de conserver un site clair où les informations sont accessibles facilement.<br>
-		<br />
+		'.$lang['pls_description'].'
 		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.pls-fluid-dynamics.com" target="_blank" title="PLS Fluid Dynamics">www.pls-fluid-dynamics.com</a>
 	</div>
 	
 	<div class="'.$class.'">
-		<img src="'.DOMAINE.'images/technostress.png" class="icon-website-technostress fade" alt="Technostress" />
-		<h2>Technostress</h2>
-		Dans le cadre d\'un travail de communication à l\'INSA de Rouen, nous avons dû réaliser un dossier d\'actualité sur le thème de notre choix. Ce travail s\'est conclu par une production écrite d\'une taille conséquente et une soutenance orale.<br>
-		<br />
-		La problèmatique de mon sujet était <span class="italic">"Les nouvelles technologies de l\'information et de la communication accentuent-elles notre stress ?"</span> portant sur le phénomène du technostress. Je suis très attaché à cette problématique car le domaine des NTIC m\'intéresse beaucoup et les problèmes qu\'elles générent font parti de mes préoccupations.<br>
-		<br />
-		J\'ai choisi de réaliser également un site web afin de présenter mon travail, en complément du dossier papier et de la présentation orale. La présentation du site reste sobre et minimaliste pour accroître la clarté.<br>
-		<br />
-		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.technostress.fr" target="_blank" title="Technostress">www.technostress.fr</a>
+		<img src="'.DOMAINE.'images/technostress.png" class="icon-website-technostress fade" alt="'.$lang['technostress_title'].'" />
+		<h2>'.$lang['technostress_title'].'</h2>
+		'.$lang['technostress_description'].'
+		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.technostress.fr" target="_blank" title="'.$lang['technostress_title'].'">www.technostress.fr</a>
 	</div>';
 }
 
 function display_contact_by_email($style = NULL)
 {
+	global $lang;
+
 	if ($style == 'cv')
 	{
 		$class = 'texte';
@@ -125,24 +123,24 @@ function display_contact_by_email($style = NULL)
 	echo '
 	<div class="'.$class.'">
 		<form action="'.DOMAINE.'?action=send" method="post">
-			Sujet :<br>
+			'.$lang['contact_subject'].'<br>
 			<input type="text" name="sujet" size="20" maxlength="30"><br> 
 			<br /> 
-			Votre nom :<br>
+			'.$lang['contact_name'].'<br>
 			<input type="text" name="nom" size="20" maxlength="30"><br> 
 			<br /> 
-			Votre email :<br>
+			'.$lang['contact_email'].'<br>
 			<input type="text" name="email" size="20" maxlength="30"><br> 
 			<br />';
 			echo captcha(); echo ' =<br>
 			<input type="text" name="captcha" size="20" maxlength="30"><br> 
 			<br />
-			<textarea rows="10" cols="70" name="message" placeholder="Entrez votre moux doux ici."></textarea><br>
+			<textarea rows="10" cols="70" name="message" placeholder="'.$lang['contact_placeholder'].'"></textarea><br>
 			<br /> 
-			Recevoir une copie de cet email ? : <input type="checkbox" value="1" name="copie" checked/>
+			'.$lang['contact_copy'].' <input type="checkbox" value="1" name="copie" checked/>
 			<br />
 			<div class="right">
-				<input type="submit" name="submit" class="submit" value="Envoyer">
+				<input type="submit" name="submit" class="submit" value="'.$lang['contact_send'].'">
 			</div>
 			<div class="clear"></div>
 		</form>
@@ -151,15 +149,17 @@ function display_contact_by_email($style = NULL)
 
 function display_header ()
 {
+	global $lang;
+
 	echo '
 	<div id="header">
 		<div id="header-content">
 			<div id="logo">
-				<a href="'.DOMAINE.'" title="Retour à l\'accueil"><img alt="Logo" src="'.DOMAINE.'images/logo.png" /></a>
-			</div>
+				<a href="'.DOMAINE.'" title="'.$lang['header_back_to_home'].'"><img alt="Logo" src="'.DOMAINE.'images/logo.png" /></a>
+			</div>';
 
+	echo '
 			<div id="social-networks">';
-				
 				display_icon_social_network('Blog', '//blog.antoine-augusti.fr');
 				display_icon_social_network('Cv', '//cv.antoine-augusti.fr');
 				display_icon_social_network('Facebook', '//www.facebook.com/AntoineAugusti');
@@ -167,8 +167,18 @@ function display_header ()
 				display_icon_social_network('Github', 'https://www.github.com/AntoineAug');
 				display_icon_social_network('Instagram', '//instagram.com/antoineaugusti');
 				display_icon_social_network('Feed','//www.antoine-augusti.fr/blog/feed/');
+	echo '	</div>';
+
+	if (!preg_match('#cv|blog#', "http://".$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"]))
+	{
+		echo '
+			<div id="flags_translate">
+				<span class="english fade_on_hover"></span>
+				<span class="french fade_on_hover"></span>
+			</div>';
+	}
+
 	echo '
-			</div>
 		</div>
 	</div><!-- END HEADER -->';
 }

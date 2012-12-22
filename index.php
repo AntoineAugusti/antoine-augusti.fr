@@ -2,10 +2,10 @@
 include "head.php";
 $action = htmlspecialchars($_GET['action']);
 if (empty($action))
-	{
+{
 ?>
 				<div id="contact" class="corps-left">
-					<h1><span class="icon-corps contact"></span>Contactez-moi</h1>
+					<h1><span class="icon-corps contact"></span><?php echo $lang['index_contact_me']; ?></h1>
 					<div class="gray-post">
 						<?php
 						display_full_contact();
@@ -14,7 +14,7 @@ if (empty($action))
 	        	</div>
 
 	        	<div class="corps-right">
-	        		<h1><span class="icon-corps blog"></span>Derniers articles</h1>
+	        		<h1><span class="icon-corps blog"></span><?php echo $lang['index_derniers_articles']; ?></h1>
 					<div class="gray-post">
 					<ul class="inside-square">
 					<?php
@@ -30,20 +30,20 @@ if (empty($action))
 
 	        	<div class="clear"></div>
 
-	        	<h1><span class="icon-corps work"></span>Quelques projets</h1>
+	        	<h1><span class="icon-corps work"></span><?php echo $lang['index_some_projects']; ?></h1>
 					<?php
 						display_projets();
 					?>
 			       
-				<h1><span class="icon-corps gmail"></span>Contactez-moi par email</h1>
+				<h1><span class="icon-corps gmail"></span><?php echo $lang['index_contact_me_by_email']; ?></h1>
 					<?php
 						display_contact_by_email();
 					?>
 <?php
-	}
+}
 elseif ($action == 'send')
-				{
-	echo '<h1><span class="icon-corps gmail"></span>Contactez-moi par email</h1>';
+{
+	echo '<h1><span class="icon-corps gmail"></span>'.$lang['index_contact_me_by_email'].'</h1>';
 	echo '<div class="gray-post">';
 	
 	if(isset($_POST['sujet']))      $sujet = $_POST['sujet'];
@@ -55,7 +55,7 @@ elseif ($action == 'send')
 	if(isset($_POST['message']))      $message = $_POST['message'];
 	else      $message = "";
 
-	if(isset($_POST['email']) && preg_match("#[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $_POST['email']))     $email = $_POST['email'];
+	if(isset($_POST['email']) AND preg_match("#[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $_POST['email']))     $email = $_POST['email'];
 	else      $email = "";
 
 
@@ -63,14 +63,14 @@ elseif ($action == 'send')
 	else      $nom = "";
 	
 	if(empty($sujet) OR empty($message) OR empty($email) OR empty($nom))
-		{ 
-		echo '<div class="erreur">Attention, un champ est vide</div><br /><br />
-		<a href="javascript:history.back()">&raquo; Retour</a>';
-		}
+	{ 
+		echo '<div class="erreur">'.$lang['index_form_empty'].'</div><br /><br />
+		<a href="javascript:history.back()">&raquo; '.$lang['index_back'].'</a>';
+	}
 	else      
-		{
+	{
 		if($_POST['captcha'] == $_SESSION['captcha'])
-			{
+		{
 		  
 			$headers ='From: "'.$nom.'"<no-reply@antoine-augusti.fr>'."\n";
 			$headers .='Reply-To: '.$email.''."\n";
@@ -82,33 +82,33 @@ elseif ($action == 'send')
 			 
 			$message .= "\r\n";
 			$message .= "\r\n";
-			$message .= "------------------ Message envoyé depuis www.antoine-augusti.fr ------------------";
+			$message .= "------------------ ".$lang['index_mail_sent_from']." www.antoine-augusti.fr ------------------";
 			
 			if(mail("antoine.augusti@gmail.com", stripslashes($sujet), stripslashes($message), $headers))
-				{ 
-				echo '<span class="icon-corps success"></span>Le message a bien été envoyé !<br><br /><br />Vous recevrez une réponse sur votre adresse email donnée (<a href="mailto:'.$email.'">'.$email.'</a>).';
-				}
-			else
-				{
-				echo '<div class="erreur">Le message n\'a pu être envoyé</div><br /><br />
-				<a href="javascript:history.back()">Retour</a>';
-				}
-
-			$message .= "\r\n";
-			$message .= "\r\n";
-			$message .= "------------------ Ceci est la copie de votre message ------------------";
-
-			if ($copie == TRUE && mail($email, stripslashes($sujet), stripslashes($message), "$headers"))
-				{
-				echo "<br /><br />Une copie de votre message &agrave; été envoyée sur votre adresse email.";
-				}
+			{ 
+				echo '<span class="icon-corps success"></span>'.$lang['index_mail_sent'].' (<a href="mailto:'.$email.'" title="'.$email.'">'.$email.'</a>).';
 			}
-		else 
+			else
 			{
-			echo '<div class="erreur">Le code de sécurité entré est mauvais</div><br /><br /><a href="javascript:history.back()">&raquo; Retour</a>';
+				echo '<div class="erreur">'.$lang['index_mail_not_sent'].'</div><br /><br />
+				<a href="javascript:history.back()">&raquo; '.$lang['index_back'].'</a>';
+			}
+
+			$message .= "\r\n";
+			$message .= "\r\n";
+			$message .= "------------------ ".$lang['index_copy_mail']." ------------------";
+
+			if ($copie == TRUE AND mail($email, stripslashes($sujet), stripslashes($message), $headers))
+			{
+				echo "<br /><br />Une copie de votre message &agrave; été envoyée sur votre adresse email.";
 			}
 		}
-	echo '</div>';
+		else 
+		{
+			echo '<div class="erreur">Le code de sécurité entré est mauvais</div><br /><br /><a href="javascript:history.back()">&raquo; Retour</a>';
+		}
 	}
+	echo '</div>';
+}
 include 'footer.php'; 
 ?>

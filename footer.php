@@ -29,5 +29,6 @@
 		</div>
 	</div>
 	<!-- END FOOTER -->	
+	<script src="<?php echo DOMAINE; ?>js/scrypt.js"></script>
 	</body>
 </html>

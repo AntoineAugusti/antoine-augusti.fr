@@ -1,10 +1,11 @@
 <?php
+ini_set('session.cookie_domain', substr($_SERVER['SERVER_NAME'], strpos($_SERVER['SERVER_NAME'], "."), 100));
 session_start();
 require "kernel/config.php";
-require "kernel/fonctions.php";
+require WEBSITE_PATH."/kernel/fonctions.php";
 ?>
 <!DOCTYPE html>
-<html lang="fr"> 
+<html lang="<?php echo substr($_SESSION['lang'], 0, 2); ?>"> 
 <head>
 	<?php display_page_title(); ?>
 	<meta charset="utf-8" />
@@ -21,7 +22,6 @@ require "kernel/fonctions.php";
 
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>
 	<script src="//static.augusti.fr/js/scroll.js"></script>
-	<script src="<?php echo DOMAINE; ?>js/load_fade.js"></script>
 	<script src="<?php echo DOMAINE; ?>js/uniform.js"></script>
 	<script>
 	  var _gaq = _gaq || [];
@@ -46,16 +46,13 @@ require "kernel/fonctions.php";
 	<div id="wrap">
 		<div id="wrap-inner">
 			<div id="corps" class="justify">
-				
 				<?php
-				if (substr($_SERVER['PHP_SELF'],1,strlen($name_page)-4) != '404')
+				if (substr($_SERVER['PHP_SELF'], 1, strlen($name_page)-4) != '404')
 				{
 				?>
 				<div class="linear-gray justify">
 					<img src="<?php echo IMAGE_PROFIL; ?>" class="avatar" alt="Antoine Augusti" />
-					Bonjour. Je m'appelle Antoine AUGUSTI et je suis étudiant à l'<a href="//www.insa-rouen.fr" target="_blank" title="INSA Rouen">INSA de Rouen</a>. Vous vous trouvez sur mon site personnel, c'est l'occasion de faire plus ample connaissance ! Découvrez ici mes projets, mes articles de blogs, mes expériences...<br>
-					<br />
-					J'ai déjà réalisé de nombreux sites webs qui totalisent plus de 5 000 visiteurs par jour. Soucieux de produire un travail de qualité, je travaille d'arrache-pied. Je suis méticuleux, perfectionniste et ambitieux. L'optimisation et la clarté sont mes maîtres mots. Ma citation préférée est <span class="italic">"less is more"</span>.
+					<?php echo $lang['header_presentation_self']; ?>
 				</div>
 				<?php
 				}

@@ -95,6 +95,35 @@ a {
 #header #logo a img {
 	height:0px;
 }
+#header #flags_translate {
+	float:right;
+	background:#555555 url(/images/tab-overlay.png) repeat-x 0 0;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	padding:5px 10px;
+	margin-right: 20px;
+}
+#header #flags_translate span {
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	display: inline-block;
+	cursor: pointer;
+	background: url(/images/icones/flags/sprite.png);
+}
+#header #flags_translate span:hover {
+	opacity: 0.6;
+}
+#header #flags_translate span.english
+{
+	background-position: 0 0;
+	margin-right: 12px;
+}
+#header #flags_translate span.french
+{
+	background-position: -24px 0;
+}
 #header #social-networks {
 	float:right;
 	background:#555555 url(/images/tab-overlay.png) repeat-x 0 0;
@@ -103,7 +132,7 @@ a {
 	border-radius:6px;
 	padding:5px 0px 5px 10px;
 }
-#header #social-networks a span.icon {
+#header #social-networks a span.icon, .fade_on_hover {
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
@@ -251,7 +280,7 @@ a {
 #footer .fleche_footer {
 	width:10px;
 	height:10px;
-	vertical-align:-25%;
+	vertical-align:-2px;
 	margin-right:5px
 }
 #footer .logo_footer a {
