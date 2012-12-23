@@ -173,8 +173,8 @@ function display_header ()
 	{
 		echo '
 			<div id="flags_translate">
-				<span class="english fade_on_hover"></span>
-				<span class="french fade_on_hover"></span>
+				<span class="english fade_on_hover" onClick="_gaq.push([\'_trackEvent\', \'translate\', \'clic\', \'English\']);"></span>
+				<span class="french fade_on_hover" onClick="_gaq.push([\'_trackEvent\', \'translate\', \'clic\', \'French\']);"></span>
 			</div>';
 	}
 
