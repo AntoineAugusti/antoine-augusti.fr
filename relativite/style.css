@@ -1,0 +1,24 @@
+body{background:url(images/background.png) fixed;color:#555;font-family:Helvetica, Arial, sans-serif;list-style:inside;margin:0;font-size:13px;line-height: 22px}
+a img{border:none}
+h1,h2,h3,h4{border-bottom:3px solid #e9eaee;text-shadow: 2px 2px 1px #d7d7d7;color:#464D4C;margin-bottom:15px;padding-left:5px;text-transform:uppercase}
+a{color:#064b74;text-decoration:none}
+#content{background:#FFF;border:15px solid #e9eaee;color:#555;font-weight:400;margin:50px auto;padding:30px 20px;width:860px;clear:both}
+#content_titre {width:850px;margin:20px auto}
+#logo {float:right;height:50px;display:block;margin:10px 0px}
+a.thumb{border:4px solid #3d3d3d;height:80px;margin-right:10px}
+ul.ul_margin_left{margin:10px 0px 10px 15px}
+ul.circle {list-style-type:circle}
+ul.square {list-style-type:square}
+img.photos {border:2px solid #CCC;background:#FAFAFA;padding:7px;margin:20px auto;max-width:850px;box-shadow:0 1px 5px rgba(0, 0, 0, 0.5),inset 0 -1px 0 rgba(0, 0, 0, 0.3);-moz-box-shadow:0 1px 5px rgba(0, 0, 0, 0.5),inset 0 -1px 0 rgba(0, 0, 0, 0.3);-webkit-box-shadow:0 1px 5px rgba(0, 0, 0, 0.5),inset 0 -1px 0 rgba(0, 0, 0, 0.3)}
+img.float_left{margin:10px 10px 10px 0px;float:left}
+img.float_right{margin:10px 0px 10px 10px;float:right}
+div.speech {border-radius:5px;background-image: -moz-linear-gradient(top, #fff, #f1f1f1); /* FF3.6 */ background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #fff),color-stop(1, #f1f1f1)); /* Saf4+, Chrome */ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f1f1f1'); /* IE6,IE7 */ -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f1f1f1')"; /* IE8 */ border:1px solid #d5d5d5; -moz-border-radius:3px; margin-bottom:10px; padding:6px 8px;}
+.clear{clear:both;}
+.justify{text-align:justify}
+.icone{border:none;height:24px;margin-right:20px;vertical-align:bottom;width:24px}
+.no_shadow {text-shadow:0px 0px 0px #FFF}
+.photo{border:2px solid #CCC;background:#FAFAFA;padding:3px;box-shadow:0 1px 5px rgba(0, 0, 0, 0.5),inset 0 -1px 0 rgba(0, 0, 0, 0.3);-moz-box-shadow:0 1px 5px rgba(0, 0, 0, 0.5),inset 0 -1px 0 rgba(0, 0, 0, 0.3);-webkit-box-shadow:0 1px 5px rgba(0, 0, 0, 0.5),inset 0 -1px 0 rgba(0, 0, 0, 0.3);}
+.mini_icone{border:none;height:18px;margin-right:10px;vertical-align:top;width:18px}
+#footer{color:#777;width:900px;margin:30px auto;text-align:right}
+#footer a{font-weight:400;color:#777}
+#footer a:hover{text-decoration:underline}
