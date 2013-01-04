@@ -7,3 +7,4 @@ Disallow: /42
 Disallow: /papa/
 Disallow: /maths
 Disallow: /twitter
+Disallow: /cv

@@ -99,9 +99,9 @@ require "../kernel/fonctions.php";
 			<u>www.antoine-augusti.fr</u>
 		</div>
 
-		<div class="texte">
+		<!--<div class="texte">
 			<img src="/images/pdf.png" class="download_pdf" title="CV au format PDF"> Vous pouvez consulter mon CV en version PDF en <a href="/cv.pdf" title="CV PDF">cliquant ici</a>.
-		</div>
+		</div>-->
 	</div>
 	<!-- END INFOS -->
 	<div id="div_experiences" class="hide" style="display:none">
