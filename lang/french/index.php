@@ -73,7 +73,7 @@ J\'ai choisi de réaliser également un site web afin de présenter mon travail,
 $lang['contact_subject'] = 'Sujet :';
 $lang['contact_name'] = 'Votre nom :';
 $lang['contact_email'] = 'Votre email :';
-$lang['contact_placeholder'] = 'Entez votre mot doux ici.';
+$lang['contact_placeholder'] = 'Entrez votre mot doux ici.';
 $lang['contact_copy'] = 'Recevoir une copie de cet email ? :';
 $lang['contact_send'] = 'Envoyer!';
 
