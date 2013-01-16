@@ -2,9 +2,11 @@
 // HEADER
 $lang['header_back_to_home'] = 'Retour à l\'accueil';
 $lang['header_presentation_self'] = '
-Bonjour. Je m\'appelle Antoine AUGUSTI et je suis étudiant à l\'<a href="//www.insa-rouen.fr" target="_blank" title="INSA Rouen">INSA de Rouen</a>. Vous vous trouvez sur mon site personnel, c\'est l\'occasion de faire plus ample connaissance ! Découvrez ici mes projets, mes articles de blogs, mes expériences...<br/>
+Je m\'appelle Antoine AUGUSTI et je suis un élève ingénieur à l\'<a href="//www.insa-rouen.fr" target="_blank" title="INSA Rouen">INSA de Rouen</a>. Je suis <span class="highlight_blue">développeur web</span> et m\'intéresse de très près au monde de l\'Internet.<br/>
 <br />
-J\'ai déjà réalisé de nombreux sites webs qui totalisent plus de 5 000 visiteurs par jour. Soucieux de produire un travail de qualité, je travaille d\'arrache-pied. Je suis méticuleux, perfectionniste et ambitieux. L\'optimisation et la clarté sont mes maîtres mots. Ma citation préférée est <span class="italic">"less is more"</span>.
+Grâce à <span class="highlight_blue">Teen Quotes</span> j\'expérimente le développement web touchant un public international, sur plusieurs plateformes. De plus, le rôle que je joue dans <span class="highlight_blue">Quantic Télécom</span> me permet de découvrir le travail des fournisseurs d\'accès à Internet.<br/>
+<br/>
+Enfin, je suis intéressé par les mathématiques, l\'algorithme, la communication, le design et l\'anglais.
 ';
 
 // INDEX
@@ -75,7 +77,7 @@ $lang['contact_name'] = 'Votre nom :';
 $lang['contact_email'] = 'Votre email :';
 $lang['contact_placeholder'] = 'Entrez votre mot doux ici.';
 $lang['contact_copy'] = 'Recevoir une copie de cet email ? :';
-$lang['contact_send'] = 'Envoyer!';
+$lang['contact_send'] = 'Envoyer !';
 
 // FOOTER
 $lang['footer_who_am_i'] = 'Qui suis-je ?';

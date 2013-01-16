@@ -50,7 +50,7 @@ require WEBSITE_PATH."/kernel/fonctions.php";
 				if (substr($_SERVER['PHP_SELF'], 1, strlen($name_page)-4) != '404')
 				{
 				?>
-				<div class="linear-gray justify">
+				<div class="presentation_self justify">
 					<img src="<?php echo IMAGE_PROFIL; ?>" class="avatar" alt="Antoine Augusti" />
 					<?php echo $lang['header_presentation_self']; ?>
 					<div class="clear"></div>

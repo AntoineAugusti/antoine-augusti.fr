@@ -2,10 +2,11 @@
 // HEADER
 $lang['header_back_to_home'] = 'Back to home';
 $lang['header_presentation_self'] = '
-Hello. My name is Antoine AUGUSTI and I am an engineering student at the <a href="//www.insa-rouen.fr" target="_blank" title="INSA Rouen">INSA de Rouen</a>. You\'re currently on my website, let\'s get to know! You will find my projects, my articles, my experiences...<br/>
+My name is Antoine AUGUSTI and I am an engineering student at the <a href="//www.insa-rouen.fr" target="_blank" title="INSA Rouen">INSA de Rouen</a>. I am a <span class="highlight_blue">web developer</span> and I feel very concerned by the Internet world.<br/>
 <br/>
-I\'ve already made ​​many websites totaling over 5,000 visitors per day. Anxious to produce quality work, I work hard. I am meticulous, perfectionist and ambitious. Optimization and clarity are my watchwords. My favorite quote is <span class="italic">"less is more"</span>.
-';
+With <span class="highlight_blue">Teen Quotes</span>, I experience web development affecting an international audience on multiple platforms. In addition, my position at <span class="highlight_blue">Quantic Télécom</span> allows me to discover the work of Internet service providers.<br/>
+<br/>
+Finally, I am interested in mathematics, algorithm, communication, design and English.';
 
 // INDEX
 $lang['index_contact_me'] = 'Contact me';
