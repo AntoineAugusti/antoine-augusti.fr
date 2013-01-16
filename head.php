@@ -20,7 +20,7 @@ require WEBSITE_PATH."/kernel/fonctions.php";
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo IMAGE_PROFIL; ?>">
 	<link rel="image_src" href="<?php echo IMAGE_PROFIL; ?>" />
 
-	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.8.0.min.js"></script>
 	<script src="//static.augusti.fr/js/scroll.js"></script>
 	<script src="<?php echo DOMAINE; ?>js/uniform.js"></script>
 	<script>
