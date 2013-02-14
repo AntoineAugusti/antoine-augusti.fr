@@ -2,6 +2,9 @@
 session_start();
 require "../kernel/config.php";
 require WEBSITE_PATH."/kernel/fonctions.php";
+
+
+
 if (isset($_POST['sujet']))      $sujet = $_POST['sujet'];
 else      $sujet = NULL;
 
