@@ -550,27 +550,6 @@ a {
 .highlight_blue {
 	color: #4183C4;
 }
-#wrap,#logo,#header,#content,#footer {
-	display: none
-}px solid #DDD;
-	-moz-box-shadow:5px 5px 7px #999;
-	box-shadow:5px 5px 7px #999;
-	-webkit-box-shadow:5px 5px 7px #999;
-	height:150px;
-	width:150px;
-	float:right;
-	margin-left:20px;
-	-webkit-transition:-webkit-transform .8s ease;
-	-moz-transition:-moz-transform .8s ease;
-	-ms-transition:-ms-transform .8s ease;
-	-o-transition:-o-transform .8s ease;
-	transition:transform .8s ease
-}
-.avatar:hover {
-	-webkit-transform:rotate(7deg);
-	-moz-transform:rotate(7deg);
-	transform:rotate(7deg);
-}
-#wrap,#logo,#header,#content,#footer {
+#wrap,#logo,#header,#content,#footer, #notification {
 	display: none
 }

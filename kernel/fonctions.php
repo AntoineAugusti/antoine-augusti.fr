@@ -122,22 +122,23 @@ function display_contact_by_email($style = NULL)
 	}
 	echo '
 	<div class="'.$class.'">
-		<form action="'.DOMAINE.'?action=send" method="post">
+		<form action="'.DOMAINE.'?action=send" id="contactForm" method="post">
+			<div id="notification"></div>
 			'.$lang['contact_subject'].'<br>
-			<input type="text" name="sujet" size="20" maxlength="30"><br> 
+			<input type="text" name="sujet" id="inputSujet" size="20" maxlength="30" required><br> 
 			<br /> 
 			'.$lang['contact_name'].'<br>
-			<input type="text" name="nom" size="20" maxlength="30"><br> 
+			<input type="text" name="nom" id="inputNom" size="20" maxlength="30" required><br> 
 			<br /> 
 			'.$lang['contact_email'].'<br>
-			<input type="text" name="email" size="20" maxlength="30"><br> 
+			<input type="email" name="email" id="inputEmail" size="20" maxlength="30" required><br> 
 			<br />';
 			echo captcha(); echo ' =<br>
-			<input type="text" name="captcha" size="20" maxlength="30"><br> 
+			<input type="text" name="captcha" id="inputCaptcha" size="20" maxlength="30"><br> 
 			<br />
-			<textarea rows="10" cols="70" name="message" placeholder="'.$lang['contact_placeholder'].'"></textarea><br>
+			<textarea rows="10" cols="70" name="message" id="textareaMessage" placeholder="'.$lang['contact_placeholder'].'"></textarea><br>
 			<br /> 
-			'.$lang['contact_copy'].' <input type="checkbox" value="1" name="copie" checked/>
+			'.$lang['contact_copy'].' <input type="checkbox" id="checkboxCopie" value="1" name="copie" checked/>
 			<br />
 			<div class="right">
 				<input type="submit" name="submit" class="submit" value="'.$lang['contact_send'].'">

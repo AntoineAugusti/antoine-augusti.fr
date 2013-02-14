@@ -75,6 +75,9 @@ $lang['contact_email'] = 'Your email address:';
 $lang['contact_placeholder'] = 'Enter your message here, with all your love.';
 $lang['contact_copy'] = 'Do you want to receive a copy of your email? :';
 $lang['contact_send'] = 'Send my message!';
+$lang['contact_empty_form'] = "The form is not fully filled.";
+$lang['contact_wrong_captcha'] = "The captcha is incorrect.";
+$lang['contact_mail_sent'] = "Your email has been sent!";
 
 // FOOTER
 $lang['footer_who_am_i'] = 'Who am I?';

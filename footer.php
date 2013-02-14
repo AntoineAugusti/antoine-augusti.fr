@@ -39,6 +39,14 @@
 
 	</div>
 
+	<?php
+	echo '
+	<script>
+	var contact_empty_form = "'.$lang['contact_empty_form'].'";
+	var contact_wrong_captcha = "'.$lang['contact_wrong_captcha'].'";
+	var contact_mail_sent = "'.$lang['contact_mail_sent'].'";
+	</script>';
+	?>
 	<script src="<?php echo DOMAINE; ?>js/scrypt.js"></script>
 	</body>
 </html>
