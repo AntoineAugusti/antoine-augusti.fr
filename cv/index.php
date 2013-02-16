@@ -108,9 +108,9 @@ require "../kernel/fonctions.php";
 		<span id="experiences" class="titre">Cursus scolaire<span class="icon school"></span></span>
 		<div class="texte">
 			<ul>
-				<li><span class="bleu">Depuis septembre 2011 :</span> Cycle préparatoire à l’INSA de Rouen – Section Musique Études. Institut National des Sciences Appliquées – Rouen (76).</li>
+				<li><span class="bleu">Depuis septembre 2011 :</span> Cycle préparatoire à l’INSA de Rouen – Pré-spécialisation en génie mathématiques et architecture des systèmes d’information. Institut National des Sciences Appliquées – Rouen (76).</li>
 				<li><span class="bleu">Septembre 2008 - juin 2011 :</span> Baccalauréat Scientifique – Spécialité mathématiques – Section européenne anglais - Mention bien. Lycée Jehan Ango - Dieppe (76).</li>
-				<li><span class="bleu">2004 - 2008:</span> Classes à horaires aménagées musique. Collège Georges Braque - Dieppe (76).</li>
+				<li><span class="bleu">2004 - 2008 :</span> Classes à horaires aménagées musique. Collège Georges Braque - Dieppe (76).</li>
 			</ul>			
 		</div>
 		<span class="titre">Quelques projets<span class="icon work"></span></span>
