@@ -24,26 +24,6 @@ require "../kernel/fonctions.php";
 
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>
 	<script src="<?php echo DOMAINE; ?>js/uniform.js"></script>
-	<script>
-	$(document).ready(function(){
-		$("#gray_bg").fadeIn(2000);
-		$('#header').delay(400).fadeIn(1600);
-		$("#menu").delay(500).fadeIn(1500);
-		$("#presentation").delay(1000).fadeIn(1500);
-		$("#content").delay(2000).fadeIn(1500);
-		$("#footer").delay(2000).fadeIn(1500);
-		
-		$("#social-networks a span").click(function()
-	    {
-	        var classes = $(this).attr("class").split(/\s/);
-
-	        // Get last class attribute
-	        var link = classes[classes.length-1];
-
-	        _gaq.push(['_trackEvent', 'topbar', 'clic', link]);
-	    });
-	});
-	</script>
 	<script type="text/javascript">
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-12045924-3']);
@@ -66,12 +46,12 @@ require "../kernel/fonctions.php";
 <?php display_header(); ?>
 <div id="menu">
 	<div class="content">
-		<a onclick="return false;" title="Informations" data-div="#infos" class="selected"><span class="icon infos"></span>Infos</a>
-		<a onclick="return false;" title="Langues" data-div="#langues"><span class="icon drapeau"></span>Langues</a>
-		<a onclick="return false;" title="Expériences" data-div="#div_experiences"><span class="icon experiences"></span>Expériences</a>
-		<a onclick="return false;" title="Connaissances" data-div="#div_connaissances"><span class="icon competences"></span>Connaissances</a>
-		<a onclick="return false;" title="Intérêts" data-div="#interet"><span class="icon interets"></span>Intérêts</a>
-		<a onclick="return false;" title="Contact" data-div="#div_contact"><span class="icon contact"></span>Contact</a>
+		<a title="Informations" data-div="#infos" class="selected"><span class="icon infos"></span>Infos</a>
+		<a title="Langues" data-div="#langues"><span class="icon drapeau"></span>Langues</a>
+		<a title="Expériences" data-div="#div_experiences"><span class="icon experiences"></span>Expériences</a>
+		<a title="Connaissances" data-div="#div_connaissances"><span class="icon competences"></span>Connaissances</a>
+		<a title="Intérêts" data-div="#interet"><span class="icon interets"></span>Intérêts</a>
+		<a title="Contact" data-div="#div_contact"><span class="icon contact"></span>Contact</a>
 	</div>
 </div><!-- END MENU -->
 
@@ -172,6 +152,6 @@ require "../kernel/fonctions.php";
 	Copyright &copy; <?php echo date("Y"); ?> Antoine Augusti
 </div>
 <!-- END FOOTER -->
-<script>$("#menu .content a").click(function(){var div_show=$(this).attr("data-div");$(".hide:visible").stop().slideUp(1000,function(){$(div_show).stop().slideDown(1000)})});$("#menu .content a").mouseover(function(){var current_link=$(this);$("#menu .content a").not(current_link).stop().animate({"opacity":"0.5"},"slow")}).mouseout(function(){$("#menu .content a").stop().animate({"opacity":"1"},"slow")});$("#menu .content a").click(function(){$("#menu .content a").removeClass('selected');$(this).addClass('selected')});</script>
+<script src="<?php echo DOMAINE; ?>js/cv.js"></script>
 </body>
 </html>
