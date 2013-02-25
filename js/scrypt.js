@@ -51,6 +51,16 @@ $(document).ready(function()
         return false;
     });
 
+    $("#social-networks a span").click(function()
+    {
+        var classes = $(this).attr("class").split(/\s/);
+
+        // Get last class attribute
+        var link = classes[classes.length-1];
+
+        _gaq.push(['_trackEvent', 'topbar', 'clic', link]);
+    });
+
     $("#contactForm").submit(function()
     {
         $('#notification').html('');

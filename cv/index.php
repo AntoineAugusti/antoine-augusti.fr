@@ -32,6 +32,16 @@ require "../kernel/fonctions.php";
 		$("#presentation").delay(1000).fadeIn(1500);
 		$("#content").delay(2000).fadeIn(1500);
 		$("#footer").delay(2000).fadeIn(1500);
+		
+		$("#social-networks a span").click(function()
+	    {
+	        var classes = $(this).attr("class").split(/\s/);
+
+	        // Get last class attribute
+	        var link = classes[classes.length-1];
+
+	        _gaq.push(['_trackEvent', 'topbar', 'clic', link]);
+	    });
 	});
 	</script>
 	<script type="text/javascript">
