@@ -52,15 +52,14 @@ a {
 	height: 0;
 }
 #header #social-networks {
-	float: right;
-	background: #555555 url(/images/tab-overlay.png) repeat-x 0 0;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	padding:5px 0 5px 10px;
-	margin-right: 6px;
+	float:right;
+	background:#555555 url(/images/tab-overlay.png) repeat-x 0 0;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	padding:5px 0px 5px 10px;
 }
-#header #social-networks a span.icon {
+#header #social-networks a span.icon, .fade_on_hover {
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
@@ -74,7 +73,6 @@ a {
 	vertical-align:middle;
 	display:inline-block;
 	background:url(/images/icones/sprite_double.png);
-	background-position-y: 0;
 }
 #header #social-networks a span.icon.blog:hover,span.icon-contact.blog:hover,span.icon-corps.blog:hover {
 	background-position:0 -24px;
@@ -121,6 +119,9 @@ a {
 #header #social-networks a span.icon.youtube:hover,span.icon-contact.youtube:hover,span.icon-corps.youtube:hover {
 	background-position:-350px -24px;
 }
+#header #social-networks a span.icon.linkedin:hover,span.icon-contact.linkedin:hover,span.icon-corps.linkedin:hover {
+	background-position:-374px -24px;
+}
 #header #social-networks a span.icon.blog,span.icon-contact.blog,span.icon-corps.blog {
 	background-position:0 0;
 }
@@ -165,6 +166,9 @@ a {
 }
 #header #social-networks a span.icon.youtube,span.icon-contact.youtube,span.icon-corps.youtube {
 	background-position:-350px 0;
+}
+#header #social-networks a span.icon.linkedin,span.icon-contact.linkedin,span.icon-corps.linkedin {
+	background-position:-374px 0;
 }
 #menu {
 	width: 100%;

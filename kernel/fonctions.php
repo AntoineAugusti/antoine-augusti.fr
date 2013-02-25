@@ -163,6 +163,7 @@ function display_header ()
 			<div id="social-networks">';
 				display_icon_social_network('Blog', '//blog.antoine-augusti.fr');
 				display_icon_social_network('Cv', '//cv.antoine-augusti.fr');
+				display_icon_social_network('LinkedIn', '//fr.linkedin.com/in/antoineaugusti');
 				display_icon_social_network('Facebook', '//www.facebook.com/AntoineAugusti');
 				display_icon_social_network('Twitter', '//www.twitter.com/AntoineAugusti');
 				display_icon_social_network('Github', 'https://www.github.com/AntoineAug');
