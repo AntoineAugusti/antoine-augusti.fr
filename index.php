@@ -15,7 +15,7 @@ include "head.php";
 					<div class="gray-post">
 						<ul class="inside-square">
 							<?php
-							$reponse = mysql_query("SELECT guid, post_title, post_date FROM wp_posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY id DESC LIMIT 0,5");
+							$reponse = mysql_query("SELECT guid, post_title, post_date FROM wp_posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY post_modified DESC LIMIT 0,5");
 							while ($donnees = mysql_fetch_array($reponse) )
 								{
 							?>
