@@ -50,6 +50,13 @@ function display_projets ($style = NULL)
 	}
 	echo '
 	<div class="'.$class.'">
+		<img src="'.DOMAINE.'images/quantic-telecom.png" class="icon-website-it fade" alt="Quantic Télécom" />
+		<h2>Quantic Télécom</h2>
+		'.$lang['qt_description'].'
+		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.quantic-telecom.net" target="_blank" title="Quantic Télécom">www.quantic-telecom.net</a>
+	</div>
+
+	<div class="'.$class.'">
 		<img src="'.DOMAINE.'images/teen-quotes.png" class="icon-website-tq fade" alt="'.$lang['teen_quotes_title'].'" />
 		<h2>'.$lang['teen_quotes_title'].'</h2>
 		'.$lang['teen_quotes_description'].'<br>
@@ -72,32 +79,11 @@ function display_projets ($style = NULL)
 	</div>
 
 	<div class="'.$class.'">
-		<img src="'.DOMAINE.'images/quantic-telecom.png" class="icon-website-it fade" alt="Quantic Télécom" />
-		<h2>Quantic Télécom</h2>
-		'.$lang['qt_description'].'
-		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.quantic-telecom.net" target="_blank" title="Quantic Télécom">www.quantic-telecom.net</a>
-	</div>
-
-	<div class="'.$class.'">
 		<img src="'.DOMAINE.'images/pretty-web.png" class="icon-website-pretty-web fade" alt="Pretty Web" />
 		<h2>Pretty Web</h2>
 		'.$lang['pretty_web_description'].'<br>
 		<br />
 		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.pretty-web.com" target="_blank" title="Pretty Web">www.pretty-web.com</a>
-	</div>
-	
-	<div class="'.$class.'">
-		<img src="'.DOMAINE.'images/jehan-ango.jpg" class="icon-website-ango fade" alt="'.$lang['jehan_ango_title'].'" />
-		<h2>'.$lang['jehan_ango_title'].'</h2>
-		'.$lang['jehan_ango_description'].'
-		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//lycees.ac-rouen.fr/ango/" target="_blank" title="'.$lang['jehan_ango_title'].'">lycees.ac-rouen.fr/ango/</a>
-	</div>
-	
-	<div class="'.$class.'">
-		<img src="'.DOMAINE.'images/pls.png" class="icon-website-pls fade" alt="PLS Fluid Dynamics" />
-		<h2>PLS Fluid Dynamics</h2>
-		'.$lang['pls_description'].'
-		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.pls-fluid-dynamics.com" target="_blank" title="PLS Fluid Dynamics">www.pls-fluid-dynamics.com</a>
 	</div>
 	
 	<div class="'.$class.'">
