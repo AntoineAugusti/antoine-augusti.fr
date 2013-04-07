@@ -15,9 +15,8 @@ require "../kernel/fonctions.php";
 	<meta name="Robots" content="all"/>
 
 	<link rel="stylesheet" href="<?php echo DOMAINE; ?>css/reset.css" />
-	<link rel="stylesheet" href="<?php echo DOMAINE; ?>css/uniform.css" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto|Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php echo DOMAINE; ?>cv/style.css" />
-	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Exo:600'>
 	
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo IMAGE_PROFIL; ?>">
 	<link rel="image_src" href="<?php echo IMAGE_PROFIL; ?>" />
@@ -44,58 +43,20 @@ require "../kernel/fonctions.php";
 -->
 <body>
 <?php display_header(); ?>
-<div id="menu">
-	<div class="content">
-		<a title="Informations" data-div="#infos" class="selected"><span class="icon infos"></span>Infos</a>
-		<a title="Langues" data-div="#langues"><span class="icon drapeau"></span>Langues</a>
-		<a title="Expériences" data-div="#div_experiences"><span class="icon experiences"></span>Expériences</a>
-		<a title="Connaissances" data-div="#div_connaissances"><span class="icon competences"></span>Connaissances</a>
-		<a title="Intérêts" data-div="#interet"><span class="icon interets"></span>Intérêts</a>
-		<a title="Contact" data-div="#div_contact"><span class="icon contact"></span>Contact</a>
-	</div>
-</div><!-- END MENU -->
-
-<div id="presentation">
-	<div class="content">
-		<div class="text">
-			<h1>Qui suis-je ?</h1>
-			Je m'appelle Antoine AUGUSTI et je suis un élève ingénieur à l'INSA de Rouen. Mes passions sont le traitement de l'information, l'informatique, l'algorithme, les mathématiques, l'anglais et la communication. Soucieux de produire un travail de qualité, je travaille d'arrache-pied. Je suis méticuleux, perfectionniste et ambitieux. L'optimisation et la clarté sont mes maîtres mots.
-		</div>
-
-		<img src="<?php echo IMAGE_PROFIL; ?>" alt="Antoine AUGUSTI" class="avatar fade" />
-	</div>
-</div><!-- END PRESENTATION -->
 <div id="content">
-	<div id="langues" class="hide" style="display:none">
-		<span class="titre">Langues<span class="icon drapeau"></span></span>
-		<div class="texte">
-			<ul>
-				<li><span class="bleu"> Anglais :</span> Courant - B2 certifié par l’université de Cambridge – Séjours.</li>
-				<li><span class="bleu"> Italien :</span> Bon niveau scolaire.</li>
-				<li><span class="bleu"> Espagnol :</span> Débutant.</li>
-			</ul>
-		</div>
-	</div>
-	<!-- END LANGUES -->
-	<div id="infos" class="hide">
+	<div id="infos">
 		<div class="texte">
 			<img src="<?php echo IMAGE_PROFIL; ?>" alt="Antoine Augusti" class="photo"/>
 			<h2>Antoine AUGUSTI</h2>
-			<span class="italic">Élève ingénieur à l'INSA de Rouen</span><br>
-			76000 Rouen<br>
-			<?php echo age('01/12/1993'); ?> ans - Français<br>
-			<br />
-			antoine@augusti.fr<br>
-			+33 6 87 09 98 92<br>
-			<u>www.antoine-augusti.fr</u>
+			<span class="italic">Élève ingénieur à l'INSA de Rouen</span><br/>
+			76000 Rouen<br/>
+			<?php echo age('01/12/1993'); ?> ans - Français<br/>
 		</div>
-
-		<!--<div class="texte">
-			<img src="/images/pdf.png" class="download_pdf" title="CV au format PDF"> Vous pouvez consulter mon CV en version PDF en <a href="/cv.pdf" title="CV PDF">cliquant ici</a>.
-		</div>-->
+		<div class="clear"></div>
 	</div>
 	<!-- END INFOS -->
-	<div id="div_experiences" class="hide" style="display:none">
+	
+	<div id="div_experiences">
 		<span id="experiences" class="titre">Cursus scolaire<span class="icon school"></span></span>
 		<div class="texte">
 			<ul>
@@ -110,7 +71,8 @@ require "../kernel/fonctions.php";
 		?>
 	</div>
 	<!-- END EXPERIENCES -->
-	<div id="div_connaissances" class="hide" style="display:none">
+
+	<div id="div_connaissances">
 		<span id="connaissances" class="titre">Connaissances diverses<span class="icon competences"></span></span>
 		<div class="texte">
 			<ul>
@@ -121,7 +83,20 @@ require "../kernel/fonctions.php";
 		</div>
 	</div>
 	<!-- END CONNAISSANCES -->
-	<div id="interet" class="hide" style="display:none">
+
+	<div id="langues">
+		<span class="titre">Langues<span class="icon drapeau"></span></span>
+		<div class="texte">
+			<ul>
+				<li><span class="bleu"> Anglais :</span> Courant - B2 certifié par l’université de Cambridge – Séjours.</li>
+				<li><span class="bleu"> Italien :</span> Bon niveau scolaire.</li>
+				<li><span class="bleu"> Espagnol :</span> Débutant.</li>
+			</ul>
+		</div>
+	</div>
+	<!-- END LANGUES -->
+
+	<div id="interet">
 		<span class="titre">Centres d’intérêts<span class="icon interets"></span></span>
 		<div class="texte">
 			<ul>
@@ -132,26 +107,23 @@ require "../kernel/fonctions.php";
 		</div>
 	</div>
 	<!-- END INTERETS -->
-	<div id="div_contact" class="hide" style="display:none">
+
+	<div id="div_contact">
 		<span id="contact" class="titre">Contact<span class="icon contact"></span></span>
 		<div class="texte">
 			<?php
 			display_full_contact();
 			?>
 		</div>
-
-		<span class="titre">Contactez-moi par email<span class="icon contact"></span></span>
-		<?php
-		display_contact_by_email('cv');
-		?>
 	</div>
 	<!-- END CONTACT -->
+
 </div>
 <!-- END CONTENT -->
 <div id="footer">
 	Copyright &copy; <?php echo date("Y"); ?> Antoine Augusti
 </div>
 <!-- END FOOTER -->
-<script src="<?php echo DOMAINE; ?>js/cv.js"></script>
+
 </body>
 </html>
