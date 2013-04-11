@@ -1,5 +1,5 @@
 <?php
-ini_set('session.cookie_domain', substr($_SERVER['SERVER_NAME'], strpos($_SERVER['SERVER_NAME'], "."), 100));
+ini_set('session.cookie_domain', '.antoine-augusti.fr');
 session_start();
 require "kernel/config.php";
 require WEBSITE_PATH."/kernel/fonctions.php";
