@@ -3,7 +3,8 @@
 	// Copyright 2012 Antoine AUGUSTI (www.antoine-augusti.fr) - Jonathan NOBLE (http://twitter.com/Gafisme)
 	// Ah, et vous savez quoi ? 42.
 */
-html,body,div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+html,body,div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+{
 	border:0;
 	font-size:100%;
 	font:inherit;
@@ -11,49 +12,60 @@ html,body,div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,
 	margin:0;
 	padding:0
 }
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section
+{
 	display:block
 }
-body {
+body
+{
 	line-height:1
 }
-ol,ul {
+ol,ul
+{
 	list-style:none
 }
-blockquote,q {
+blockquote,q
+{
 	quotes:none
 }
-blockquote:before,blockquote:after,q:before,q:after {
+blockquote:before,blockquote:after,q:before,q:after
+{
 	content:none
 }
-table {
+table
+{
 	border-collapse:collapse;
 	border-spacing:0
 }
-body {
+body
+{
 	font-family:'Nunito',sans-serif;
 	color:#353537;
 	font-size:13px;
 	background:white;
 }
-a img {
+a img
+{
 	border:none
 }
-@font-face {
+@font-face
+{
 	font-family:'MuseoSlabLight';
 	src:url(/css/fonts/MuseoSlabLight/museo300.eot);
 	src:url(/css/fonts/MuseoSlabLight/MuseoSlab300.eot?#iefix) format("embedded-opentype"),url(/css/fonts/MuseoSlabLight/MuseoSlab300-5810773bf9fb122ec22e061359479b32.woff) format("woff"),url(/css/fonts/MuseoSlabLight/MuseoSlab300-f1ee7bc36ff6126880f7be8738c8d9b2.ttf) format("truetype");
 	font-weight:normal;
 	font-style:normal
 }
-@font-face {
+@font-face
+{
 	font-family:'MuseoSlabRegular';
 	src:url(/css/fonts/MuseoSlab500-5dfda85ab9b23ab368b16b02fae649aa.eot);
 	src:url(/css/fonts/MuseoSlab500.eot?#iefix) format("embedded-opentype"),url(/css/fonts/MuseoSlab500-48b905f3b45475f65a2535134635fa29.woff) format("woff"),url(/css/fonts/MuseoSlabRegular/MuseoSlab500-3476be1a3e908182e377545dc3bcdcec.ttf) format("truetype");
 	font-weight:normal;
 	font-style:normal
 }
-h1,h2,h3,h4 {
+h1,h2,h3,h4
+{
 	text-shadow:0px 2px 1px #d7d7d7;
 	font-family:'MuseoSlabLight',cursive;
 	color:#353537;
@@ -61,11 +73,13 @@ h1,h2,h3,h4 {
 	padding-bottom:2px;
 	font-weight:normal !important;
 }
-a {
+a
+{
 	color:#064b74;
 	text-decoration:none
 }
-#translate_transition {
+#translate_transition
+{
 	background: url(/images/bg_translate.jpg);
 	background-repeat: repeat;
 	top: 0;
@@ -98,7 +112,8 @@ a {
 	font-weight: bold;
 	text-shadow: 0 2px 0px #f8f8f8;
 }
-#translate_transition .caption {
+#translate_transition .caption
+{
 	position: absolute;
 	bottom: 100px;
 	left: 30%;
@@ -106,47 +121,56 @@ a {
 	font-style: italic;
 	text-shadow: 0 2px 0px #f8f8f8;
 }
-#header {
+#header
+{
 	background:#353537;
 	display:block;
 	height:60px;
 	position: relative;
 	z-index: 2;
 }
-#header #header-content {
+#header #header-content
+{
 	width:802px;
 	margin:0 auto;
 	padding:15px 0;
 }
-#header #logo {
+#header #logo
+{
 	float:left;
 	margin:0;
 }
-#header #logo a {
+#header #logo a
+{
 	display:block;
 	width:172px;
 	height:30px;
 	background:url(/images/logo.png) no-repeat 0 0;
 }
-#header #logo a,.fade,#corps a,#footer .plan a,#footer .logo_footer a {
+#header #logo a,.fade,#corps a,#footer .plan a,#footer .logo_footer a
+{
 	-webkit-transition:opacity 0.5s ease;
 	-moz-transition:opacity 0.5s ease;
 	-o-transition:opacity 0.5s ease;
 	transition:opacity 0.5s ease;
 }
-#header #logo a:hover,.fade:hover,#corps a:hover,#footer .plan a:hover,#footer .logo_footer a:hover {
+#header #logo a:hover,.fade:hover,#corps a:hover,#footer .plan a:hover,#footer .logo_footer a:hover
+{
 	opacity:0.6;
 }
-#header #logo a img {
+#header #logo a img
+{
 	height:0px;
 }
-#header #flags_translate {
+#header #flags_translate
+{
 	float:right;
 	background:#555;
 	padding:5px 10px;
 	margin-right: 20px;
 }
-#header #flags_translate span {
+#header #flags_translate span
+{
 	width: 24px;
 	height: 24px;
 	vertical-align: middle;
@@ -154,7 +178,8 @@ a {
 	cursor: pointer;
 	background: url(/images/icones/flags/sprite.png);
 }
-#header #flags_translate span:hover {
+#header #flags_translate span:hover
+{
 	opacity: 0.6;
 }
 #header #flags_translate span.english
@@ -166,19 +191,22 @@ a {
 {
 	background-position: -24px 0;
 }
-#header #social-networks {
+#header #social-networks
+{
 	float:right;
 	background:#555;
 	padding:5px 0px 5px 10px;
 }
-#header #social-networks a span.icon, .fade_on_hover {
+#header #social-networks a span.icon, .fade_on_hover
+{
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
 }
-#header #social-networks a span.icon,span.icon-contact,span.icon-corps {
+#header #social-networks a span.icon,span.icon-contact,span.icon-corps
+{
 	height:24px;
 	width:24px;
 	margin-right:12px;
@@ -186,111 +214,146 @@ a {
 	display:inline-block;
 	background:url(/images/icones/sprite_double.png);
 }
-#header #social-networks a span.icon.blog:hover,span.icon-contact.blog:hover,span.icon-corps.blog:hover {
+#header #social-networks a span.icon.blog:hover,span.icon-contact.blog:hover,span.icon-corps.blog:hover
+{
 	background-position:0 -24px;
 }
-#header #social-networks a span.icon.contact:hover,span.icon-contact.contact:hover,span.icon-corps.contact:hover {
+#header #social-networks a span.icon.contact:hover,span.icon-contact.contact:hover,span.icon-corps.contact:hover
+{
 	background-position:-25px -24px;
 }
-#header #social-networks a span.icon.cv:hover,span.icon-contact.cv:hover,span.icon-corps.cv:hover {
+#header #social-networks a span.icon.cv:hover,span.icon-contact.cv:hover,span.icon-corps.cv:hover
+{
 	background-position:-50px -24px;
 }
-#header #social-networks a span.icon.email:hover,span.icon-contact.email:hover,span.icon-corps.email:hover {
+#header #social-networks a span.icon.email:hover,span.icon-contact.email:hover,span.icon-corps.email:hover
+{
 	background-position:-75px -24px;
 }
-#header #social-networks a span.icon.facebook:hover,span.icon-contact.facebook:hover,span.icon-corps.facebook:hover {
+#header #social-networks a span.icon.facebook:hover,span.icon-contact.facebook:hover,span.icon-corps.facebook:hover
+{
 	background-position:-100px -24px;
 }
-#header #social-networks a span.icon.feed:hover,span.icon-contact.feed:hover,span.icon-corps.feed:hover {
+#header #social-networks a span.icon.feed:hover,span.icon-contact.feed:hover,span.icon-corps.feed:hover
+{
 	background-position:-125px -24px;
 }
-#header #social-networks a span.icon.github:hover,span.icon-contact.github:hover,span.icon-corps.github:hover {
+#header #social-networks a span.icon.github:hover,span.icon-contact.github:hover,span.icon-corps.github:hover
+{
 	background-position:-150px -24px;
 }
-#header #social-networks a span.icon.gmail:hover,span.icon-contact.gmail:hover,span.icon-corps.gmail:hover {
+#header #social-networks a span.icon.gmail:hover,span.icon-contact.gmail:hover,span.icon-corps.gmail:hover
+{
 	background-position:-175px -24px;
 }
-#header #social-networks a span.icon.instagram:hover,span.icon-contact.instagram:hover,span.icon-corps.instagram:hover {
+#header #social-networks a span.icon.instagram:hover,span.icon-contact.instagram:hover,span.icon-corps.instagram:hover
+{
 	background-position:-200px -24px;
 }
-#header #social-networks a span.icon.portable:hover,span.icon-contact.portable:hover,span.icon-corps.portable:hover {
+#header #social-networks a span.icon.portable:hover,span.icon-contact.portable:hover,span.icon-corps.portable:hover
+{
 	background-position:-225px -24px;
 }
-#header #social-networks a span.icon.skype:hover,span.icon-contact.skype:hover,span.icon-corps.skype:hover {
+#header #social-networks a span.icon.skype:hover,span.icon-contact.skype:hover,span.icon-corps.skype:hover
+{
 	background-position:-250px -24px;
 }
-#header #social-networks a span.icon.success:hover,span.icon-contact.success:hover,span.icon-corps.success:hover {
+#header #social-networks a span.icon.success:hover,span.icon-contact.success:hover,span.icon-corps.success:hover
+{
 	background-position:-275px -24px;
 }
-#header #social-networks a span.icon.twitter:hover,span.icon-contact.twitter:hover,span.icon-corps.twitter:hover {
+#header #social-networks a span.icon.twitter:hover,span.icon-contact.twitter:hover,span.icon-corps.twitter:hover
+{
 	background-position:-300px -24px;
 }
-#header #social-networks a span.icon.work:hover,span.icon-contact.work:hover,span.icon-corps.work:hover {
+#header #social-networks a span.icon.work:hover,span.icon-contact.work:hover,span.icon-corps.work:hover
+{
 	background-position:-325px -24px;
 }
-#header #social-networks a span.icon.youtube:hover,span.icon-contact.youtube:hover,span.icon-corps.youtube:hover {
+#header #social-networks a span.icon.youtube:hover,span.icon-contact.youtube:hover,span.icon-corps.youtube:hover
+{
 	background-position:-350px -24px;
 }
-#header #social-networks a span.icon.linkedin:hover,span.icon-contact.linkedin:hover,span.icon-corps.linkedin:hover {
+#header #social-networks a span.icon.linkedin:hover,span.icon-contact.linkedin:hover,span.icon-corps.linkedin:hover
+{
 	background-position:-374px -24px;
 }
-#header #social-networks a span.icon.blog,span.icon-contact.blog,span.icon-corps.blog {
+#header #social-networks a span.icon.blog,span.icon-contact.blog,span.icon-corps.blog
+{
 	background-position:0 0;
 }
-#header #social-networks a span.icon.contact,span.icon-contact.contact,span.icon-corps.contact {
+#header #social-networks a span.icon.contact,span.icon-contact.contact,span.icon-corps.contact
+{
 	background-position:-25px 0;
 }
-#header #social-networks a span.icon.cv,span.icon-contact.cv,span.icon-corps.cv {
+#header #social-networks a span.icon.cv,span.icon-contact.cv,span.icon-corps.cv
+{
 	background-position:-50px 0;
 }
-#header #social-networks a span.icon.email,span.icon-contact.email,span.icon-corps.email {
+#header #social-networks a span.icon.email,span.icon-contact.email,span.icon-corps.email
+{
 	background-position:-75px 0;
 }
-#header #social-networks a span.icon.facebook,span.icon-contact.facebook,span.icon-corps.facebook {
+#header #social-networks a span.icon.facebook,span.icon-contact.facebook,span.icon-corps.facebook
+{
 	background-position:-100px 0;
 }
-#header #social-networks a span.icon.feed,span.icon-contact.feed,span.icon-corps.feed {
+#header #social-networks a span.icon.feed,span.icon-contact.feed,span.icon-corps.feed
+{
 	background-position:-125px 0;
 }
-#header #social-networks a span.icon.github,span.icon-contact.github,span.icon-corps.github {
+#header #social-networks a span.icon.github,span.icon-contact.github,span.icon-corps.github
+{
 	background-position:-150px 0;
 }
-#header #social-networks a span.icon.gmail,span.icon-contact.gmail,span.icon-corps.gmail {
+#header #social-networks a span.icon.gmail,span.icon-contact.gmail,span.icon-corps.gmail
+{
 	background-position:-175px 0;
 }
-#header #social-networks a span.icon.instagram,span.icon-contact.instagram,span.icon-corps.instagram {
+#header #social-networks a span.icon.instagram,span.icon-contact.instagram,span.icon-corps.instagram
+{
 	background-position:-200px 0;
 }
-#header #social-networks a span.icon.portable,span.icon-contact.portable,span.icon-corps.portable {
+#header #social-networks a span.icon.portable,span.icon-contact.portable,span.icon-corps.portable
+{
 	background-position:-225px 0;
 }
-#header #social-networks a span.icon.skype,span.icon-contact.skype,span.icon-corps.skype {
+#header #social-networks a span.icon.skype,span.icon-contact.skype,span.icon-corps.skype
+{
 	background-position:-250px 0;
 }
-#header #social-networks a span.icon.success,span.icon-contact.success,span.icon-corps.success {
+#header #social-networks a span.icon.success,span.icon-contact.success,span.icon-corps.success
+{
 	background-position:-275px 0;
 }
-#header #social-networks a span.icon.twitter,span.icon-contact.twitter,span.icon-corps.twitter {
+#header #social-networks a span.icon.twitter,span.icon-contact.twitter,span.icon-corps.twitter
+{
 	background-position:-300px 0;
 }
-#header #social-networks a span.icon.work,span.icon-contact.work,span.icon-corps.work {
+#header #social-networks a span.icon.work,span.icon-contact.work,span.icon-corps.work
+{
 	background-position:-325px 0;
 }
-#header #social-networks a span.icon.youtube,span.icon-contact.youtube,span.icon-corps.youtube {
+#header #social-networks a span.icon.youtube,span.icon-contact.youtube,span.icon-corps.youtube
+{
 	background-position:-350px 0;
 }
-#header #social-networks a span.icon.linkedin,span.icon-contact.linkedin,span.icon-corps.linkedin {
+#header #social-networks a span.icon.linkedin,span.icon-contact.linkedin,span.icon-corps.linkedin
+{
 	background-position:-374px 0;
 }
-#wrap {
+#wrap
+{
 	background:#F0F0F0 url(/images/tile.gif) repeat -70% 0;
 	position: relative;
 	z-index: 1;
 }
-#wrap-inner {
+#wrap-inner
+{
 	background:url(/images/big-fade.png) repeat-x -70% 0;
 }
-#corps {
+#corps
+{
 	background:url('/images/corps.png');
 	background-repeat:repeat-y;
 	line-height:22px;
@@ -298,15 +361,18 @@ a {
 	width:814px;
 	margin:0 auto;
 }
-#corps.justify p,#corps p.justify {
+#corps.justify p,#corps p.justify
+{
 	text-indent:20px;
 	margin-bottom:15px;
 	text-align:justify;
 }
-#corps a:hover {
+#corps a:hover
+{
 	border-bottom:1px dashed #064b74
 }
-#footer {
+#footer
+{
 	font-size:11px;
 	font-family:Arial;
 	background:url('/images/bg_footer.png') repeat-x;
@@ -314,23 +380,27 @@ a {
 	display:block;
 	margin-top:-37px;
 }
-#footer #footer_content {
+#footer #footer_content
+{
 	width:850px;
 	margin:0 auto;
 	padding:60px 0px 20px 0px
 }
-#footer .ligne {
+#footer .ligne
+{
 	background:url('/images/ligne_footer.png');
 	height:101px;
 	width:2px;
 	display:inline
 }
-#footer span.bleu {
+#footer span.bleu
+{
 	text-shadow:0px 2px 1px #000;
 	color:#5b83c1;
 	font-weight:bold
 }
-#footer .about {
+#footer .about
+{
 	text-shadow:0px 1px 1px #000;
 	margin:0px 30px;
 	line-height:17px;
@@ -339,7 +409,8 @@ a {
 	color:#FFF;
 	float:left
 }
-#footer .plan {
+#footer .plan
+{
 	text-shadow:0px 1px 1px #000;
 	margin:0px 30px;
 	line-height:15px;
@@ -348,14 +419,17 @@ a {
 	color:#FFF;
 	float:left
 }
-#footer .plan a {
+#footer .plan a
+{
 	margin-left:15px;
 	color:#FFF
 }
-#footer .plan a:hover {
+#footer .plan a:hover
+{
 	text-decoration:underline
 }
-#footer .logo_footer {
+#footer .logo_footer
+{
 	text-shadow:0px 2px 1px #000;
 	float:right;
 	margin:0px;
@@ -363,19 +437,23 @@ a {
 	line-height:17px;
 	color:#FFF;
 }
-#footer .fleche_footer {
+#footer .fleche_footer
+{
 	width:10px;
 	height:10px;
 	vertical-align:-2px;
 	margin-right:5px
 }
-#footer .logo_footer a {
+#footer .logo_footer a
+{
 	color:#FFF
 }
-#footer .logo_footer a:hover {
+#footer .logo_footer a:hover
+{
 	text-decoration:underline
 }
-.presentation_self {
+.presentation_self
+{
 	font-family: 'MuseoSlabRegular';
 	line-height: 25px;
 	font-size: 15px;
@@ -383,43 +461,53 @@ a {
 	padding-bottom: 30px;
 	border-bottom: 1px dashed #CCC;
 }
-.clear {
+.clear
+{
 	clear:both;
 }
-.corps-left {
+.corps-left
+{
 	float:left;
 	width:397px;
 	padding-right:10px;
 }
-.corps-right {
+.corps-right
+{
 	float:right;
 	width:397px;
 	padding-left:10px;
 }
-.corps-right .inside-square {
+.corps-right .inside-square
+{
 	margin-left:10px;
 }
-.corps-right .gray-post {
+.corps-right .gray-post
+{
 	height:306px;
 }
-.margin-bottom-30 {
+.margin-bottom-30
+{
 	margin-bottom:30px;
 }
-.inside-square {
+.inside-square
+{
 	list-style:inside square;
 	margin-left:25px;
 }
-.img_404 {
+.img_404
+{
 	float:right;
 	width:350px;
 	height:350px;
 	margin-top:60px;
 }
-.rick_roll {
+.rick_roll
+{
 	width:640px;
 	margin:20px auto;
 }
-.erreur {
+.erreur
+{
 	margin:0 auto 20px;
 	padding:10px 20px;
 	background:#fff9d7;
@@ -427,32 +515,40 @@ a {
 	color:#333;
 	font-size:13px
 }
-.left {
+.left
+{
 	float:left;
 }
-.right {
+.right
+{
 	float:right;
 }
-.justify {
+.justify
+{
 	text-align:justify;
 }
-.italic {
+.italic
+{
 	font-style:italic;
 }
-.barred {
+.barred
+{
 	text-decoration:line-through;
 }
-.no-margin-bottom {
+.no-margin-bottom
+{
 	margin-bottom:0px;
 }
-.gray-post {
+.gray-post
+{
 	background:#f5f5f5;
 	border:1px solid #e5e5e5;
 	padding:10px;
 	margin-bottom:40px;
 	color:#666;
 }
-.linear-gray {
+.linear-gray
+{
 	border-radius:5px;
 	background-image:-moz-linear-gradient(top,#fff,#f1f1f1);
 	/* FF3.6 */ background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#f1f1f1));
@@ -463,19 +559,22 @@ a {
 	margin-bottom:40px;
 	padding:10px;
 }
-.icon-website-tq {
+.icon-website-tq
+{
 	width:100px;
 	margin:15px 0px 0px 20px;
 	float:right;
 	height:100px;
 }
-.icon-website-pretty-web {
+.icon-website-pretty-web
+{
 	width:167px;
 	margin:15px 0px 0px 20px;
 	float:right;
 	height:30px;
 }
-.icon-website-ango {
+.icon-website-ango
+{
 	width:200px;
 	margin:10px 0px 0px 20px;
 	float:right;
@@ -486,36 +585,43 @@ a {
 	box-shadow:5px 5px 7px #999;
 	-webkit-box-shadow:5px 5px 7px #999;
 }
-.icon-website-it {
+.icon-website-it
+{
 	width:150px;
 	margin:20px 0px 0px 20px;
 	float:right;
 }
-.icon-website-pls {
+.icon-website-pls
+{
 	width:150px;
 	margin:5px 0px 0px 20px;
 	float:right;
 }
-.icon-website-technostress {
+.icon-website-technostress
+{
 	width:200px;
 	margin:5px 0px 0px 20px;
 	float:right;
 }
-.icon-contact {
+.icon-contact
+{
 	margin:0px 20px 10px 0px !important;
 	vertical-align:-17px !important;
 }
-.icon-corps {
+.icon-corps
+{
 	margin-right:30px !important;
 	vertical-align:-10% !important;
 }
-.icon-link-website {
+.icon-link-website
+{
 	height:16px;
 	width:16px;
 	margin-right:5px;
 	vertical-align:-4px;
 }
-.avatar {
+.avatar
+{
 	background:#FAFAFA;
 	padding:4px;
 	border:1px solid #DDD;
@@ -532,12 +638,14 @@ a {
 	-o-transition:-o-transform .8s ease;
 	transition:transform .8s ease
 }
-.avatar:hover {
+.avatar:hover
+{
 	-webkit-transform:rotate(7deg);
 	-moz-transform:rotate(7deg);
 	transform:rotate(7deg);
 }
-.highlight_blue {
+.highlight_blue
+{
 	color: #4183C4;
 }
 #textareaMessage
@@ -551,7 +659,6 @@ a {
 	{
 		display: none;
 	}
-
 	#header
 	{
 		width: 100%;
@@ -560,32 +667,48 @@ a {
 	{
 		line-height: 20px;
 	}
-
+	#header #logo a
+	{
+		background-size: 129px 22px;
+		width: 129px;
+		height: 22px;
+		margin-top: 5px;
+	}
+	.avatar
+	{
+		height: 112px;
+		width: 112px;
+		margin-top: 10px;
+		margin-left: 20px;
+		-moz-box-shadow: 0 0;
+		box-shadow: 0 0;
+		-webkit-box-shadow: 0 0;
+	}
+	.icon-corps
+	{
+		margin-right: 15px !important;
+	}
 	#header #header-content, #corps
 	{
 		width: 80%;
 		margin: 0 auto;
 	}
-
 	.corps-right, .corps-left
 	{
 		float: none;
 		width: 100%;
 		padding: 0;
 	}
-
 	.corps-right .gray-post
 	{
 		height: 100%;
 	}
-
 	#translate_transition .translate_img
 	{
 		background-size: 100px 255px;
 		width: 100px;
 		height: 255px;
 	}
-
 	#translate_transition .translate_text
 	{
 		font-size: 10px;
