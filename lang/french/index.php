@@ -6,7 +6,7 @@ Je m\'appelle Antoine AUGUSTI et je suis un élève ingénieur à l\'<a href="//
 <br />
 Grâce à <span class="highlight_blue">Teen Quotes</span> j\'expérimente le développement web touchant un public international, sur plusieurs plateformes. De plus, le rôle que je joue dans <span class="highlight_blue">Quantic Télécom</span> me permet de découvrir le travail des fournisseurs d\'accès à Internet.<br/>
 <br/>
-Enfin, je suis intéressé par les mathématiques, l\'algorithme, la communication, le design et l\'anglais.
+Enfin, je suis intéressé par les mathématiques, l\'algorithmique, la communication, le design et l\'anglais.
 ';
 
 // INDEX

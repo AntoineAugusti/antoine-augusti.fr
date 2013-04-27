@@ -540,6 +540,55 @@ a {
 .highlight_blue {
 	color: #4183C4;
 }
-#wrap,#logo,#header,#content,#footer, #notification {
-	display: none
+#textareaMessage
+{
+	width: 70%;
+	height: 200px;
+}
+@media only screen and (max-width: 900px)
+{
+	#header #social-networks, #footer, #contact_email, #translate_transition .caption
+	{
+		display: none;
+	}
+
+	#header
+	{
+		width: 100%;
+	}
+	.presentation_self
+	{
+		line-height: 20px;
+	}
+
+	#header #header-content, #corps
+	{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.corps-right, .corps-left
+	{
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+
+	.corps-right .gray-post
+	{
+		height: 100%;
+	}
+
+	#translate_transition .translate_img
+	{
+		background-size: 100px 255px;
+		width: 100px;
+		height: 255px;
+	}
+
+	#translate_transition .translate_text
+	{
+		font-size: 10px;
+		font-family: Arial;
+	}
 }

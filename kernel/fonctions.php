@@ -122,7 +122,7 @@ function display_contact_by_email($style = NULL)
 			echo captcha(); echo ' =<br>
 			<input type="text" name="captcha" id="inputCaptcha" size="20" maxlength="30"><br> 
 			<br />
-			<textarea rows="10" cols="70" name="message" id="textareaMessage" placeholder="'.$lang['contact_placeholder'].'"></textarea><br>
+			<textarea name="message" id="textareaMessage" placeholder="'.$lang['contact_placeholder'].'"></textarea><br>
 			<br /> 
 			'.$lang['contact_copy'].' <input type="checkbox" id="checkboxCopie" value="1" name="copie" checked/>
 			<br />

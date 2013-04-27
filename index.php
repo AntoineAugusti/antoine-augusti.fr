@@ -32,10 +32,12 @@ include "head.php";
 						display_projets();
 					?>
 			       
-				<h1><span class="icon-corps gmail"></span><?php echo $lang['index_contact_me_by_email']; ?></h1>
-					<?php
-						display_contact_by_email();
-					?>
+				<div id="contact_email">
+					<h1><span class="icon-corps gmail"></span><?php echo $lang['index_contact_me_by_email']; ?></h1>
+						<?php
+							display_contact_by_email();
+						?>
+				</div>
 <?php
 include 'footer.php'; 
 ?>
