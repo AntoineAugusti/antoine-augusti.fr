@@ -1,6 +1,10 @@
 <?php
+// DESCRIPTION
+$lang['page_description'] = 'Antoine Augusti. Engineering student. Algorithm, web development, mathematics and IT.';
+
 // HEADER
 $lang['header_back_to_home'] = 'Back to home';
+$lang['hint_flag'] = 'Je parle français !';
 $lang['header_presentation_self'] = '
 My name is Antoine AUGUSTI and I am an engineering student at the <a href="//www.insa-rouen.fr" target="_blank" title="INSA Rouen">INSA de Rouen</a>. I am a <span class="highlight_blue">web developer</span> and I feel very concerned by the Internet world.<br/>
 <br/>
@@ -23,6 +27,7 @@ $lang['index_copy_mail'] = 'This is the copy of your email.';
 // TEEN QUOTES
 $lang['teen_quotes_title'] = 'Teen Quotes';
 $lang['teen_quotes_description'] = 'Teen Quotes describes your daily life and feelings in a few words that you can share with your acquaintances. It\'s fully in English. The French version is called  Kotado.';
+$lang['tq_stats'] = '+1,500,000 visitors / 2,000,000 followers on Twitter.';
 $lang['tq_signup'] = 'Registration of users';
 $lang['tq_add_quotes'] = 'Quotes are moderated from an admin panel.';
 $lang['tq_french_english'] = 'Website in English and in French.';

@@ -1,5 +1,5 @@
 <?php
-// English by default
+// French by default
 if (!isset($_SESSION['lang']) OR empty($_SESSION['lang']))
 {
 	$_SESSION['lang'] = 'french';
@@ -11,43 +11,30 @@ function display_page_title ()
 {
 	$name_page = ucfirst(substr($_SERVER['PHP_SELF'],1,strlen($name_page)-4));
 	$projet = ucfirst($_GET['projet']);
+
 	if ($name_page != 'Index' AND empty($projet)) 
-	{
 		echo '<title>'.$name_page.' | Antoine Augusti</title>';
-	}
 	elseif (!empty($projet)) 
-	{
 		echo '<title>'.$name_page.' : '.$projet.' | Antoine Augusti</title>';
-	}
 	else 
-	{
 		echo "<title>Antoine Augusti</title>";
-	}
 }
 
 function display_icon_social_network ($alt,$link)
 {
 	if (strtolower($alt) != 'cv')
-	{
 		echo '<a href="'.$link.'" target="_blank" title="'.ucfirst($alt).'"><span class="icon '.strtolower($alt).'"></span></a>';
-	}
 	else
-	{
 		echo '<a href="'.$link.'" target="_blank" title="'.strtoupper($alt).'"><span class="icon '.strtolower($alt).'"></span></a>';
-	}
 }
 function display_projets ($style = NULL)
 {
 	global $lang;
 
 	if ($style == 'cv')
-	{
 		$class = 'texte margin_xp justify';
-	}
 	else
-	{
 		$class = 'gray-post justify';
-	}
 	echo '
 	<div class="'.$class.'">
 		<img src="'.DOMAINE.'images/quantic-telecom.png" class="icon-website-it fade" alt="Quantic Télécom" />
@@ -62,6 +49,7 @@ function display_projets ($style = NULL)
 		'.$lang['teen_quotes_description'].'<br>
 		<br />
 		<ul class="inside-square">
+			<li>'.$lang['tq_stats'].'</li>
 			<li>'.$lang['tq_signup'].'</li>
 			<li>'.$lang['tq_add_quotes'].'</li>
 			<li>'.$lang['tq_french_english'].'</li>
@@ -99,13 +87,9 @@ function display_contact_by_email($style = NULL)
 	global $lang;
 
 	if ($style == 'cv')
-	{
 		$class = 'texte';
-	}
 	else
-	{
 		$class = 'gray-post';
-	}
 	echo '
 	<div class="'.$class.'">
 		<form action="'.DOMAINE.'?action=send" id="contactForm" method="post">
@@ -159,11 +143,18 @@ function display_header ()
 
 	if (!preg_match('#cv|blog#', "http://".$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"]))
 	{
-		echo '
-			<div id="flags_translate">
-				<span class="english fade_on_hover" onClick="_gaq.push([\'_trackEvent\', \'translate\', \'clic\', \'English\']);"></span>
-				<span class="french fade_on_hover" onClick="_gaq.push([\'_trackEvent\', \'translate\', \'clic\', \'French\']);"></span>
-			</div>';
+		if (isset($_SESSION['lang']))
+		{
+			echo '<div id="flags_translate">';
+
+			// Just display the other language
+			if ($_SESSION['lang'] == 'french')
+				echo '<span class="hint--bottom" data-hint="'.$lang['hint_flag'].'"><span class="english fade_on_hover" onClick="_gaq.push([\'_trackEvent\', \'translate\', \'clic\', \'English\']);"></span></span>';
+			elseif ($_SESSION['lang'] == 'english')
+				echo '<span class="hint--bottom" data-hint="'.$lang['hint_flag'].'"><span class="french fade_on_hover" onClick="_gaq.push([\'_trackEvent\', \'translate\', \'clic\', \'French\']);"></span></span>';
+
+			echo '</div>';
+		}
 	}
 
 	echo '
@@ -191,13 +182,9 @@ function convertirDate ($date)
 {
 	list($annee, $mois, $jour) = split('-', substr($date, 0, 10));
 	if ($annee == date("Y"))
-	{
 		echo ''.$jour.'/'.$mois.'';
-	}
 	else
-	{
 		echo ''.$jour.'/'.$mois.'/'.$annee.'';
-	}
 }
 
 function lit_rss($fichier,$objets) {
@@ -239,14 +226,10 @@ function age($naiss)
 		if ($mois == $today['mois']) 
 		{
 			if ($jour > $today['jour'])
-			{
-				$annees--;
-			}	
+				$annees--;	
 		}
 		else
-		{
 			$annees--;
-		}
 	}
 
 	return $annees;

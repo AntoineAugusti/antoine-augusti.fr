@@ -1,6 +1,10 @@
 <?php
+// DESCRIPTION
+$lang['page_description'] = 'Antoine Augusti. Élève ingénieur. Algorithmique, développement web, mathématiques, actualité informatique.';
+
 // HEADER
 $lang['header_back_to_home'] = 'Retour à l\'accueil';
+$lang['hint_flag'] = 'I speak English!';
 $lang['header_presentation_self'] = '
 Je m\'appelle Antoine AUGUSTI et je suis un élève ingénieur à l\'<a href="//www.insa-rouen.fr" target="_blank" title="INSA Rouen">INSA de Rouen</a>. Je suis <span class="highlight_blue">développeur web</span> et m\'intéresse de très près au monde de l\'Internet.<br/>
 <br />
@@ -24,6 +28,7 @@ $lang['index_copy_mail'] = 'Ceci est la copie de votre message.';
 // TEEN QUOTES
 $lang['teen_quotes_title'] = 'Teen Quotes';
 $lang['teen_quotes_description'] = 'Teen Quotes est un site regroupant des citations du quotidien, que l\'on considère comme "vraies". Il est intégralement en anglais, sa version française s\'appelle Kotado.';
+$lang['tq_stats'] = '+1 500 000 visiteurs / 2 000 000 followers sur Twitter.';
 $lang['tq_signup'] = 'Inscription d\'utilisateurs.';
 $lang['tq_add_quotes'] = 'Ajout de citations gérées par un panel d\'administration.';
 $lang['tq_french_english'] = 'Interface français / anglais.';
