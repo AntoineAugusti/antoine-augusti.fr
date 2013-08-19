@@ -1,15 +1,13 @@
 <?php
 // French by default
 if (!isset($_SESSION['lang']) OR empty($_SESSION['lang']))
-{
 	$_SESSION['lang'] = 'french';
-}
 
 require WEBSITE_PATH."/lang/".$_SESSION['lang']."/index.php";
 
-function display_page_title ()
+function display_page_title()
 {
-	$name_page = ucfirst(substr($_SERVER['PHP_SELF'],1,strlen($name_page)-4));
+	$name_page = ucfirst(substr($_SERVER['PHP_SELF'], 1, strlen($name_page) - 4));
 	$projet = ucfirst($_GET['projet']);
 
 	if ($name_page != 'Index' AND empty($projet)) 
@@ -20,14 +18,15 @@ function display_page_title ()
 		echo "<title>Antoine Augusti</title>";
 }
 
-function display_icon_social_network ($alt,$link)
+function display_icon_social_network($alt, $link)
 {
 	if (strtolower($alt) != 'cv')
 		echo '<a href="'.$link.'" target="_blank" title="'.ucfirst($alt).'"><span class="icon '.strtolower($alt).'"></span></a>';
 	else
 		echo '<a href="'.$link.'" target="_blank" title="'.strtoupper($alt).'"><span class="icon '.strtolower($alt).'"></span></a>';
 }
-function display_projets ($style = NULL)
+
+function display_projets($style = null)
 {
 	global $lang;
 
@@ -66,13 +65,14 @@ function display_projets ($style = NULL)
 		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//kotado.fr" target="_blank" title="Kotado">kotado.fr</a>
 	</div>
 
+	<!--
 	<div class="'.$class.'">
 		<img src="'.DOMAINE.'images/pretty-web.png" class="icon-website-pretty-web fade" alt="Pretty Web" />
 		<h2>Pretty Web</h2>
 		'.$lang['pretty_web_description'].'<br>
 		<br />
 		<img src="'.DOMAINE.'images/icones/arrow-blue.png" class="icon-link-website" alt="Arrow" /><a href="//www.pretty-web.com" target="_blank" title="Pretty Web">www.pretty-web.com</a>
-	</div>
+	</div>-->
 	
 	<div class="'.$class.'">
 		<img src="'.DOMAINE.'images/technostress.png" class="icon-website-technostress fade" alt="'.$lang['technostress_title'].'" />
@@ -82,7 +82,7 @@ function display_projets ($style = NULL)
 	</div>';
 }
 
-function display_contact_by_email($style = NULL)
+function display_contact_by_email($style = null)
 {
 	global $lang;
 
@@ -118,7 +118,7 @@ function display_contact_by_email($style = NULL)
 	</div>';
 }
 
-function display_header ()
+function display_header()
 {
 	global $lang;
 
@@ -133,11 +133,12 @@ function display_header ()
 			<div id="social-networks">';
 				display_icon_social_network('Blog', '//blog.antoine-augusti.fr');
 				display_icon_social_network('Cv', '//cv.antoine-augusti.fr');
-				display_icon_social_network('LinkedIn', '//fr.linkedin.com/in/antoineaugusti');
-				display_icon_social_network('Facebook', '//www.facebook.com/AntoineAugusti');
+				// display_icon_social_network('LinkedIn', '//fr.linkedin.com/in/antoineaugusti');
+				// display_icon_social_network('Facebook', '//www.facebook.com/AntoineAugusti');
+				// display_icon_social_network('GooglePlus', 'https://plus.google.com/104395355791731974347?rel=author');
 				display_icon_social_network('Twitter', '//www.twitter.com/AntoineAugusti');
 				display_icon_social_network('Github', 'https://www.github.com/AntoineAug');
-				display_icon_social_network('Instagram', '//instagram.com/antoineaugusti');
+				// display_icon_social_network('Instagram', '//instagram.com/antoineaugusti');
 				display_icon_social_network('Feed','//www.antoine-augusti.fr/blog/feed/');
 	echo '	</div>';
 
@@ -162,23 +163,25 @@ function display_header ()
 	</div><!-- END HEADER -->';
 }
 
-function display_icon_contact ($alt, $link, $txt)
+function display_icon_contact($alt, $link, $txt)
 {
 	echo '<span class="icon-contact '.strtolower($alt).'"></span><a href="'.$link.'" target="_blank" title="'.$alt.'">'.$txt.'</a><br>';
 }
-function display_full_contact ()
+
+function display_full_contact()
 {
 	display_icon_contact('Gmail', 'mailto:antoine@augusti.fr', 'antoine@augusti.fr');
 	display_icon_contact('Blog', '//blog.antoine-augusti.fr', 'blog.antoine-augusti.fr');
-	display_icon_contact('Facebook', '//www.facebook.com/AntoineAugusti', 'www.facebook.com/AntoineAugusti');
+	// display_icon_contact('Facebook', '//www.facebook.com/AntoineAugusti', 'www.facebook.com/AntoineAugusti');
 	display_icon_contact('Twitter', '//www.twitter.com/AntoineAugusti', '@AntoineAugusti');
-	display_icon_contact('Instagram', '//instagram.com/antoineaugusti', '@antoineaugusti');
+	// display_icon_contact('Instagram', '//instagram.com/antoineaugusti', '@antoineaugusti');
 	display_icon_contact('GitHub', 'https://github.com/AntoineAug', 'github.com/AntoineAug');
-	display_icon_contact('YouTube', '//www.youtube.com/AugustiAntoine', 'www.youtube.com/AugustiAntoine');
-	display_icon_contact('Skype', '#', 'AntoineAugusti');
-	display_icon_contact('Portable', '#', '+33 6 87 09 98 92');
+	// display_icon_contact('YouTube', '//www.youtube.com/AugustiAntoine', 'www.youtube.com/AugustiAntoine');
+	// display_icon_contact('Skype', '#', 'AntoineAugusti');
+	// display_icon_contact('Portable', '#', '+33 6 87 09 98 92');
 }
-function convertirDate ($date)
+
+function convertirDate($date)
 {
 	list($annee, $mois, $jour) = split('-', substr($date, 0, 10));
 	if ($annee == date("Y"))
@@ -187,28 +190,28 @@ function convertirDate ($date)
 		echo ''.$jour.'/'.$mois.'/'.$annee.'';
 }
 
-function lit_rss($fichier,$objets) {
-
-	// on lit tout le fichier
-	if($chaine = @implode("",@file($fichier))) {
-
-		// on découpe la chaine obtenue en items
+function lit_rss($fichier,$objets) 
+{
+	// On lit tout le fichier
+	if ($chaine = @implode("",@file($fichier)))
+	{
+		// On découpe la chaine obtenue en items
 		$tmp = preg_split("/<\/?"."item".">/",$chaine);
 
-		// pour chaque item
-		for($i=1;$i<sizeof($tmp)-1;$i+=2)
+		// Pour chaque item
+		for($i = 1;$i < sizeof($tmp)-1; $i += 2)
 
-			// on lit chaque objet de l'item
-			foreach($objets as $objet) {
-
-				// on découpe la chaine pour obtenir le contenu de l'objet
+			// On lit chaque objet de l'item
+			foreach($objets as $objet) 
+			{
+				// On découpe la chaine pour obtenir le contenu de l'objet
 				$tmp2 = preg_split("/<\/?".$objet.">/",$tmp[$i]);
 
-				// on ajoute le contenu de l'objet au tableau resultat
+				// On ajoute le contenu de l'objet au tableau resultat
 				$resultat[$i-1][] = @$tmp2[1];
 			}
 
-		// on retourne le tableau resultat
+		// On retourne le tableau resultat
 		return $resultat;
 	}
 }
@@ -235,9 +238,9 @@ function age($naiss)
 	return $annees;
 }
 
-function obtenirDateRelative ($date) 
+function obtenirDateRelative($date) 
 {
-	if(is_numeric($date))
+	if (is_numeric($date))
 	    $date = date("Y-m-d H:i:s", $date);
 	    
 	// Les paramètres locaux sont basés sur la France 
@@ -250,33 +253,49 @@ function obtenirDateRelative ($date)
 	$today           = strtotime("today 00:00"); 
 	$yesterday       = strtotime("-1 day 00:00"); 
 	$beforeYesterday = strtotime("-2 day 00:00"); 
-	$before          = strtotime("-7 day 00:00"); 
+	$before          = strtotime("-7 day 00:00");
+
 	// On compare les repères à la date actuelle 
-	// si elle est proche alors on retourne une date relative... 
-	if ($time < $after && $time > $before) { 
-	    if ($time >= $after) { 
-		$relative = strftime("%A", $date)." prochain"; 
-	    } else if ($time >= $afterTomorrow) { 
-		$relative = "après-demain"; 
-	    } else if ($time >= $tomorrow) { 
-		$relative = "demain"; 
-	    } else if ($time >= $today) { 
-		$relative = "aujourd'hui"; 
-	    } else if ($time >= $yesterday) { 
-		$relative = "hier"; 
-	    } else if ($time >= $beforeYesterday) { 
-		$relative = "avant-hier"; 
-	    } else if ($time >= $before) { 
-		$relative = strftime("%A", $time)." dernier";     
+	// Si elle est proche alors on retourne une date relative
+	if ($time < $after AND $time > $before)
+	{ 
+	    if ($time >= $after)
+	    { 
+			$relative = strftime("%A", $date)." prochain"; 
+	    }
+	    else if ($time >= $afterTomorrow)
+	    { 
+			$relative = "après-demain"; 
+	    }
+	    else if ($time >= $tomorrow)
+	    { 
+			$relative = "demain"; 
+	    }
+	    else if ($time >= $today)
+	    { 
+			$relative = "aujourd'hui"; 
+	    }
+	    else if ($time >= $yesterday)
+	    { 
+			$relative = "hier"; 
+	    }
+	    else if ($time >= $beforeYesterday)
+	    { 
+			$relative = "avant-hier"; 
+	    }
+	    else if ($time >= $before)
+	    { 
+			$relative = strftime("%A", $time)." dernier";     
 	    } 
-	// sinon on retourne une date complète. 
-	} else { 
-	    $relative = 'le '.strftime("%A %d %B %Y", $time); 
-	} 
-	// si l'heure est présente dans la date originale, on l'ajoute 
-	if (preg_match('/[0-9]{2}:[0-9]{2}/', $date)) {
-	$relative .= ' &agrave; '.date('H\hi', $time);
+	// Sinon on retourne une date complète. 
 	}
+	else
+	    $relative = 'le '.strftime("%A %d %B %Y", $time);  
+
+	// Si l'heure est présente dans la date originale, on l'ajoute 
+	if (preg_match('/[0-9]{2}:[0-9]{2}/', $date))
+		$relative .= ' &agrave; '.date('H\hi', $time);
+
 	return $relative; 
 }
 
@@ -284,7 +303,7 @@ function captchaMath ()
 {
 	$n1 = mt_rand(1,84);
 
-	if (in_array($n1, array('1', '2', '3', '6', '7', '14', '21', '42')))
+	if (in_array($n1, array(1, 2, 3, 6, 7, 14, 21, 42)))
 	{
 		$n2 = 42 / $n1;
 		$phrase = ''.$n1.' x '.$n2.'';
@@ -302,7 +321,6 @@ function captchaMath ()
 			$phrase = ''.$n1.' - '.$n2.'';
 		}
 	}
-	
 	
 	return array('42', $phrase);	
 }
