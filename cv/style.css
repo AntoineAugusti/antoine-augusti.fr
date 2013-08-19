@@ -1,4 +1,5 @@
-body {
+body
+{
 	background: url(/cv/images/paper.png) fixed;
 	color: #777;
 	font-size: 13px;
@@ -6,58 +7,95 @@ body {
 	font-family: "Roboto", sans-serif;
 	list-style: inside;
 }
-a img {
+a img
+{
 	border:none;
 }
-a {
+a
+{
 	color: #064b74;
 	text-decoration: none;
 }
-#header {
-	background: #2A4785;
-	display: block;
-	height: 60px;
+#header
+{
+	background:#2A4785;
+	display:block;
+	height:60px;
+	position: relative;
+	z-index: 2;
 }
-#header #header-content {
-	width: 750px;
-	margin: 0 auto;
-	padding: 15px 0;
+#header #header-content
+{
+	width:802px;
+	margin:0 auto;
+	padding:15px 0;
 }
-#header #logo {
-	float: left;
-	margin: 0;
+#header #logo
+{
+	float:left;
+	margin:0;
 }
-#header #logo a {
-	display: block;
-	width: 172px;
-	height: 30px;
-	background: url(/images/logo.png) no-repeat 0 0;
+#header #logo a
+{
+	display:block;
+	width:172px;
+	height:30px;
+	background:url(/images/logo.png) no-repeat 0 0;
 }
-#header #logo a, .fade, #corps a, #footer .plan a,#footer .logo_footer a {
-	-webkit-transition: opacity 0.5s ease;
-	-moz-transition: opacity 0.5s ease;
-	-o-transition: opacity 0.5s ease;
-	transition: opacity 0.5s ease;
+#header #logo a,.fade,#corps a,#footer .plan a,#footer .logo_footer a
+{
+	-webkit-transition:all 300ms ease-in-out;
+	-moz-transition:all 300ms ease-in-out;
+	-o-transition:all 300ms ease-in-out;
+	transition:all 300ms ease-in-out;
 }
-#header #logo a:hover, .fade:hover, #corps a:hover, #footer .plan a:hover, #footer .logo_footer a:hover {
-  opacity: 0.6;
+#header #logo a:hover,.fade:hover,#corps a:hover,#footer .plan a:hover,#footer .logo_footer a:hover
+{
+	opacity:0.6;
 }
-#header #logo a img {
-	height: 0;
+#header #logo a img
+{
+	height:0px;
 }
-#header #social-networks {
+#header #flags_translate
+{
+	float:right;
+	padding:5px 10px;
+	margin-right: 20px;
+}
+#header #flags_translate span.english, #header #flags_translate span.french 
+{
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	display: inline-block;
+	cursor: pointer;
+	background: url(/images/icones/flags/sprite.png);
+}
+#header #flags_translate span.english
+{
+	background-position: 0 0;
+}
+#header #flags_translate span.french
+{
+	background-position: -24px 0;
+}
+#header #social-networks
+{
 	float:right;
 	background:#555;
 	padding:5px 0px 5px 10px;
 }
-#header #social-networks a span.icon, .fade_on_hover {
+#header #social-networks a span.icon, .fade_on_hover
+{
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
 }
-#header #social-networks a span.icon,span.icon-contact,span.icon-corps {
+#header #social-networks a span.icon,span.icon-contact,span.icon-corps
+{
 	height:24px;
 	width:24px;
 	margin-right:12px;
@@ -65,113 +103,156 @@ a {
 	display:inline-block;
 	background:url(/images/icones/sprite_double.png);
 }
-#header #social-networks a span.icon.blog:hover,span.icon-contact.blog:hover,span.icon-corps.blog:hover {
+#header #social-networks a span.icon.blog:hover,span.icon-contact.blog:hover,span.icon-corps.blog:hover
+{
 	background-position:0 -24px;
 }
-#header #social-networks a span.icon.contact:hover,span.icon-contact.contact:hover,span.icon-corps.contact:hover {
-	background-position:-25px -24px;
+#header #social-networks a span.icon.contact:hover,span.icon-contact.contact:hover,span.icon-corps.contact:hover
+{
+	background-position:-24px -24px;
 }
-#header #social-networks a span.icon.cv:hover,span.icon-contact.cv:hover,span.icon-corps.cv:hover {
-	background-position:-50px -24px;
+#header #social-networks a span.icon.cv:hover,span.icon-contact.cv:hover,span.icon-corps.cv:hover
+{
+	background-position:-48px -24px;
 }
-#header #social-networks a span.icon.email:hover,span.icon-contact.email:hover,span.icon-corps.email:hover {
-	background-position:-75px -24px;
+#header #social-networks a span.icon.email:hover,span.icon-contact.email:hover,span.icon-corps.email:hover
+{
+	background-position:-72px -24px;
 }
-#header #social-networks a span.icon.facebook:hover,span.icon-contact.facebook:hover,span.icon-corps.facebook:hover {
-	background-position:-100px -24px;
+#header #social-networks a span.icon.facebook:hover,span.icon-contact.facebook:hover,span.icon-corps.facebook:hover
+{
+	background-position:-96px -24px;
 }
-#header #social-networks a span.icon.feed:hover,span.icon-contact.feed:hover,span.icon-corps.feed:hover {
-	background-position:-125px -24px;
+#header #social-networks a span.icon.feed:hover,span.icon-contact.feed:hover,span.icon-corps.feed:hover
+{
+	background-position:-120px -24px;
 }
-#header #social-networks a span.icon.github:hover,span.icon-contact.github:hover,span.icon-corps.github:hover {
-	background-position:-150px -24px;
+#header #social-networks a span.icon.github:hover,span.icon-contact.github:hover,span.icon-corps.github:hover
+{
+	background-position:-144px -24px;
 }
-#header #social-networks a span.icon.gmail:hover,span.icon-contact.gmail:hover,span.icon-corps.gmail:hover {
-	background-position:-175px -24px;
+#header #social-networks a span.icon.gmail:hover,span.icon-contact.gmail:hover,span.icon-corps.gmail:hover
+{
+	background-position:-168px -24px;
 }
-#header #social-networks a span.icon.instagram:hover,span.icon-contact.instagram:hover,span.icon-corps.instagram:hover {
-	background-position:-200px -24px;
+#header #social-networks a span.icon.googleplus:hover,span.icon-contact.googleplus:hover,span.icon-corps.googleplus:hover
+{
+	background-position:-192px -24px;
 }
-#header #social-networks a span.icon.portable:hover,span.icon-contact.portable:hover,span.icon-corps.portable:hover {
-	background-position:-225px -24px;
+#header #social-networks a span.icon.instagram:hover,span.icon-contact.instagram:hover,span.icon-corps.instagram:hover
+{
+	background-position:-216px -24px;
 }
-#header #social-networks a span.icon.skype:hover,span.icon-contact.skype:hover,span.icon-corps.skype:hover {
-	background-position:-250px -24px;
+#header #social-networks a span.icon.linkedin:hover,span.icon-contact.linkedin:hover,span.icon-corps.linkedin:hover
+{
+	background-position:-240px -24px;
 }
-#header #social-networks a span.icon.success:hover,span.icon-contact.success:hover,span.icon-corps.success:hover {
-	background-position:-275px -24px;
+#header #social-networks a span.icon.portable:hover,span.icon-contact.portable:hover,span.icon-corps.portable:hover
+{
+	background-position:-264px -24px;
 }
-#header #social-networks a span.icon.twitter:hover,span.icon-contact.twitter:hover,span.icon-corps.twitter:hover {
-	background-position:-300px -24px;
+#header #social-networks a span.icon.skype:hover,span.icon-contact.skype:hover,span.icon-corps.skype:hover
+{
+	background-position:-299px -24px;
 }
-#header #social-networks a span.icon.work:hover,span.icon-contact.work:hover,span.icon-corps.work:hover {
-	background-position:-325px -24px;
+#header #social-networks a span.icon.success:hover,span.icon-contact.success:hover,span.icon-corps.success:hover
+{
+	background-position:-312px -24px;
 }
-#header #social-networks a span.icon.youtube:hover,span.icon-contact.youtube:hover,span.icon-corps.youtube:hover {
-	background-position:-350px -24px;
+#header #social-networks a span.icon.twitter:hover,span.icon-contact.twitter:hover,span.icon-corps.twitter:hover
+{
+	background-position:-336px -24px;
 }
-#header #social-networks a span.icon.linkedin:hover,span.icon-contact.linkedin:hover,span.icon-corps.linkedin:hover {
-	background-position:-374px -24px;
+#header #social-networks a span.icon.work:hover,span.icon-contact.work:hover,span.icon-corps.work:hover
+{
+	background-position:-360px -24px;
 }
-#header #social-networks a span.icon.blog,span.icon-contact.blog,span.icon-corps.blog {
+#header #social-networks a span.icon.youtube:hover,span.icon-contact.youtube:hover,span.icon-corps.youtube:hover
+{
+	background-position:-384px -24px;
+}
+#header #social-networks a span.icon.blog,span.icon-contact.blog,span.icon-corps.blog
+{
 	background-position:0 0;
 }
-#header #social-networks a span.icon.contact,span.icon-contact.contact,span.icon-corps.contact {
-	background-position:-25px 0;
+#header #social-networks a span.icon.contact,span.icon-contact.contact,span.icon-corps.contact
+{
+	background-position:-24px 0;
 }
-#header #social-networks a span.icon.cv,span.icon-contact.cv,span.icon-corps.cv {
-	background-position:-50px 0;
+#header #social-networks a span.icon.cv,span.icon-contact.cv,span.icon-corps.cv
+{
+	background-position:-48px 0;
 }
-#header #social-networks a span.icon.email,span.icon-contact.email,span.icon-corps.email {
-	background-position:-75px 0;
+#header #social-networks a span.icon.email,span.icon-contact.email,span.icon-corps.email
+{
+	background-position:-72px 0;
 }
-#header #social-networks a span.icon.facebook,span.icon-contact.facebook,span.icon-corps.facebook {
-	background-position:-100px 0;
+#header #social-networks a span.icon.facebook,span.icon-contact.facebook,span.icon-corps.facebook
+{
+	background-position:-96px 0;
 }
-#header #social-networks a span.icon.feed,span.icon-contact.feed,span.icon-corps.feed {
-	background-position:-125px 0;
+#header #social-networks a span.icon.feed,span.icon-contact.feed,span.icon-corps.feed
+{
+	background-position:-120px 0;
 }
-#header #social-networks a span.icon.github,span.icon-contact.github,span.icon-corps.github {
-	background-position:-150px 0;
+#header #social-networks a span.icon.github,span.icon-contact.github,span.icon-corps.github
+{
+	background-position:-144px 0;
 }
-#header #social-networks a span.icon.gmail,span.icon-contact.gmail,span.icon-corps.gmail {
-	background-position:-175px 0;
+#header #social-networks a span.icon.gmail,span.icon-contact.gmail,span.icon-corps.gmail
+{
+	background-position:-168px 0;
 }
-#header #social-networks a span.icon.instagram,span.icon-contact.instagram,span.icon-corps.instagram {
-	background-position:-200px 0;
+#header #social-networks a span.icon.googleplus,span.icon-contact.googleplus,span.icon-corps.googleplus
+{
+	background-position:-192px 0;
 }
-#header #social-networks a span.icon.portable,span.icon-contact.portable,span.icon-corps.portable {
-	background-position:-225px 0;
+#header #social-networks a span.icon.instagram,span.icon-contact.instagram,span.icon-corps.instagram
+{
+	background-position:-216px 0;
 }
-#header #social-networks a span.icon.skype,span.icon-contact.skype,span.icon-corps.skype {
-	background-position:-250px 0;
+#header #social-networks a span.icon.linkedin,span.icon-contact.linkedin,span.icon-corps.linkedin
+{
+	background-position:-240px 0;
 }
-#header #social-networks a span.icon.success,span.icon-contact.success,span.icon-corps.success {
-	background-position:-275px 0;
+#header #social-networks a span.icon.portable,span.icon-contact.portable,span.icon-corps.portable
+{
+	background-position:-264px 0;
 }
-#header #social-networks a span.icon.twitter,span.icon-contact.twitter,span.icon-corps.twitter {
-	background-position:-300px 0;
+#header #social-networks a span.icon.skype,span.icon-contact.skype,span.icon-corps.skype
+{
+	background-position:-288px 0;
 }
-#header #social-networks a span.icon.work,span.icon-contact.work,span.icon-corps.work {
-	background-position:-325px 0;
+#header #social-networks a span.icon.success,span.icon-contact.success,span.icon-corps.success
+{
+	background-position:-312px 0;
 }
-#header #social-networks a span.icon.youtube,span.icon-contact.youtube,span.icon-corps.youtube {
-	background-position:-350px 0;
+#header #social-networks a span.icon.twitter,span.icon-contact.twitter,span.icon-corps.twitter
+{
+	background-position:-336px 0;
 }
-#header #social-networks a span.icon.linkedin,span.icon-contact.linkedin,span.icon-corps.linkedin {
-	background-position:-374px 0;
+#header #social-networks a span.icon.work,span.icon-contact.work,span.icon-corps.work
+{
+	background-position:-360px 0;
 }
-#menu {
+#header #social-networks a span.icon.youtube,span.icon-contact.youtube,span.icon-corps.youtube
+{
+	background-position:-384px 0;
+}
+#menu
+{
 	width: 100%;
 	background: url(/cv/images/sprite_menu.png) repeat-x;
 	background-position: 0 -1px;
 	height: 39px;
 }
-#menu .content {
+#menu .content
+{
 	margin: 0px auto;
 	width: 748px;
 }
-#menu .content a span.icon {
+#menu .content a span.icon
+{
 	display: inline-block;
 	height: 13px;
 	width: 13px;
@@ -179,34 +260,44 @@ a {
 	vertical-align: -22%;
 	background: url(/cv/images/sprite.png);
 }
-#menu .content a span.icon.competences {
+#menu .content a span.icon.competences
+{
 	background-position: 0 0;
 }
-#menu .content a span.icon.contact {
+#menu .content a span.icon.contact
+{
 	background-position: -14px 0;
 }
-#menu .content a span.icon.drapeau {
+#menu .content a span.icon.drapeau
+{
 	background-position: -28px 0;
 }
-#menu .content a span.icon.experiences {
+#menu .content a span.icon.experiences
+{
 	background-position: -42px 0;
 }
-#menu .content a span.icon.help {
+#menu .content a span.icon.help
+{
 	background-position: -56px 0;
 }
-#menu .content a span.icon.infos {
+#menu .content a span.icon.infos
+{
 	background-position: -70px 0;
 }
-#menu .content a span.icon.interets {
+#menu .content a span.icon.interets
+{
 	background-position: -84px 0;
 }
-#menu .content a span.icon.school {
+#menu .content a span.icon.school
+{
 	background-position: -98px 0;
 }
-#menu .content a span.icon.work {
+#menu .content a span.icon.work
+{
 	background-position: -112px 0;
 }
-#menu .content a {
+#menu .content a
+{
 	font-family: 'Exo',sans-serif;
 	font-size: 13px;
 	color: #FFF;
@@ -220,22 +311,26 @@ a {
 	cursor: pointer;
 	margin-right: -4px;
 }
-#menu .content a:hover, #menu .content a.selected {
+#menu .content a:hover, #menu .content a.selected
+{
 	background: url(/cv/images/sprite_menu.png) repeat-x;
 	height: 39px;
 	background-position: 0 -42px;
 }
-#presentation {
+#presentation
+{
 	background:#0F1620 url(/cv/images/presentation-bg.jpg) no-repeat center bottom;
 	border-bottom: 2px solid #2A384F;
 	width: 100%;
 }
-#presentation .content {
+#presentation .content
+{
 	width: 750px;
 	height: 362px;
 	margin: 0 auto;
 }
-#presentation .content .text {
+#presentation .content .text
+{
 	float: right;
 	background: #E0E0E0 url('http://p-w.fr/bmg4q') center;
 	width: 400px;
@@ -247,14 +342,16 @@ a {
 	line-height: 22px;
 	border-bottom: 1px solid #CCC;
 }
-#presentation .content .text h1 {
+#presentation .content .text h1
+{
 	font-family: 'Open Sans';
 	font-size: 20px;
 	line-height: 22px;
 	color: #333;
 	margin: 10px 0;
 }
-#presentation .content img.avatar {
+#presentation .content img.avatar
+{
 	background: #FAFAFA;
 	padding: 4px;
 	border: 1px solid #DDD;
@@ -263,7 +360,8 @@ a {
 	float: left;
 	margin: 100px 0 0 70px;
 }
-#content {
+#content
+{
 	width: 720px;
 	border-top: 1px solid #ccc;
 	color: #555;
@@ -273,7 +371,8 @@ a {
 	padding: 20px 15px;
 	line-height: 22px;
 }
-#footer {
+#footer
+{
 	width: 750px;
 	color :#666;
 	font-size: 11px;
@@ -281,34 +380,41 @@ a {
 	text-align: center;
 	margin: 0 auto 30px;
 }
-#footer a {
+#footer a
+{
 	font-weight: 400;
 }
-.texte {
+.texte
+{
 	background: #f5f5f5;
 	border: 1px solid #e5e5e5;
 	padding: 10px;
 	margin: 10px 0 70px 0;
 	color: #666;
 }
-.margin_xp {
+.margin_xp
+{
 	margin-bottom: 30px;
 }
-.margin_xp:last-child {
+.margin_xp:last-child
+{
 	margin-bottom: 50px;
 }
-.pdf {
+.pdf
+{
 	margin: 20px auto;
 	padding: 15px;
 	background-color: #F1F2FF;
 }
-#content img.download_pdf {
+#content img.download_pdf
+{
 	height: 22px;
 	width: 22px;
 	margin-right: 10px;
 	vertical-align: -5px;
 }
-#content .icon {
+#content .icon
+{
 	float: right;
 	height: 24px;
 	width: 24px;
@@ -317,47 +423,59 @@ a {
 	display: inline-block;
 	background: url(/cv/images/sprite.png);
 }
-#content .icon.competences {
+#content .icon.competences
+{
 	background-position: 0 -13px
 }
-#content .icon.contact {
+#content .icon.contact
+{
 	background-position: -25px -13px
 }
-#content .icon.drapeau {
+#content .icon.drapeau
+{
 	background-position: -50px -13px
 }
-#content .icon.experiences {
+#content .icon.experiences
+{
 	background-position: -75px -13px
 }
-#content .icon.infos {
+#content .icon.infos
+{
 	background-position: -100px -13px
 }
-#content .icon.interets {
+#content .icon.interets
+{
 	background-position: -125px -13px
 }
-#content .icon.school {
+#content .icon.school
+{
 	background-position: -150px -13px
 }
-#content .icon.work {
+#content .icon.work
+{
 	background-position: -175px -13px
 }
-.icon-contact {
+.icon-contact
+{
 	margin: 0px 20px 10px 0px !important;
 	vertical-align: -17px !important;
 }
-.icon-website-tq {
+.icon-website-tq
+{
 	width: 100px;
 	margin: 15px 0 0 20px;
 	float: right;
 	height: 100px;
 }
-.icon-website-pretty-web {
+.icon-website-pretty-web
+{
 	width: 167px;
 	margin: 15px 0px 0px 20px;
 	float: right;
 	height: 30px;
 }
-.icon-website-ango {
+.icon-website-ango
+{
 	width: 200px;
 	margin: 10px 0 0 20px;
 	float: right;
@@ -365,65 +483,81 @@ a {
 	padding: 4px;
 	border: 1px solid #DDD;
 }
-.icon-website-it {
+.icon-website-it
+{
 	width: 150px;
 	margin: 20px 0 0 20px;
 	float: right;
 }
-.icon-website-pls {
+.icon-website-pls
+{
 	width: 150px;
 	margin: 5px 0 0 20px;
 	float: right;
 }
-.icon-website-technostress {
+.icon-website-technostress
+{
 width: 200px;
 margin: 5px 0 0 20px;
 float: right;
 }
-.icon-link-website {
+.icon-link-website
+{
 	height: 16px;
 	width: 16px;
 	margin-right: 5px;
 	vertical-align: -20%;
 }
-.titre {
+.titre
+{
 	font-size:180%;
 	font-family: 'Open Sans';
 	color: #353537;
 	padding-bottom: 2px;
-}
-.clear {
-	clear: both;
-}
-.right {
-	float: right;
-}
-.italic {
+	font-weight: 300;
 	font-style: italic;
 }
-.justify {
+.clear
+{
+	clear: both;
+}
+.right
+{
+	float: right;
+}
+.italic
+{
+	font-style: italic;
+}
+.justify
+{
 	text-align: justify;
 }
-.inside-square {
+.inside-square
+{
 	list-style: inside square;
 	margin-left: 25px;
 }
-h2 {
+h2
+{
 	font-weight: 400 !important;
 	margin:2px 0 4px 0;
 	font-family: 'Open Sans';
 }
-span.bleu,h3 {
+span.bleu,h3
+{
 	color: #2A4785;
-	font-weight: 700;
+	font-weight: 300;
 	padding: 3px;
 }
-img.help {
+img.help
+{
 	margin-left: 30px;
 	padding-right: 20px;
 	vertical-align: middle
 }
-.photo {
+.photo
+{
 	background: #FAFAFA;
 	padding: 4px;
 	border: 1px solid #DDD;
@@ -437,22 +571,26 @@ img.help {
 	-o-transition:-o-transform .8s ease;
 	transition:transform .8s ease
 }
-.photo:hover {
+.photo:hover
+{
 	-webkit-transform: rotate(7deg);
 	-moz-transform: rotate(7deg);
 	transform: rotate(7deg);
 }
-li {
+li
+{
 	list-style: square inside;
 	margin-bottom:5px;
 }
-a.website {
+a.website
+{
 	background: transparent url(images/arrow_blue.png) no-repeat 0 3px;
 	margin-left: 50px;
 	padding-left: 20px;
 	padding-top: 2px;
 	vertical-align: middle;
 }
-a:hover,#footer a:hover {
+a:hover,#footer a:hover
+{
 	text-decoration: underline;
 }
