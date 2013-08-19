@@ -1,5 +1,6 @@
 .DS_STORE
 /blog
+/papa*
 /twitter
 kernel/config.php
 sftp-config.json

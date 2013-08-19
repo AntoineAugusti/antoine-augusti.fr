@@ -5,6 +5,7 @@ Disallow: /new/
 Disallow: /euler/
 Disallow: /42
 Disallow: /papa/
-Disallow: /maths
-Disallow: /twitter
-Disallow: /cv
+Disallow: /papa2/
+Disallow: /maths/
+Disallow: /twitter/
+Disallow: /cv/
