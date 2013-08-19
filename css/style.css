@@ -78,6 +78,10 @@ a
 	color:#064b74;
 	text-decoration:none
 }
+#corps a
+{
+	padding: 3px;
+}
 #translate_transition
 {
 	background: url(/images/bg_translate.jpg);
@@ -149,10 +153,10 @@ a
 }
 #header #logo a,.fade,#corps a,#footer .plan a,#footer .logo_footer a
 {
-	-webkit-transition:opacity 0.5s ease;
-	-moz-transition:opacity 0.5s ease;
-	-o-transition:opacity 0.5s ease;
-	transition:opacity 0.5s ease;
+	-webkit-transition:all 300ms ease-in-out;
+	-moz-transition:all 300ms ease-in-out;
+	-o-transition:all 300ms ease-in-out;
+	transition:all 300ms ease-in-out;
 }
 #header #logo a:hover,.fade:hover,#corps a:hover,#footer .plan a:hover,#footer .logo_footer a:hover
 {
@@ -214,63 +218,67 @@ a
 }
 #header #social-networks a span.icon.contact:hover,span.icon-contact.contact:hover,span.icon-corps.contact:hover
 {
-	background-position:-25px -24px;
+	background-position:-24px -24px;
 }
 #header #social-networks a span.icon.cv:hover,span.icon-contact.cv:hover,span.icon-corps.cv:hover
 {
-	background-position:-50px -24px;
+	background-position:-48px -24px;
 }
 #header #social-networks a span.icon.email:hover,span.icon-contact.email:hover,span.icon-corps.email:hover
 {
-	background-position:-75px -24px;
+	background-position:-72px -24px;
 }
 #header #social-networks a span.icon.facebook:hover,span.icon-contact.facebook:hover,span.icon-corps.facebook:hover
 {
-	background-position:-100px -24px;
+	background-position:-96px -24px;
 }
 #header #social-networks a span.icon.feed:hover,span.icon-contact.feed:hover,span.icon-corps.feed:hover
 {
-	background-position:-125px -24px;
+	background-position:-120px -24px;
 }
 #header #social-networks a span.icon.github:hover,span.icon-contact.github:hover,span.icon-corps.github:hover
 {
-	background-position:-150px -24px;
+	background-position:-144px -24px;
 }
 #header #social-networks a span.icon.gmail:hover,span.icon-contact.gmail:hover,span.icon-corps.gmail:hover
 {
-	background-position:-175px -24px;
+	background-position:-168px -24px;
+}
+#header #social-networks a span.icon.googleplus:hover,span.icon-contact.googleplus:hover,span.icon-corps.googleplus:hover
+{
+	background-position:-192px -24px;
 }
 #header #social-networks a span.icon.instagram:hover,span.icon-contact.instagram:hover,span.icon-corps.instagram:hover
 {
-	background-position:-200px -24px;
-}
-#header #social-networks a span.icon.portable:hover,span.icon-contact.portable:hover,span.icon-corps.portable:hover
-{
-	background-position:-225px -24px;
-}
-#header #social-networks a span.icon.skype:hover,span.icon-contact.skype:hover,span.icon-corps.skype:hover
-{
-	background-position:-250px -24px;
-}
-#header #social-networks a span.icon.success:hover,span.icon-contact.success:hover,span.icon-corps.success:hover
-{
-	background-position:-275px -24px;
-}
-#header #social-networks a span.icon.twitter:hover,span.icon-contact.twitter:hover,span.icon-corps.twitter:hover
-{
-	background-position:-300px -24px;
-}
-#header #social-networks a span.icon.work:hover,span.icon-contact.work:hover,span.icon-corps.work:hover
-{
-	background-position:-325px -24px;
-}
-#header #social-networks a span.icon.youtube:hover,span.icon-contact.youtube:hover,span.icon-corps.youtube:hover
-{
-	background-position:-350px -24px;
+	background-position:-216px -24px;
 }
 #header #social-networks a span.icon.linkedin:hover,span.icon-contact.linkedin:hover,span.icon-corps.linkedin:hover
 {
-	background-position:-374px -24px;
+	background-position:-240px -24px;
+}
+#header #social-networks a span.icon.portable:hover,span.icon-contact.portable:hover,span.icon-corps.portable:hover
+{
+	background-position:-264px -24px;
+}
+#header #social-networks a span.icon.skype:hover,span.icon-contact.skype:hover,span.icon-corps.skype:hover
+{
+	background-position:-299px -24px;
+}
+#header #social-networks a span.icon.success:hover,span.icon-contact.success:hover,span.icon-corps.success:hover
+{
+	background-position:-312px -24px;
+}
+#header #social-networks a span.icon.twitter:hover,span.icon-contact.twitter:hover,span.icon-corps.twitter:hover
+{
+	background-position:-336px -24px;
+}
+#header #social-networks a span.icon.work:hover,span.icon-contact.work:hover,span.icon-corps.work:hover
+{
+	background-position:-360px -24px;
+}
+#header #social-networks a span.icon.youtube:hover,span.icon-contact.youtube:hover,span.icon-corps.youtube:hover
+{
+	background-position:-384px -24px;
 }
 #header #social-networks a span.icon.blog,span.icon-contact.blog,span.icon-corps.blog
 {
@@ -278,63 +286,67 @@ a
 }
 #header #social-networks a span.icon.contact,span.icon-contact.contact,span.icon-corps.contact
 {
-	background-position:-25px 0;
+	background-position:-24px 0;
 }
 #header #social-networks a span.icon.cv,span.icon-contact.cv,span.icon-corps.cv
 {
-	background-position:-50px 0;
+	background-position:-48px 0;
 }
 #header #social-networks a span.icon.email,span.icon-contact.email,span.icon-corps.email
 {
-	background-position:-75px 0;
+	background-position:-72px 0;
 }
 #header #social-networks a span.icon.facebook,span.icon-contact.facebook,span.icon-corps.facebook
 {
-	background-position:-100px 0;
+	background-position:-96px 0;
 }
 #header #social-networks a span.icon.feed,span.icon-contact.feed,span.icon-corps.feed
 {
-	background-position:-125px 0;
+	background-position:-120px 0;
 }
 #header #social-networks a span.icon.github,span.icon-contact.github,span.icon-corps.github
 {
-	background-position:-150px 0;
+	background-position:-144px 0;
 }
 #header #social-networks a span.icon.gmail,span.icon-contact.gmail,span.icon-corps.gmail
 {
-	background-position:-175px 0;
+	background-position:-168px 0;
+}
+#header #social-networks a span.icon.googleplus,span.icon-contact.googleplus,span.icon-corps.googleplus
+{
+	background-position:-192px 0;
 }
 #header #social-networks a span.icon.instagram,span.icon-contact.instagram,span.icon-corps.instagram
 {
-	background-position:-200px 0;
-}
-#header #social-networks a span.icon.portable,span.icon-contact.portable,span.icon-corps.portable
-{
-	background-position:-225px 0;
-}
-#header #social-networks a span.icon.skype,span.icon-contact.skype,span.icon-corps.skype
-{
-	background-position:-250px 0;
-}
-#header #social-networks a span.icon.success,span.icon-contact.success,span.icon-corps.success
-{
-	background-position:-275px 0;
-}
-#header #social-networks a span.icon.twitter,span.icon-contact.twitter,span.icon-corps.twitter
-{
-	background-position:-300px 0;
-}
-#header #social-networks a span.icon.work,span.icon-contact.work,span.icon-corps.work
-{
-	background-position:-325px 0;
-}
-#header #social-networks a span.icon.youtube,span.icon-contact.youtube,span.icon-corps.youtube
-{
-	background-position:-350px 0;
+	background-position:-216px 0;
 }
 #header #social-networks a span.icon.linkedin,span.icon-contact.linkedin,span.icon-corps.linkedin
 {
-	background-position:-374px 0;
+	background-position:-240px 0;
+}
+#header #social-networks a span.icon.portable,span.icon-contact.portable,span.icon-corps.portable
+{
+	background-position:-264px 0;
+}
+#header #social-networks a span.icon.skype,span.icon-contact.skype,span.icon-corps.skype
+{
+	background-position:-288px 0;
+}
+#header #social-networks a span.icon.success,span.icon-contact.success,span.icon-corps.success
+{
+	background-position:-312px 0;
+}
+#header #social-networks a span.icon.twitter,span.icon-contact.twitter,span.icon-corps.twitter
+{
+	background-position:-336px 0;
+}
+#header #social-networks a span.icon.work,span.icon-contact.work,span.icon-corps.work
+{
+	background-position:-360px 0;
+}
+#header #social-networks a span.icon.youtube,span.icon-contact.youtube,span.icon-corps.youtube
+{
+	background-position:-384px 0;
 }
 #wrap
 {
@@ -363,7 +375,8 @@ a
 }
 #corps a:hover
 {
-	border-bottom:1px dashed #064b74
+	background: #064b74;
+	color: #FFF;
 }
 #footer
 {
