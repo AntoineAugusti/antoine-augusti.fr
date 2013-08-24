@@ -50,15 +50,10 @@ require WEBSITE_PATH."/kernel/fonctions.php";
 	<div id="wrap">
 		<div id="wrap-inner">
 			<div id="corps" class="justify">
-				<?php
-				if (substr($_SERVER['PHP_SELF'], 1, strlen($name_page)-4) != '404')
-				{
-				?>
+				<?php if (substr($_SERVER['PHP_SELF'], 1, strlen($name_page)-4) != '404') : ?>
 				<div class="presentation_self justify">
 					<img src="<?php echo IMAGE_PROFIL; ?>" class="avatar" alt="Antoine Augusti" />
 					<?php echo $lang['header_presentation_self']; ?>
 					<div class="clear"></div>
 				</div>
-				<?php
-				}
-				?>
+				<?php endif; ?>
