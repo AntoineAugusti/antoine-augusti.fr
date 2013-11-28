@@ -2,6 +2,9 @@
 /blog
 /papa*
 /twitter
+/epita
+/shareroad
+/parallaxe
 kernel/config.php
 sftp-config.json
 *sublime*
