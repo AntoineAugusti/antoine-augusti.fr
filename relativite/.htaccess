@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^antoine-augusti.fr [NC]
+RewriteRule (.*) http://www.antoine-augusti.fr/$1 [QSA,R=301,L]
+RewriteRule ^([a-z]+)$ /$1.php [L,QSA]
+ErrorDocument 404 http://www.antoine-augusti.fr/erreur.php?erreur=404
+ErrorDocument 403 http://www.antoine-augusti.fr/erreur.php?erreur=403
