@@ -1,0 +1,205 @@
+@import "compass/css3";
+@import "compass/css3/filter";
+
+@import "breakpoints";
+
+$orange: #F25400;
+$lightBlue:#428bca;
+$mainGray: #333;
+
+@mixin element-transition {
+	@include transition-property(all);
+	@include transition-duration(0.3s);
+	@include transition-timing-function(ease-in-out);
+}
+
+@mixin abstract-link($color, $background) {
+	a {
+		background: inherit;
+		text-decoration: none;
+		color: $color;
+		padding: 2px;
+		@include element-transition;
+
+		&:hover {
+			background: $color;
+			color: $background;
+			text-decoration: none;
+		}
+	}
+}
+
+@mixin link-blue-on-white {
+	@include abstract-link($lightBlue, white);
+}
+
+body {
+	font-family: "calluna", serif;
+	font-weight: 400;
+	height: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+.wow:first-child {
+	visibility: hidden;
+}
+
+.animate-delay {
+	-webkit-animation-delay:0.5s;
+	animation-delay:0.5s;
+}
+
+#intro {
+	background-image: url("../images/intro.jpg");
+	height: 350px;
+	padding: 50px 0;
+
+	img {
+		display: block;
+		margin: auto;
+		width: 160px;
+		height: 160px;
+
+		@include border-radius(100px);
+	}
+
+	h1 {
+		margin: 30px auto;
+		text-align: center;
+		font-weight: 400;
+		color: white;
+
+		@media screen and (max-width: $breakpointTablet) {
+			margin-bottom: 2em;
+		}
+	}
+}
+
+.test {
+	font-size: 3.5em;
+}
+
+.container{
+	h1 {
+		color: $orange;
+		margin: 40px 0 50px 0;
+		font-weight: 700;
+		font-style: italic;
+	}
+}
+
+.card {
+	@media screen and (max-width: $breakpointTablet) {
+		margin-bottom: 2em;
+	}
+	@media screen and (min-width: $breakpointTablet) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	article {
+		font-size: 1.5em;
+		line-height: 1.8;
+		text-align: justify;
+		color: lighten($mainGray, 20%);
+		@include hyphens(auto);
+
+		.title {
+			color: $mainGray;
+		}
+
+		i.fa {
+			font-size: 3em;
+			display: block;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		img#teen-quotes {
+			background: #22313F;
+			padding: 5px;
+			display: block;
+			margin: 30px auto 45px auto;
+			@media screen and (max-width: $breakpointTablet) {
+				margin: 10px auto 20px auto;
+			}
+		}
+
+		img#quantic-telecom {
+			display: block;
+			margin: 0 auto 20px auto;
+			@media screen and (max-width: $breakpointTablet) {
+				margin: 10px auto 20px auto;
+			}
+		}
+
+		@include link-blue-on-white;
+
+		a.button {
+			text-align: center;
+			margin: 20px auto;
+			display: inline-block;
+			background: $lightBlue;
+			padding: 5px 10px;
+			color: white;
+			@include element-transition;
+
+			&:hover {
+				color: white;
+				background: darken($lightBlue, 10%);
+			}
+		}
+	}
+}
+
+footer {
+	margin: 50px 0 100px 0;
+
+	.catchphrase {
+		font-size: 1.4em;
+		margin-bottom: 50px;
+	}
+	
+	a {
+		text-align: center;
+		display: block;
+		color: $lightBlue;
+		@include element-transition;
+
+		&:hover {
+			background: none;
+			text-decoration: none;
+			color: darken($lightBlue, 20%);
+			
+			i.fa {
+				color: darken($lightBlue, 20%);
+			}
+		}
+	}
+	
+	i.fa {
+		font-size: 2em;
+		color: lighten(rgb(51, 51, 51), 20%);
+		text-align: center;
+	}
+	
+	.fa-envelope {
+		display: block;
+	}
+
+	.username {
+		font-size: 1.2em;
+		margin-top: 15px;
+		text-align: center;
+		display: block;
+	}
+
+	.col-sm-3 {
+		@media screen and (max-width: $breakpointSmartphone) {
+			margin-bottom: 2em;
+		}
+	}
+}
