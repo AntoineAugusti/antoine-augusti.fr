@@ -52,10 +52,41 @@ html {
 	animation-delay:0.5s;
 }
 
-#intro {
+.animate-delay-big {
+	-webkit-animation-delay:1s;
+	animation-delay:1s;
+}
+
+header {
 	background-image: url("../images/intro.jpg");
 	height: 350px;
-	padding: 50px 0;
+	padding-bottom: 50px;
+
+	nav {
+		text-align: center;
+		height: 40px;
+		line-height: 40px;
+		margin-bottom: 40px;
+		@include box-sizing('border-box');
+		@media screen and (max-width: $breakpointSmartphone) {
+			margin-bottom: 20px;
+		}
+
+		a {
+			@include element-transition;
+			color: white;
+			text-transform: uppercase;
+			border-bottom: 2px solid transparent;
+			padding: 5px;
+			margin-right: 20px;
+
+			&:hover {
+				border-bottom-color: white;
+				text-decoration: none;
+				color: white;
+			}
+		}
+	}
 
 	img {
 		display: block;
@@ -155,11 +186,29 @@ html {
 	}
 }
 
-footer {
-	margin: 50px 0 100px 0;
+#contact {
+	margin: 50px auto 100px auto;
 
-	.catchphrase {
+	.text {
 		font-size: 1.4em;
+		margin-bottom: 50px;
+		line-height: 2;
+		text-align: justify;
+
+		
+		
+		em {
+			color: darken($mainGray, 20%);
+			font-weight: 700;
+			font-style: normal;
+		}
+	}
+
+	#mocking {
+		margin-bottom: 20px;
+	}
+
+	.row {
 		margin-bottom: 50px;
 	}
 	
@@ -191,7 +240,7 @@ footer {
 	}
 
 	.username {
-		font-size: 1.2em;
+		font-size: 1.4em;
 		margin-top: 15px;
 		text-align: center;
 		display: block;
@@ -200,6 +249,27 @@ footer {
 	.col-sm-3 {
 		@media screen and (max-width: $breakpointSmartphone) {
 			margin-bottom: 2em;
+		}
+	}
+}
+
+footer {
+	background-image: url("../images/intro.jpg");
+	height: 410px;
+	padding: 50px 0;
+	@include box-sizing('border-box');
+
+	h1 {
+		margin: 130px auto;
+		text-align: center;
+		font-weight: 400;
+		color: white;
+		max-width: 70%;
+		line-height: 1.8;
+
+		@media screen and (max-width: $breakpointSmartphone) {
+			margin-top: 80px;
+			margin-bottom: 80px;
 		}
 	}
 }
