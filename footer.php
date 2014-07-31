@@ -23,8 +23,6 @@
 			<img src="<?php echo DOMAINE; ?>images/footer-ligne.png" class="left" alt="Ligne footer">
 			<div class="logo_footer">
 				<a href="../" title="<?php echo $lang['header_back_to_home']; ?>"><img src="<?php echo DOMAINE; ?>images/logo.png" alt="Logo"/></a><br>
-				<br/>
-				&copy; <?php echo date("Y"); ?>	<a href="//www.antoine-augusti.fr" title="<?php echo $lang['footer_website_antoine_augusti']; ?>" target="_blank">Antoine AUGUSTI</a> | <a href="//www.insa-rouen.fr" target="_blank" title="<?php echo $lang['footer_website_insa_rouen']; ?>">INSA Rouen</a><br>
 			</div>
 		</div>
 	</div>

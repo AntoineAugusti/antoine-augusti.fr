@@ -178,7 +178,7 @@ function display_full_contact()
 	display_icon_contact('GitHub', 'https://github.com/AntoineAugusti', 'github.com/AntoineAugusti');
 	// display_icon_contact('YouTube', '//www.youtube.com/AugustiAntoine', 'www.youtube.com/AugustiAntoine');
 	// display_icon_contact('Skype', '#', 'AntoineAugusti');
-	// display_icon_contact('Portable', '#', '+33 6 87 09 98 92');
+	display_icon_contact('Portable', '#', '(hex) +21 (0)6 57 09 62 5C');
 }
 
 function convertirDate($date)

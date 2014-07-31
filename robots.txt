@@ -9,3 +9,4 @@ Disallow: /papa2/
 Disallow: /maths/
 Disallow: /twitter/
 Disallow: /cv/
+Disallow: /epita/

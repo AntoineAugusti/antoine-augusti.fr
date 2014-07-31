@@ -20,6 +20,7 @@ redirect 301 /favicon.ico http://www.antoine-augusti.fr/images_site/favicon.png
 ErrorDocument 404 http://www.antoine-augusti.fr/404
 ErrorDocument 403 http://www.antoine-augusti.fr/404
 
+
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
  <FilesMatch "\\.(ico|jpe?g|png|gif|swf|gz|ttf)$">
