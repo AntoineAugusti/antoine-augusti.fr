@@ -2,36 +2,11 @@
 @import "compass/css3/filter";
 
 @import "breakpoints";
+@import "mixins";
 
 $orange: #F25400;
 $lightBlue:#428bca;
 $mainGray: #333;
-
-@mixin element-transition {
-	@include transition-property(all);
-	@include transition-duration(0.3s);
-	@include transition-timing-function(ease-in-out);
-}
-
-@mixin abstract-link($color, $background) {
-	a {
-		background: inherit;
-		text-decoration: none;
-		color: $color;
-		padding: 2px;
-		@include element-transition;
-
-		&:hover {
-			background: $color;
-			color: $background;
-			text-decoration: none;
-		}
-	}
-}
-
-@mixin link-blue-on-white {
-	@include abstract-link($lightBlue, white);
-}
 
 body {
 	font-family: "calluna", serif;
@@ -66,7 +41,10 @@ header {
 		text-align: center;
 		height: 40px;
 		line-height: 40px;
-		margin-bottom: 40px;
+		display: flex;
+		justify-content: space-around;
+		margin: 0 auto 40px auto;
+		max-width: 750px;
 		@include box-sizing('border-box');
 		@media screen and (max-width: $breakpointSmartphone) {
 			margin-bottom: 20px;
@@ -78,7 +56,7 @@ header {
 			text-transform: uppercase;
 			border-bottom: 2px solid transparent;
 			padding: 5px;
-			margin-right: 20px;
+
 
 			&:hover {
 				border-bottom-color: white;
@@ -244,6 +222,10 @@ header {
 		margin-top: 15px;
 		text-align: center;
 		display: block;
+
+		@media screen and (max-width: $breakpointMiniSmartphone) {
+			font-size: 1.2em;
+		}
 	}
 
 	.col-sm-3 {
@@ -256,20 +238,15 @@ header {
 footer {
 	background-image: url("../images/intro.jpg");
 	height: 410px;
-	padding: 50px 0;
+	padding: 50px 10%;
+	line-height: 310px;
+	text-align: center;
 	@include box-sizing('border-box');
 
 	h1 {
-		margin: 130px auto;
-		text-align: center;
-		font-weight: 400;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: normal;
 		color: white;
-		max-width: 70%;
-		line-height: 1.8;
-
-		@media screen and (max-width: $breakpointSmartphone) {
-			margin-top: 80px;
-			margin-bottom: 80px;
-		}
 	}
 }

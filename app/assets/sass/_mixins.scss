@@ -1,0 +1,25 @@
+@mixin element-transition {
+	@include transition-property(all);
+	@include transition-duration(0.3s);
+	@include transition-timing-function(ease-in-out);
+}
+
+@mixin abstract-link($color, $background) {
+	a {
+		background: inherit;
+		text-decoration: none;
+		color: $color;
+		padding: 2px;
+		@include element-transition;
+
+		&:hover {
+			background: $color;
+			color: $background;
+			text-decoration: none;
+		}
+	}
+}
+
+@mixin link-blue-on-white {
+	@include abstract-link($lightBlue, white);
+}
