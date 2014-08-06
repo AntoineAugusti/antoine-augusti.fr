@@ -53,6 +53,14 @@
 				</article>
 			</section>
 		</div>
+		
+		<h1 id="anchor-blog">Latest articles</h1>
+		<section class="card">		
+			@foreach ($lastArticles as $article)
+				@include('blog.singleArticle')
+			@endforeach
+		</section>
+
 	</section>
 
 	<section id="contact" class="container animated wow zoomIn">
