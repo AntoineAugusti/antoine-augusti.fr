@@ -1,0 +1,26 @@
+{
+	"openSource": {
+		"projects":[
+			{
+				"url": "https://github.com/TeenQuotes/website",
+				"title": "Teen Quotes - website",
+				"description": "The Teen Quotes responsive website and its API, built with Laravel"
+			},
+			{
+				"url": "https://github.com/TeenQuotes/api-documentation",
+				"title": "Teen Quotes - API documentation",
+				"description": "The documentation for the OAuth 2 API of Teen Quotes"
+			},
+			{
+				"url": "https://github.com/AntoineAugusti/laravel-easyrec",
+				"title": "Laravel Easyrec",
+				"description": "A Laravel package to use the recommendation system Easyrec"
+			},
+			{
+				"url": "https://github.com/AntoineAugusti/laravel-sentiment-analysis",
+				"title": "Laravel Sentiment Analysis",
+				"description": "A Laravel package to perform sentiment analysis over a sentence"
+			}
+		]
+	}
+}
