@@ -118,6 +118,10 @@ header {
 		font-size: 1.9em;
 		border-left: 3px solid #eee;
 
+		@media screen and (max-width: $breakpointSmartphone) {
+			width: 90%;
+		}
+
 		.author {
 			margin-top: 50px;
 			float: right;
