@@ -2,7 +2,8 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"simplepie/simplepie": "dev-master",
-		"awjudd/feed-reader": "1.1.*"
+		"awjudd/feed-reader": "1.1.*",
+		"philf/setting": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

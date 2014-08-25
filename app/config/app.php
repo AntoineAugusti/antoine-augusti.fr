@@ -121,7 +121,8 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		'Awjudd\FeedReader\FeedReaderServiceProvider'
+		'Awjudd\FeedReader\FeedReaderServiceProvider',
+		'Philf\Setting\SettingServiceProvider'
 	),
 
 	/*
@@ -149,7 +150,7 @@ return array(
 	*/
 
 	'aliases' => array(
-
+		
 		'App'               => 'Illuminate\Support\Facades\App',
 		'Artisan'           => 'Illuminate\Support\Facades\Artisan',
 		'Auth'              => 'Illuminate\Support\Facades\Auth',
@@ -190,6 +191,7 @@ return array(
 		'View'              => 'Illuminate\Support\Facades\View',
 		'FeedReader'        => 'Awjudd\FeedReader\Facades\FeedReader',
 		'Carbon'            => 'Carbon\Carbon',
+		'LaraSetting'       => 'Philf\Setting\Facades\Setting',
 
 	),
 
