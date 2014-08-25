@@ -9,6 +9,14 @@ class PageController extends BaseController {
 		$feed = FeedReader::read('http://blog.antoine-augusti.fr/feed/');
 		$lastArticles = $feed->get_items(0, 5);
 
-		return View::make('pages.home', compact('lastArticles'));
+		// Get open source projects
+		$projects = LaraSetting::get('openSource.projects');
+
+		$data = [
+			'lastArticles' => $lastArticles,
+			'projects'     => $projects,
+		];
+
+		return View::make('pages.home', $data);
 	}
 }

@@ -8,14 +8,14 @@
 			<section class="card wow col-md-6 animated slideInLeft">
 				<article>
 					<i class="fa fa-code"></i>
-					<span class="title">I'm a passionate web developer.</span> My favorite tools are Laravel, MySQL, Redis and Nginx. I build REST APIs, <a href="//blog.antoine-augusti.fr">blog about what I have learned</a> and know how to use Git. I have build my first website 6 years ago so I'm very familiar with the web stack. In a perfect world, code write itself and calls me when the tests are green.
+					<span class="title">I'm a passionate web developer.</span> My favorite tools are Laravel, MySQL, Memcached and Nginx. I build REST APIs, <a href="//blog.antoine-augusti.fr">blog about what I have learned</a> and know how to use Git. I have build my first website 6 years ago so I'm very familiar with the web stack. I'm excited about scalable and distributed systems. In a perfect world, code write itself and calls me when the tests are green.
 				</article>
 			</section>
 
 			<section class="card wow col-md-6 animated slideInRight">
 				<article>
 					<i class="fa fa-book"></i>
-					<span class="title">I love to learn.</span> I'm an engineering student, currently specializing in software engineering and data mining. In my free time I take classes on Coursera to discover new things like functional programming or machine learning. I also tried to wakeboard but you really don't want to know that.
+					<span class="title">I love to learn.</span> I'm an engineering student, currently specializing in software engineering, machine learning and data mining. In my free time I take classes on Coursera to discover new things like functional programming, R programming or machine learning. I also tried to wakeboard but you really don't want to know that.
 				</article>
 			</section>
 		</div>
@@ -54,12 +54,33 @@
 			</section>
 		</div>
 		
+		<!-- Open source -->
+		<h1>Open source projects</h1>
+		<section class="card">
+			<article>
+				<p>
+					In my free time I write and contribute to open source software. That's my way to say thank you to contributors around the world that are building the amazing tools I use everyday.
+				</p>
+			</article>
+
+			@foreach ($projects as $project)
+				@include('projects.singleProject')
+			@endforeach
+			
+			<blockquote>
+				I think, fundamentally, open source does tend to be more stable software. It's the right way to do things.
+				<div class="author">Linus Torvalds</div>
+			</blockquote>
+
+		</section>
+
 		<h1 id="anchor-blog">Latest articles</h1>
-		<section class="card">		
+		<section class="card">
 			@foreach ($lastArticles as $article)
 				@include('blog.singleArticle')
 			@endforeach
 		</section>
+
 
 	</section>
 
@@ -85,17 +106,6 @@
 				<i class="fa fa-envelope"></i>
 				<span class="username">antoine@augusti.fr</span>
 			</div>
-		</div>
-		<div class="text animated wow fadeIn" data-wow-delay="2s">
-			<p>
-				Trying to know me by clicking links is fine, but you know what's better?<span class="animated wow fadeIn" data-wow-delay="4.5s"> Sending me an e-mail.</span><span class="animated wow fadeIn" data-wow-delay="6s"> Yes, it involves <em>typing</em>.</span>
-			</p>
-			<p class="animated wow fadeIn" data-wow-delay="8s">
-				Yeah, I know, sometimes it is difficult.
-			</p>
-		</div>
-		<div id="mocking" class="text animated wow fadeIn" data-wow-delay="11s">
-			Nope, that's all, there is nothing coming next.
 		</div>
 	</section>
 	

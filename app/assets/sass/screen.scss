@@ -108,6 +108,23 @@ header {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
+	
+	blockquote {
+		font-weight: 400;
+		font-style: italic;
+		width: 80%;
+		margin: 50px auto;
+		line-height: 2;
+		font-size: 1.9em;
+		border-left: 3px solid #eee;
+
+		.author {
+			margin-top: 50px;
+			float: right;
+			font-size: 0.7em;
+			color: lighten($mainGray, 10%);
+		}
+	}
 
 	article {
 		font-size: 1.5em;
@@ -120,7 +137,7 @@ header {
 			color: $mainGray;
 		}
 
-		.date {
+		.italic {
 			font-style: italic;
 			margin-left: 10px;
 		}
@@ -131,6 +148,7 @@ header {
 			text-align: center;
 			margin-bottom: 20px;
 		}
+
 
 		img#teen-quotes {
 			background: #22313F;
@@ -170,15 +188,13 @@ header {
 }
 
 #contact {
-	margin: 50px auto 100px auto;
+	margin: 50px auto;
 
 	.text {
 		font-size: 1.4em;
 		margin-bottom: 50px;
 		line-height: 2;
 		text-align: justify;
-
-		
 		
 		em {
 			color: darken($mainGray, 20%);
