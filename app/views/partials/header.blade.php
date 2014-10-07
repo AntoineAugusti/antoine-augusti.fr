@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title>{{ $pageTitle or 'Antoine Augusti' }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	{{ HTML::style('assets/css/styles.min.css') }}
 	<meta name="description" content="Antoine Augusti, web developer, software engineering and data mining." />
+	<link media="all" type="text/css" rel="stylesheet" href="/assets/css/styles.min.css">
 	<link rel="shortcut icon" href="/assets/images/favicon.jpg"/>
 	
 	<link href="https://plus.google.com/104395355791731974347/" rel="author" />
