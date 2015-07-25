@@ -8,14 +8,14 @@
 			<section class="card col-md-6">
 				<article>
 					<i class="fa fa-code"></i>
-					<span class="title">I'm a passionate web developer.</span> My favorite tools are Laravel, MySQL, Memcached and Nginx. I build REST APIs, <a href="//blog.antoine-augusti.fr">blog about what I have learned</a> and know how to use Git. I have build my first website 6 years ago so I'm very familiar with the web stack. I'm excited about scalable and distributed systems. I love to automate things. In a perfect world, code write itself and calls me when the tests are green.
+					<span class="title">I'm a passionate software engineer.</span> I'm comfortable around and interested by distributed systems, REST APIs, automated testing tools, machine learning algorithms, system administration and networking. I have been involved at different levels in a lot of sectors: Internet service provider, customer assistance, fraud detection, inspiring quotes for teenagers, gaming servers, equity crowdfunding, bioinformatics... Did I mention that I'm French?
 				</article>
 			</section>
 
 			<section class="card col-md-6">
 				<article>
 					<i class="fa fa-book"></i>
-					<span class="title">I love to learn.</span> I'm an engineering student, currently specializing in software engineering, machine learning and data mining. In my free time I take classes on Coursera to discover new things like functional programming, R programming or machine learning. Moreover I watch <a href="https://laracasts.com">Laracasts</a> episodes to improve my knowledge of Laravel. I also tried to wakeboard but you really don't want to know that.
+					<span class="title">I love to learn.</span> I'm an engineering student, currently specializing in software engineering, machine learning and data mining. In my free time I take classes on Coursera to discover new things like functional programming, R programming or machine learning. I try to keep my brain busy in my free time with <a href="https://github.com/AntoineAugusti/katas">code katas</a> and read a lot of technical books or articles. I also tried to wakeboard but you really don't want to know that.
 				</article>
 			</section>
 		</div>
@@ -42,7 +42,7 @@
 				<article>
 					{{ HTML::image("assets/images/quantic-telecom.png", "Quantic Télécom", ['id' => 'quantic-telecom']) }}
 					<p>
-						<span class="title">Quantic Télécom is an Internet Service Provider for students.</span> Since the beginning in 2011 I took part of the implementation of our network in datacenters and residences by installing some servers and antennas.
+						<span class="title">Quantic Télécom is an Internet Service Provider for students.</span> Since the beginning in 2011, I took part of the implementation of our network in datacenters and residences by installing some servers and antennas.
 					</p>
 					<p>
 						As part of a three-member team we developed a complete public website and some advanced administration tools: billing, support, statistics, security.
@@ -71,6 +71,12 @@
 
 		<h1 id="anchor-blog">Latest articles</h1>
 		<section class="card">
+			<article>
+				<p>
+					I try to write an article every month or so.
+					If I don't respect this, it means that I'm usually busy with an interesting project, worth a blog post at the end of the day.
+				</p>
+			</article>
 			@foreach ($lastArticles as $article)
 				@include('blog.singleArticle')
 			@endforeach
