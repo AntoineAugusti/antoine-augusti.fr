@@ -4,22 +4,18 @@
 @import "breakpoints";
 @import "mixins";
 
-$orange: #F25400;
-$lightBlue:#428bca;
+$navyBlue: #2980b9;
+$asphalt: lighten(#2c3e50, 10%);
 $mainGray: #333;
 
 body {
-	font-family: "calluna", serif;
+	font-family: 'Libre Baskerville', serif;
 	font-weight: 400;
 	height: 100%;
 }
 
 html {
 	height: 100%;
-}
-
-.wow:first-child {
-	visibility: hidden;
 }
 
 .animate-delay {
@@ -33,7 +29,7 @@ html {
 }
 
 header {
-	background-image: url("../images/intro.jpg");
+	background-image: url("../images/city.jpg");
 	height: 350px;
 	padding-bottom: 50px;
 
@@ -56,7 +52,7 @@ header {
 			text-transform: uppercase;
 			border-bottom: 2px solid transparent;
 			padding: 5px;
-
+			text-shadow: 2px 2px #000;
 
 			&:hover {
 				border-bottom-color: white;
@@ -80,6 +76,7 @@ header {
 		text-align: center;
 		font-weight: 400;
 		color: white;
+		text-shadow: 2px 2px #000;
 
 		@media screen and (max-width: $breakpointTablet) {
 			margin-bottom: 2em;
@@ -93,10 +90,9 @@ header {
 
 .container{
 	h1 {
-		color: $orange;
+		color: $navyBlue;
 		margin: 40px 0 50px 0;
 		font-weight: 700;
-		font-style: italic;
 	}
 }
 
@@ -108,31 +104,10 @@ header {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-	
-	blockquote {
-		font-weight: 400;
-		font-style: italic;
-		width: 80%;
-		margin: 50px auto;
-		line-height: 2;
-		font-size: 1.9em;
-		border-left: 3px solid #eee;
-
-		@media screen and (max-width: $breakpointSmartphone) {
-			width: 90%;
-		}
-
-		.author {
-			margin-top: 50px;
-			float: right;
-			font-size: 0.7em;
-			color: lighten($mainGray, 10%);
-		}
-	}
 
 	article {
-		font-size: 1.5em;
-		line-height: 1.8;
+		font-size: 1.4em;
+		line-height: 2;
 		text-align: justify;
 		color: lighten($mainGray, 20%);
 		@include hyphens(auto);
@@ -172,20 +147,20 @@ header {
 			}
 		}
 
-		@include link-blue-on-white;
+		@include link-asphalt-on-white;
 
 		a.button {
 			text-align: center;
 			margin: 20px auto;
 			display: inline-block;
-			background: $lightBlue;
+			background: $asphalt;
 			padding: 5px 10px;
 			color: white;
 			@include element-transition;
 
 			&:hover {
 				color: white;
-				background: darken($lightBlue, 10%);
+				background: darken($asphalt, 10%);
 			}
 		}
 	}
@@ -199,7 +174,7 @@ header {
 		margin-bottom: 50px;
 		line-height: 2;
 		text-align: justify;
-		
+
 		em {
 			color: darken($mainGray, 20%);
 			font-weight: 700;
@@ -214,30 +189,30 @@ header {
 	.row {
 		margin-bottom: 50px;
 	}
-	
+
 	a {
 		text-align: center;
 		display: block;
-		color: $lightBlue;
+		color: $asphalt;
 		@include element-transition;
 
 		&:hover {
 			background: none;
 			text-decoration: none;
-			color: darken($lightBlue, 20%);
-			
+			color: darken($asphalt, 20%);
+
 			i.fa {
-				color: darken($lightBlue, 20%);
+				color: darken($asphalt, 20%);
 			}
 		}
 	}
-	
+
 	i.fa {
 		font-size: 2em;
 		color: lighten(rgb(51, 51, 51), 20%);
 		text-align: center;
 	}
-	
+
 	.fa-envelope {
 		display: block;
 	}

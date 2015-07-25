@@ -1,8 +1,9 @@
-/vendor
-/bootstrap/compiled.php
-composer.phar
-composer.lock
 .DS_Store
-Thumbs.db
-.sass-cache/
+.sass-cache
+bootstrap/compiled.php
+/vendor/
 app/assets/css/screen.css
+composer.lock
+composer.phar
+/node_modules/
+Thumbs.db

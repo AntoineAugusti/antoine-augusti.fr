@@ -1,5 +1,3 @@
-new WOW().init();
-
 $(document).ready(function() {
 	// Smooth scroll
 	$('a[href^=#]').bind("click", jump);
