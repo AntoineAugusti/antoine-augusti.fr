@@ -235,6 +235,13 @@ header {
 	}
 }
 
+code {
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	background-color: rgba(0, 0, 0, 0.04);
+	padding: 6px 3px;
+	font-size: 90%;
+}
+
 footer {
 	background-image: url("../images/intro.jpg");
 	height: 410px;

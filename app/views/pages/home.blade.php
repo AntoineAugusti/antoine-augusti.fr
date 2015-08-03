@@ -104,7 +104,7 @@
 			</div>
 			<div class="col-xs-6 col-sm-3" data-wow-delay="0.5s">
 				<i class="fa fa-envelope"></i>
-				<span class="username">antoine@augusti.fr</span>
+				<span class="username"><code>X-Email</code> HTTP header</span>
 			</div>
 		</div>
 	</section>
