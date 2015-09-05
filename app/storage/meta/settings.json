@@ -2,6 +2,11 @@
 	"openSource": {
 		"projects":[
 			{
+				"url": "https://github.com/AntoineAugusti/feature-flags",
+				"title": "Feature flags API",
+				"description": "API written in golang using bolt as a key-value store"
+			},
+			{
 				"url": "https://github.com/TeenQuotes/website",
 				"title": "Teen Quotes - website",
 				"description": "The Teen Quotes responsive website and its API, built with Laravel"
