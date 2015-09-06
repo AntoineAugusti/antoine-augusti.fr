@@ -63,8 +63,12 @@
 				</p>
 			</article>
 
-			@foreach ($projects as $project)
-				@include('projects.singleProject')
+			@foreach ($projects->chunk(2) as $projectsRow)
+				<div class="row project-row">
+					@foreach ($projectsRow as $project)
+						@include('projects.singleProject')
+					@endforeach
+				</div>
 			@endforeach
 
 		</section>

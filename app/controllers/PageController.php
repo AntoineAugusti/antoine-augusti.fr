@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Collection;
+
 class PageController extends BaseController {
 
 	public function home()
@@ -10,7 +12,7 @@ class PageController extends BaseController {
 		$lastArticles = $feed->get_items(0, 5);
 
 		// Get open source projects
-		$projects = LaraSetting::get('openSource.projects');
+		$projects = new Collection(LaraSetting::get('openSource.projects'));
 
 		return View::make('pages.home', compact('lastArticles', 'projects'));
 	}

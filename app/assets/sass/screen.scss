@@ -235,6 +235,60 @@ header {
 	}
 }
 
+.project-row {
+	margin-left: -20px;
+	margin-right: 10px;
+}
+
+.open-source-item {
+	font-size: 1.2em;
+	line-height: 1.5;
+	display: inline-block;
+	position: relative;
+	margin: 15px;
+	height: 180px;
+	padding: 15px 10px;
+	width: 100%;
+	background-color: #fefefe;
+	border: 1px solid #f1f1f1;
+	border-radius: 2px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.05);
+	@include box-sizing('border-box');
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0 8px 11px 3px rgba(0,0,0,.05);
+	}
+
+	.title {
+		color: $mainGray
+	}
+
+	.description {
+		color: lighten($mainGray, 25%);
+		margin-top: 25px;
+	}
+
+	.technologies {
+		position: absolute;
+		top: 140px;
+
+		.technology {
+			display: inline-block;
+			min-width: 10px;
+			padding: 3px 7px;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 1.5;
+			color: #fff;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: middle;
+			background-color: #999;
+		}
+	}
+
+}
+
 code {
 	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	background-color: rgba(0, 0, 0, 0.04);
