@@ -22,7 +22,7 @@
 			{
 				"url": "https://github.com/AntoineAugusti/bagging-boosting-random-forests",
 				"title": "Bagging, boosting, random forests",
-				"description": "Several classification algorithms in Matlab",
+				"description": "Several classification algorithms",
 				"technologies": [
 					"Matlab",
 					"Machine learning"
@@ -31,7 +31,7 @@
 			{
 				"url": "https://github.com/AntoineAugusti/katas",
 				"title": "Code katas",
-				"description": "Coding exercises on CodinGame, Prologin and Rosalind. Mainly in Python",
+				"description": "Coding exercises on CodinGame, Prologin and Rosalind",
 				"technologies": [
 					"Python",
 					"Scala"
