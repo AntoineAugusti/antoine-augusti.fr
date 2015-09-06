@@ -48,9 +48,10 @@
 			{
 				"url": "https://github.com/TeenQuotes/website",
 				"title": "Teen Quotes - website",
-				"description": "The Teen Quotes responsive website and its API, built with Laravel",
+				"description": "Responsive website and its OAuth 2 API",
 				"technologies": [
 					"PHP",
+					"Laravel",
 					"SASS",
 					"JavaScript",
 					"HTML5",
@@ -60,7 +61,7 @@
 			{
 				"url": "https://github.com/TeenQuotes/api-documentation",
 				"title": "Teen Quotes - API documentation",
-				"description": "The documentation for the OAuth 2 API of Teen Quotes",
+				"description": "OAuth 2 API documentation",
 				"technologies": [
 					"Markdown"
 				]
@@ -70,7 +71,8 @@
 				"title": "Laravel Gravatar",
 				"description": "A Laravel package to get Gravatar images",
 				"technologies": [
-					"PHP"
+					"PHP",
+					"Laravel"
 				]
 			},
 			{
@@ -79,15 +81,17 @@
 				"description": "A Laravel package to use the recommendation system Easyrec",
 				"technologies": [
 					"PHP",
+					"Laravel",
 					"API client"
 				]
 			},
 			{
 				"url": "https://github.com/AntoineAugusti/laravel-sentiment-analysis",
 				"title": "Laravel Sentiment Analysis",
-				"description": "A Laravel package to perform sentiment analysis over a sentence",
+				"description": "Perform sentiment analysis over a sentence",
 				"technologies": [
-					"PHP"
+					"PHP",
+					"Laravel"
 				]
 			}
 		]

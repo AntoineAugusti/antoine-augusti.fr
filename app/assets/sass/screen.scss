@@ -242,11 +242,11 @@ header {
 
 .open-source-item {
 	font-size: 1.2em;
-	line-height: 1.5;
+	line-height: 2;
 	display: inline-block;
 	position: relative;
 	margin: 15px;
-	height: 180px;
+	height: 200px;
 	padding: 15px 10px;
 	width: 100%;
 	background-color: #fefefe;
@@ -257,6 +257,12 @@ header {
 	&:hover {
 		cursor: pointer;
 		box-shadow: 0 8px 11px 3px rgba(0,0,0,.05);
+	}
+
+	&.extra-height {
+		@media screen and (max-width: $breakpointSmartphone) {
+			height: 235px;
+		}
 	}
 
 	.title {
@@ -270,7 +276,7 @@ header {
 
 	.technologies {
 		position: absolute;
-		top: 140px;
+		top: 150px;
 
 		.technology {
 			display: inline-block;
