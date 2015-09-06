@@ -4,52 +4,91 @@
 			{
 				"url": "https://github.com/AntoineAugusti/feature-flags",
 				"title": "Feature flags API",
-				"description": "API written in golang using bolt as a key-value store"
+				"description": "API written in golang using bolt as a key-value store",
+				"technologies": [
+					"Go",
+					"API"
+				]
 			},
 			{
 				"url": "https://github.com/AntoineAugusti/PdfArchiver",
 				"title": "PDF archiver",
-				"description": "Archive locally generated PDFs to a remote host"
+				"description": "Archive locally generated PDFs to a remote host",
+				"technologies": [
+					"PHP",
+					"Filesystem"
+				]
 			},
 			{
 				"url": "https://github.com/AntoineAugusti/bagging-boosting-random-forests",
 				"title": "Bagging, boosting, random forests",
-				"description": "Several classification algorithms in Matlab"
+				"description": "Several classification algorithms in Matlab",
+				"technologies": [
+					"Matlab",
+					"Machine learning"
+				]
 			},
 			{
 				"url": "https://github.com/AntoineAugusti/katas",
 				"title": "Code katas",
-				"description": "Coding exercises on CodinGame, Prologin and Rosalind. Mainly in Python"
+				"description": "Coding exercises on CodinGame, Prologin and Rosalind. Mainly in Python",
+				"technologies": [
+					"Python",
+					"Scala"
+				]
 			},
 			{
 				"url": "https://github.com/AntoineAugusti/solid-principles",
 				"title": "SOLID principles",
-				"description": "SOLID principles explanations and exercises"
+				"description": "SOLID principles explanations and exercises",
+				"technologies": [
+					"Text"
+				]
 			},
 			{
 				"url": "https://github.com/TeenQuotes/website",
 				"title": "Teen Quotes - website",
-				"description": "The Teen Quotes responsive website and its API, built with Laravel"
+				"description": "The Teen Quotes responsive website and its API, built with Laravel",
+				"technologies": [
+					"PHP",
+					"SASS",
+					"JavaScript",
+					"HTML5",
+					"API"
+				]
 			},
 			{
 				"url": "https://github.com/TeenQuotes/api-documentation",
 				"title": "Teen Quotes - API documentation",
-				"description": "The documentation for the OAuth 2 API of Teen Quotes"
+				"description": "The documentation for the OAuth 2 API of Teen Quotes",
+				"technologies": [
+					"Markdown"
+				]
 			},
 			{
 				"url": "https://github.com/thomaswelton/laravel-gravatar",
 				"title": "Laravel Gravatar",
-				"description": "A Laravel package to get Gravatar images"
+				"description": "A Laravel package to get Gravatar images",
+				"technologies": [
+					"PHP"
+				]
 			},
 			{
 				"url": "https://github.com/AntoineAugusti/laravel-easyrec",
 				"title": "Laravel Easyrec",
-				"description": "A Laravel package to use the recommendation system Easyrec"
+				"description": "A Laravel package to use the recommendation system Easyrec",
+				"technologies": [
+					"PHP",
+					"API client"
+				]
 			},
 			{
 				"url": "https://github.com/AntoineAugusti/laravel-sentiment-analysis",
 				"title": "Laravel Sentiment Analysis",
-				"description": "A Laravel package to perform sentiment analysis over a sentence"
+				"description": "A Laravel package to perform sentiment analysis over a sentence",
+				"technologies": [
+					"PHP"
+				]
 			}
 		]
 	}
