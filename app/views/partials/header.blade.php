@@ -30,9 +30,9 @@
 
 	<header>
 		<nav class="animated animate-delay-big bounceInDown">
-			<a href="#anchor-presentation">About me</a>
+			<a href="#anchor-presentation">About</a>
 			<a href="#anchor-projects">Projects</a>
-			<a href="#anchor-contact">Contact me</a>
+			<a href="#anchor-contact">Contact</a>
 		</nav>
 		{{ HTML::image("assets/images/me.jpg", "Antoine Augusti", ['height' => 160, 'width' => 160])}}
 		<h1 class="fadeInUp animated animate-delay">Hello World, I'm Antoine Augusti</h1>
