@@ -20,7 +20,7 @@
 			</section>
 		</div>
 
-		<h1 id="anchor-projects">Projects</h1>
+		<h1 id="anchor-projects">Personal projects</h1>
 
 		<div class="row">
 			<section class="card col-md-6">
