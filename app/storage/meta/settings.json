@@ -11,6 +11,14 @@
 				]
 			},
 			{
+				"url": "https://github.com/AntoineAugusti/wordsegmentation",
+				"title": "Word segmentation",
+				"description": "Word segmentation library, using unigrams and bigrams",
+				"technologies": [
+					"Go"
+				]
+			},
+			{
 				"url": "https://github.com/AntoineAugusti/PdfArchiver",
 				"title": "PDF archiver",
 				"description": "Archive locally generated PDFs to a remote host",
