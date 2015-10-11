@@ -8,7 +8,7 @@
 	<meta name="description" content="Antoine Augusti, software engineering, machine learning, distributed systems." />
 
 	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
-	<link media="all" type="text/css" rel="stylesheet" href="/assets/css/styles.min.css">
+	<link media="all" type="text/css" rel="stylesheet" href="{{ elixir('assets/css/styles.min.css') }}">
 	<link rel="shortcut icon" href="/assets/images/favicon.jpg"/>
 
 	<link href="https://plus.google.com/+AntoineAugusti" rel="author" />

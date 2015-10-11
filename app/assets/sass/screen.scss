@@ -29,7 +29,7 @@ html {
 }
 
 header {
-	background-image: url("../images/city.jpg");
+	background-image: url(/assets/images/city.jpg);
 	height: 350px;
 	padding-bottom: 50px;
 
@@ -292,8 +292,17 @@ header {
 			background-color: #999;
 		}
 	}
-
 }
+
+#music {
+	margin-bottom: 80px;
+
+	.music-artist__title {
+		font-size: 17px;
+	    margin: 10px 0 3px 0;
+	}
+}
+
 
 code {
 	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -303,7 +312,7 @@ code {
 }
 
 footer {
-	background-image: url("../images/intro.jpg");
+	background-image: url(/assets/images/intro.jpg);
 	height: 410px;
 	padding: 50px 10%;
 	line-height: 310px;

@@ -1,3 +1,3 @@
-<script src="/assets/js/scripts.min.js"></script>
+<script src="{{ elixir('assets/js/scripts.min.js') }}"></script>
 </body>
 </html>

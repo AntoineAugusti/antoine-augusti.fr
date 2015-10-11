@@ -1,9 +1,13 @@
 .DS_Store
 .sass-cache
-bootstrap/compiled.php
+/node_modules/
 /vendor/
 app/assets/css/screen.css
+bootstrap/compiled.php
 composer.lock
 composer.phar
-/node_modules/
+public/assets/css/styles.min.css*
+public/assets/js/scripts.min.js*
+public/build/assets/css/styles.min.css.map
+public/build/assets/js/scripts.min.js.map
 Thumbs.db

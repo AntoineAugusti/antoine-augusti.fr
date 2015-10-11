@@ -64,11 +64,11 @@
 			</article>
 
 			@foreach ($projects->chunk(2) as $projectsRow)
-				<div class="row project-row">
-					@foreach ($projectsRow as $project)
-						@include('projects.singleProject')
-					@endforeach
-				</div>
+			<div class="row project-row">
+				@foreach ($projectsRow as $project)
+				@include('projects.singleProject')
+				@endforeach
+			</div>
 			@endforeach
 
 		</section>
@@ -82,7 +82,7 @@
 				</p>
 			</article>
 			@foreach ($lastArticles as $article)
-				@include('blog.singleArticle')
+			@include('blog.singleArticle')
 			@endforeach
 		</section>
 
@@ -109,6 +109,21 @@
 			<div class="col-xs-6 col-sm-3" data-wow-delay="0.5s">
 				<i class="fa fa-envelope"></i>
 				<span class="username"><code>X-Email</code> HTTP header</span>
+			</div>
+		</div>
+	</section>
+
+	<section id="music" class="container hidden-xs hidden-sm">
+		<h1>Music I listen to</h1>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				@foreach ($musicArtists->chunk(4) as $artists)
+					<div class="row">
+						@foreach ($artists as $musicArtist)
+							@include('partials.music-artist', compact('musicArtist'))
+						@endforeach
+					</div>
+				@endforeach
 			</div>
 		</div>
 	</section>
