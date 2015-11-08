@@ -2,9 +2,17 @@
    "openSource":{
       "projects":[
          {
+            "url":"https://github.com/AntoineAugusti/moduluschecking",
+            "title":"Modulus checking",
+            "description":"Check that a UK bank account number is valid",
+            "technologies":[
+               "Go"
+            ]
+         },
+         {
             "url":"https://github.com/AntoineAugusti/feature-flags",
             "title":"Feature flags API",
-            "description":"API written in golang using bolt as a key-value store",
+            "description":"Enable or disable features for some users or groups",
             "technologies":[
                "Go",
                "API"
