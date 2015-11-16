@@ -2,6 +2,17 @@
    "openSource":{
       "projects":[
          {
+            "url":"https://github.com/AntoineAugusti/moduluschecking-api",
+            "title":"Modulus checking API",
+            "description":"API to validate UK bank account numbers",
+            "technologies":[
+               "Go",
+               "API",
+               "Rate limit",
+               "Authentication"
+            ]
+         },
+         {
             "url":"https://github.com/AntoineAugusti/moduluschecking",
             "title":"Modulus checking",
             "description":"Check that a UK bank account number is valid",
