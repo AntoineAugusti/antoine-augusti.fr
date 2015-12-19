@@ -9,6 +9,13 @@ if (count($project['technologies']) > 3) {
 <div class="col-md-6">
     <a href="{{ $project['url'] }}">
         <div class="open-source-item {{ $class }}">
+            <div class="contribution-container">
+                @if ($project['published'])
+                    <div class="contribution published">Published</div>
+                @else
+                    <div class="contribution contributed">Contributed</div>
+                @endif
+            </div>
         	<span class="title">{{ $project['title'] }}</span>
             <div class="description">
                 {{ $project['description'] }}

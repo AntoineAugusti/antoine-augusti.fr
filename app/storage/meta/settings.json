@@ -5,6 +5,7 @@
             "url":"https://github.com/AntoineAugusti/moduluschecking-api",
             "title":"Modulus checking API",
             "description":"API to validate UK bank account numbers",
+            "published":true,
             "technologies":[
                "Go",
                "API",
@@ -16,6 +17,7 @@
             "url":"https://github.com/AntoineAugusti/moduluschecking",
             "title":"Modulus checking",
             "description":"Check that a UK bank account number is valid",
+            "published":true,
             "technologies":[
                "Go"
             ]
@@ -24,15 +26,28 @@
             "url":"https://github.com/AntoineAugusti/feature-flags",
             "title":"Feature flags API",
             "description":"Enable or disable features for some users or groups",
+            "published":true,
             "technologies":[
                "Go",
                "API"
             ]
          },
          {
+            "url":"https://github.com/cloudflare/service",
+            "title":"Service",
+            "description":"Quickly build web services and APIs",
+            "published":false,
+            "technologies":[
+               "Go",
+               "API",
+               "HTTP"
+            ]
+         },
+         {
             "url":"https://github.com/AntoineAugusti/wordsegmentation",
             "title":"Word segmentation",
             "description":"Word segmentation library, using unigrams and bigrams",
+            "published":true,
             "technologies":[
                "Go"
             ]
@@ -41,6 +56,7 @@
             "url":"https://github.com/AntoineAugusti/PdfArchiver",
             "title":"PDF archiver",
             "description":"Archive locally generated PDFs to a remote host",
+            "published":true,
             "technologies":[
                "PHP",
                "Filesystem"
@@ -50,6 +66,7 @@
             "url":"https://github.com/AntoineAugusti/bagging-boosting-random-forests",
             "title":"Bagging, boosting, random forests",
             "description":"Several classification algorithms",
+            "published":true,
             "technologies":[
                "Matlab",
                "Machine learning"
@@ -59,6 +76,7 @@
             "url":"https://github.com/AntoineAugusti/katas",
             "title":"Code katas",
             "description":"Coding exercises on CodinGame, Prologin and Rosalind",
+            "published":true,
             "technologies":[
                "Python",
                "Scala"
@@ -68,6 +86,7 @@
             "url":"https://github.com/AntoineAugusti/solid-principles",
             "title":"SOLID principles",
             "description":"SOLID principles explanations and exercises",
+            "published":true,
             "technologies":[
                "Text"
             ]
@@ -76,6 +95,7 @@
             "url":"https://github.com/TeenQuotes/website",
             "title":"Teen Quotes - website",
             "description":"Responsive website and its OAuth 2 API",
+            "published":true,
             "technologies":[
                "PHP",
                "Laravel",
@@ -89,6 +109,7 @@
             "url":"https://github.com/TeenQuotes/api-documentation",
             "title":"Teen Quotes - API documentation",
             "description":"OAuth 2 API documentation",
+            "published":true,
             "technologies":[
                "Markdown"
             ]
@@ -97,15 +118,28 @@
             "url":"https://github.com/thomaswelton/laravel-gravatar",
             "title":"Laravel Gravatar",
             "description":"A Laravel package to get Gravatar images",
+            "published":false,
             "technologies":[
                "PHP",
                "Laravel"
             ]
          },
          {
+            "url":"https://github.com/cachethq/Cachet",
+            "title":"Cachet",
+            "description":"An open source status page",
+            "published":false,
+            "technologies":[
+               "PHP",
+               "Laravel",
+               "JavaScript"
+            ]
+         },
+         {
             "url":"https://github.com/AntoineAugusti/laravel-easyrec",
             "title":"Laravel Easyrec",
             "description":"A Laravel package to use the recommendation system Easyrec",
+            "published":true,
             "technologies":[
                "PHP",
                "Laravel",
@@ -116,6 +150,7 @@
             "url":"https://github.com/AntoineAugusti/laravel-sentiment-analysis",
             "title":"Laravel Sentiment Analysis",
             "description":"Perform sentiment analysis over a sentence",
+            "published":true,
             "technologies":[
                "PHP",
                "Laravel"

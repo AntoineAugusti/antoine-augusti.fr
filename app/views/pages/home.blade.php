@@ -64,12 +64,18 @@
 			</article>
 
 			@foreach ($projects->chunk(2) as $projectsRow)
-			<div class="row project-row">
-				@foreach ($projectsRow as $project)
-				@include('projects.singleProject')
-				@endforeach
-			</div>
+				<div class="row project-row">
+					@foreach ($projectsRow as $project)
+					@include('projects.singleProject')
+					@endforeach
+				</div>
 			@endforeach
+
+			<article>
+				<p>
+					And countless other projects I have used and where I have just sent 1 or 2 pull requests. Many thanks to all the amazing open source contributors and projects. I owe you.
+				</p>
+			</article>
 
 		</section>
 
@@ -108,7 +114,7 @@
 			</div>
 			<div class="col-xs-6 col-sm-3" data-wow-delay="0.5s">
 				<i class="fa fa-envelope"></i>
-				<span class="username"><code>X-Email</code> HTTP header</span>
+				<span class="username">hi@antoine-augusti.fr</span>
 			</div>
 		</div>
 	</section>
