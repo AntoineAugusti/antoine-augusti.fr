@@ -11,7 +11,7 @@
 	<link media="all" type="text/css" rel="stylesheet" href="{{ elixir('assets/css/styles.min.css') }}">
 	<link rel="shortcut icon" href="/assets/images/favicon.jpg"/>
 
-	<link href="https://plus.google.com/+AntoineAugusti" rel="author" />
+	<link href="https://plus.google.com/+AntoineAugusti" rel="publisher" />
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
