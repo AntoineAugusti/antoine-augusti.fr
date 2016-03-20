@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://www.antoine-augusti.fr',
+	'url' => 'https://www.antoine-augusti.fr',
 
 	/*
 	|--------------------------------------------------------------------------
