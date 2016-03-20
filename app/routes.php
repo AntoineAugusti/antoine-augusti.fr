@@ -1,3 +1,3 @@
 <?php
 
-Route::get('/', ['uses' => 'PageController@home']);
+Route::get('/', ['uses' => 'HomeController@show']);

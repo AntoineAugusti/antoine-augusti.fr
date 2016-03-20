@@ -114,7 +114,7 @@
 			</div>
 			<div class="col-xs-6 col-sm-3" data-wow-delay="0.5s">
 				<i class="fa fa-envelope"></i>
-				<span class="username">hi@antoine-augusti.fr</span>
+				<span class="username">{{ $email }}</span>
 			</div>
 		</div>
 	</section>

@@ -2,20 +2,23 @@
 
 use Illuminate\Support\Collection;
 
-class PageController extends BaseController {
+class HomeController extends BaseController {
 
     /**
      * Display the homepage.
      *
      * @return \Illuminate\View\View
      */
-    public function home()
+    public function show()
     {
         $lastArticles = $this->getLastBlogArticles();
         $projects = $this->getProjects();
         $musicArtists = $this->getArtists();
+        $email = LaraSetting::get('email');
 
-        return View::make('pages.home', compact('lastArticles', 'projects', 'musicArtists'));
+        $data = compact('lastArticles', 'projects', 'musicArtists', 'email');
+
+        return View::make('pages.home', $data);
     }
 
     /**
