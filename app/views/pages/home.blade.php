@@ -8,14 +8,14 @@
 			<section class="card col-md-6">
 				<article>
 					<i class="fa fa-code"></i>
-					<span class="title">I'm a passionate software engineer.</span> I'm comfortable around and interested by distributed systems, REST APIs, automated testing tools, machine learning algorithms, system administration and networking. I have been involved at different levels in a lot of sectors: Internet service provider, customer assistance, fraud detection, inspiring quotes for teenagers, gaming servers, equity crowdfunding, bioinformatics... Did I mention that I'm French?
+					<span class="title">I'm a passionate software engineer.</span> I'm comfortable around and interested by distributed systems, REST APIs, automated testing tools, machine learning algorithms, system administration and networking. I have been involved at different levels in a lot of sectors: Internet service provider, customer service, fraud detection, inspiring quotes for teenagers, gaming servers, car rental, equity crowdfunding, bioinformatics... Did I mention that I'm French?
 				</article>
 			</section>
 
 			<section class="card col-md-6">
 				<article>
 					<i class="fa fa-book"></i>
-					<span class="title">I love to learn.</span> I'm an engineering student, currently specializing in software engineering, machine learning and data mining. In my free time I take classes on Coursera to discover new things like functional programming, R programming or machine learning. I try to keep my brain busy in my free time with <a href="https://github.com/AntoineAugusti/katas">code katas</a> and read a lot of technical books or articles. I also tried to wakeboard but you really don't want to know that.
+					<span class="title">I love to learn.</span> I'm a data engineer at <a href="https://en.drivy.com/">Drivy</a>, the leading car rental platform in Europe. I studied at the <a href="http://asi.insa-rouen.fr">INSA Rouen</a> and the <a href="http://masterstim.formations.univ-rouen.fr/">University of Rouen</a> with majors in software engineering, machine learning and data mining. In my free time I take classes on Coursera to discover new things. I try to keep my brain busy in my free time with <a href="https://github.com/AntoineAugusti/katas">code katas</a> and read a lot of technical books or articles. I also tried to wakeboard but you really don't want to know that.
 				</article>
 			</section>
 		</div>
