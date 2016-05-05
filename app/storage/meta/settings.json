@@ -54,6 +54,18 @@
             ]
          },
          {
+            "url":"https://github.com/getredash/redash",
+            "title":"Re:dash",
+            "description":"Connect to any data source, easily visualize and share your data",
+            "published":false,
+            "technologies":[
+               "Python",
+               "Flask",
+               "Doc",
+               "AngularJS"
+            ]
+         },
+         {
             "url":"https://github.com/AntoineAugusti/PdfArchiver",
             "title":"PDF archiver",
             "description":"Archive locally generated PDFs to a remote host",
