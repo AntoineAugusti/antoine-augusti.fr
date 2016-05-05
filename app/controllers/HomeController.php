@@ -39,7 +39,8 @@ class HomeController extends BaseController {
      */
     private function getProjects()
     {
-        return new Collection(LaraSetting::get('openSource.projects'));
+        $projects = new Collection(LaraSetting::get('openSource.projects'));
+        return $projects->shuffle();
     }
 
     /**
