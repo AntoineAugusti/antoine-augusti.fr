@@ -20,13 +20,12 @@ if (!function_exists('elixir')) {
         }
         throw new InvalidArgumentException("File {$file} not defined in asset manifest.");
     }
+}
 
-    function get_gravatar($email, $s=500)
-    {
-        $url = 'https://www.gravatar.com/avatar/';
-        $url .= md5(strtolower(trim($email)));
-        $url .= "?s=$s";
 
-        return $url;
-    }
+function get_gravatar($email, $size=500)
+{
+    $format = "https://www.gravatar.com/avatar/%s/?s=%s";
+
+    return sprintf($format, md5(strtolower(trim($email))), $size);
 }
