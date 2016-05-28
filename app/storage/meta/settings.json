@@ -1,5 +1,32 @@
 {
-   "email": "hi@antoine-augusti.fr",
+   "books":[
+      {
+         "isbn":"9781491929124",
+         "status":"reading",
+         "when":null
+      },
+      {
+         "isbn":"9780142181119",
+         "status":"read",
+         "when":"2016-05-28"
+      },
+      {
+         "isbn":"9780062301239",
+         "status":"read",
+         "when":"2016-05-19"
+      },
+      {
+         "isbn":"9780307957023",
+         "status":"read",
+         "when":"2016-05-09"
+      },
+      {
+         "isbn":"9781101513774",
+         "status":"read",
+         "when":"2016-04-01"
+      }
+   ],
+   "email":"hi@antoine-augusti.fr",
    "openSource":{
       "projects":[
          {

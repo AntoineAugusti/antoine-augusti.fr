@@ -122,7 +122,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Awjudd\FeedReader\FeedReaderServiceProvider',
-		'Philf\Setting\SettingServiceProvider'
+		'Philf\Setting\SettingServiceProvider',
+		BookFetcherServiceProvider::class
 	),
 
 	/*

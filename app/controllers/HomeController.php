@@ -4,6 +4,13 @@ use Illuminate\Support\Collection;
 
 class HomeController extends BaseController {
 
+    private $fetcher;
+
+    public function __construct(BookFetcher $fetcher)
+    {
+        $this->fetcher = $fetcher;
+    }
+
     /**
      * Display the homepage.
      *
@@ -14,11 +21,26 @@ class HomeController extends BaseController {
         $lastArticles = $this->getLastBlogArticles();
         $projects = $this->getProjects();
         $musicArtists = $this->getArtists();
+        $booksCol = $this->readBooks();
         $email = LaraSetting::get('email');
 
-        $data = compact('lastArticles', 'projects', 'musicArtists', 'email');
+        $data = compact('lastArticles', 'projects', 'musicArtists', 'email', 'booksCol');
 
         return View::make('pages.home', $data);
+    }
+
+    private function readBooks()
+    {
+        return (new Collection(LaraSetting::get('books')))
+        ->filter(function($book) {
+            return $book['status'] == 'read';
+        })->take(8)->map(function($book) {
+            $bookTransformed = $this->fetcher->forISBN($book['isbn']);
+            $bookTransformed->thumbnail = str_replace('http://', 'https://', $bookTransformed->thumbnail);
+            $when = new Carbon($book['when']);
+
+            return new Book($bookTransformed, $book['status'], $book['isbn'], $when);
+        });
     }
 
     /**
