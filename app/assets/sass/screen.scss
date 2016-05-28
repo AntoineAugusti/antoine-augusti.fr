@@ -317,13 +317,18 @@ header {
 	}
 }
 
-#music {
+#music, #books {
 	margin-bottom: 80px;
+}
 
-	.music-artist__title {
-		font-size: 17px;
-	    margin: 10px 0 3px 0;
-	}
+.music-artist__title, .book__title {
+	font-size: 17px;
+    margin: 10px 0 3px 0;
+}
+
+.book__when-read {
+	color: #777;
+	font-size: 13px;
 }
 
 

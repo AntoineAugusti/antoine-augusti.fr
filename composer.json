@@ -3,13 +3,16 @@
 		"laravel/framework": "4.2.*",
 		"simplepie/simplepie": "dev-master",
 		"awjudd/feed-reader": "1.1.*",
-		"philf/setting": "dev-master"
+		"philf/setting": "dev-master",
+		"antoineaugusti/google-books": "^0.2.0",
+		"guzzlehttp/guzzle": "^6.2"
 	},
 	"autoload": {
 		"classmap": [
 			"app/commands",
 			"app/controllers",
 			"app/models",
+			"app/services",
 			"app/database/migrations",
 			"app/database/seeds",
 			"app/tests/TestCase.php"
