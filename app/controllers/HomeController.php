@@ -21,7 +21,7 @@ class HomeController extends BaseController {
         $lastArticles = $this->getLastBlogArticles();
         $projects = $this->getProjects();
         $musicArtists = $this->getArtists();
-        $booksCol = $this->readBooks();
+        $booksCol = $this->getBooks();
         $email = LaraSetting::get('email');
 
         $data = compact('lastArticles', 'projects', 'musicArtists', 'email', 'booksCol');
@@ -29,12 +29,10 @@ class HomeController extends BaseController {
         return View::make('pages.home', $data);
     }
 
-    private function readBooks()
+    private function getBooks()
     {
         return (new Collection(LaraSetting::get('books')))
-        ->filter(function($book) {
-            return $book['status'] == 'read';
-        })->take(8)->map(function($book) {
+        ->take(4)->map(function($book) {
             $bookTransformed = $this->fetcher->forISBN($book['isbn']);
             $bookTransformed->thumbnail = str_replace('http://', 'https://', $bookTransformed->thumbnail);
             $when = new Carbon($book['when']);

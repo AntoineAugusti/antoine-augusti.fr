@@ -16,6 +16,11 @@ class Book {
         $this->when = $when;
     }
 
+    public function isCurrentlyReading()
+    {
+        return $this->status == 'reading';
+    }
+
     public function __get($name)
     {
         if (property_exists($this, $name)) {

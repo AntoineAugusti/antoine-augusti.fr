@@ -121,7 +121,7 @@
 
 	<!-- Books -->
 	<section id="books" class="container hidden-xs hidden-sm">
-		<h1>Books I've read</h1>
+		<h1>Books</h1>
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				@foreach ($booksCol->chunk(4) as $books)
@@ -137,7 +137,7 @@
 
 	<!-- Music -->
 	<section id="music" class="container hidden-xs hidden-sm">
-		<h1>Music I listen to</h1>
+		<h1>Music</h1>
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				@foreach ($musicArtists->chunk(4) as $artists)

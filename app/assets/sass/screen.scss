@@ -11,346 +11,338 @@ $green:#27ae60;
 $orange:#e67e22;
 
 body {
-	font-family: 'Libre Baskerville', serif;
-	font-weight: 400;
-	height: 100%;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    height: 100%;
 }
 
 html {
-	height: 100%;
+    height: 100%;
 }
 
 .animate-delay {
-	-webkit-animation-delay:0.5s;
-	animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+    animation-delay:0.5s;
 }
 
 .animate-delay-big {
-	-webkit-animation-delay:1s;
-	animation-delay:1s;
+    -webkit-animation-delay:1s;
+    animation-delay:1s;
 }
 
 header {
-	background-image: url(/assets/images/city.jpg);
-	height: 350px;
-	padding-bottom: 50px;
+    background-image: url(/assets/images/city.jpg);
+    height: 350px;
+    padding-bottom: 50px;
 
-	nav {
-		text-align: center;
-		height: 40px;
-		line-height: 40px;
-		display: flex;
-		justify-content: space-around;
-		margin: 0 auto 40px auto;
-		max-width: 750px;
-		@include box-sizing('border-box');
-		@media screen and (max-width: $breakpointSmartphone) {
-			margin-bottom: 20px;
-		}
+    nav {
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto 40px auto;
+        max-width: 750px;
+        @include box-sizing('border-box');
+        @media screen and (max-width: $breakpointSmartphone) {
+            margin-bottom: 20px;
+        }
 
-		a {
-			@include element-transition;
-			color: white;
-			text-transform: uppercase;
-			border-bottom: 2px solid transparent;
-			padding: 5px;
-			text-shadow: 2px 2px #000;
+        a {
+            @include element-transition;
+            color: white;
+            text-transform: uppercase;
+            border-bottom: 2px solid transparent;
+            padding: 5px;
+            text-shadow: 2px 2px #000;
 
-			&:hover {
-				border-bottom-color: white;
-				text-decoration: none;
-				color: white;
-			}
-		}
-	}
+            &:hover {
+                border-bottom-color: white;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
 
-	img {
-		display: block;
-		margin: auto;
-		width: 160px;
-		height: 160px;
+    img {
+        display: block;
+        margin: auto;
+        width: 160px;
+        height: 160px;
 
-		@include border-radius(100px);
-	}
+        @include border-radius(100px);
+    }
 
-	h1 {
-		margin: 30px auto;
-		text-align: center;
-		font-weight: 400;
-		color: white;
-		text-shadow: 2px 2px #000;
+    h1 {
+        margin: 30px auto;
+        text-align: center;
+        font-weight: 400;
+        color: white;
+        text-shadow: 2px 2px #000;
 
-		@media screen and (max-width: $breakpointTablet) {
-			margin-bottom: 2em;
-		}
-	}
-}
-
-.test {
-	font-size: 3.5em;
+        @media screen and (max-width: $breakpointTablet) {
+            margin-bottom: 2em;
+        }
+    }
 }
 
 .container{
-	h1 {
-		color: $navyBlue;
-		margin: 50px 0;
-		font-weight: 700;
-	}
+    h1 {
+        color: $navyBlue;
+        margin: 50px 0;
+        font-weight: 700;
+    }
 }
 
 .card {
-	@media screen and (max-width: $breakpointTablet) {
-		margin-bottom: 2em;
-	}
-	@media screen and (min-width: $breakpointTablet) {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
+    @media screen and (max-width: $breakpointTablet) {
+        margin-bottom: 2em;
+    }
+    @media screen and (min-width: $breakpointTablet) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
-	article {
-		font-size: 1.4em;
-		line-height: 2;
-		text-align: justify;
-		color: lighten($mainGray, 20%);
-		@include hyphens(auto);
+    article {
+        font-size: 1.4em;
+        line-height: 2;
+        text-align: justify;
+        color: lighten($mainGray, 20%);
+        @include hyphens(auto);
 
-		.title {
-			color: $mainGray;
-		}
+        .title {
+            color: $mainGray;
+        }
 
-		.italic {
-			font-style: italic;
-			margin-left: 10px;
-		}
+        .italic {
+            font-style: italic;
+            margin-left: 10px;
+        }
 
-		i.fa {
-			font-size: 3em;
-			display: block;
-			text-align: center;
-			margin-bottom: 20px;
-		}
+        i.fa {
+            font-size: 3em;
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
 
-		img#teen-quotes {
-			background: #22313F;
-			padding: 5px;
-			display: block;
-			margin: 30px auto 45px auto;
-			@media screen and (max-width: $breakpointTablet) {
-				margin: 10px auto 20px auto;
-			}
-		}
+        img#teen-quotes {
+            background: #22313F;
+            padding: 5px;
+            display: block;
+            margin: 30px auto 45px auto;
+            @media screen and (max-width: $breakpointTablet) {
+                margin: 10px auto 20px auto;
+            }
+        }
 
-		img#quantic-telecom {
-			display: block;
-			margin: 0 auto 20px auto;
-			@media screen and (max-width: $breakpointTablet) {
-				margin: 10px auto 20px auto;
-			}
-		}
+        img#quantic-telecom {
+            display: block;
+            margin: 0 auto 20px auto;
+            @media screen and (max-width: $breakpointTablet) {
+                margin: 10px auto 20px auto;
+            }
+        }
 
-		@include link-asphalt-on-white;
+        @include link-asphalt-on-white;
 
-		a.button {
-			text-align: center;
-			margin: 20px auto;
-			display: inline-block;
-			background: $asphalt;
-			padding: 5px 10px;
-			color: white;
-			@include element-transition;
+        a.button {
+            text-align: center;
+            margin: 20px auto;
+            display: inline-block;
+            background: $asphalt;
+            padding: 5px 10px;
+            color: white;
+            @include element-transition;
 
-			&:hover {
-				color: white;
-				background: darken($asphalt, 10%);
-			}
-		}
-	}
+            &:hover {
+                color: white;
+                background: darken($asphalt, 10%);
+            }
+        }
+    }
 }
 
 #contact {
-	margin: 50px auto;
+    margin: 50px auto;
 
-	.text {
-		font-size: 1.4em;
-		margin-bottom: 50px;
-		line-height: 2;
-		text-align: justify;
+    .text {
+        font-size: 1.4em;
+        margin-bottom: 50px;
+        line-height: 2;
+        text-align: justify;
 
-		em {
-			color: darken($mainGray, 20%);
-			font-weight: 700;
-			font-style: normal;
-		}
-	}
+        em {
+            color: darken($mainGray, 20%);
+            font-weight: 700;
+            font-style: normal;
+        }
+    }
 
-	#mocking {
-		margin-bottom: 20px;
-	}
+    #mocking {
+        margin-bottom: 20px;
+    }
 
-	.row {
-		margin-bottom: 50px;
-	}
+    .row {
+        margin-bottom: 50px;
+    }
 
-	a {
-		text-align: center;
-		display: block;
-		color: $asphalt;
-		@include element-transition;
+    a {
+        text-align: center;
+        display: block;
+        color: $asphalt;
+        @include element-transition;
 
-		&:hover {
-			background: none;
-			text-decoration: none;
-			color: darken($asphalt, 20%);
+        &:hover {
+            background: none;
+            text-decoration: none;
+            color: darken($asphalt, 20%);
 
-			i.fa {
-				color: darken($asphalt, 20%);
-			}
-		}
-	}
+            i.fa {
+                color: darken($asphalt, 20%);
+            }
+        }
+    }
 
-	i.fa {
-		font-size: 2em;
-		color: lighten(rgb(51, 51, 51), 20%);
-		text-align: center;
-	}
+    i.fa {
+        font-size: 2em;
+        color: lighten(rgb(51, 51, 51), 20%);
+        text-align: center;
+    }
 
-	.fa-envelope {
-		display: block;
-	}
+    .fa-envelope {
+        display: block;
+    }
 
-	.username {
-		font-size: 1.4em;
-		margin-top: 15px;
-		text-align: center;
-		display: block;
+    .username {
+        font-size: 1.4em;
+        margin-top: 15px;
+        text-align: center;
+        display: block;
 
-		@media screen and (max-width: $breakpointMiniSmartphone) {
-			font-size: 1.2em;
-		}
-	}
+        @media screen and (max-width: $breakpointMiniSmartphone) {
+            font-size: 1.2em;
+        }
+    }
 
-	.col-sm-3 {
-		@media screen and (max-width: $breakpointSmartphone) {
-			margin-bottom: 2em;
-		}
-	}
+    .col-sm-3 {
+        @media screen and (max-width: $breakpointSmartphone) {
+            margin-bottom: 2em;
+        }
+    }
 }
 
 .project-row {
-	margin-left: -20px;
-	margin-right: 10px;
+    margin-left: -20px;
+    margin-right: 10px;
 }
 
 .open-source-item {
-	font-size: 1.2em;
-	line-height: 2;
-	display: inline-block;
-	position: relative;
-	margin: 15px;
-	height: 200px;
-	padding: 15px 10px;
-	width: 100%;
-	background-color: #fefefe;
-	border: 1px solid #f1f1f1;
-	border-radius: 2px;
-	box-shadow: 0 2px 3px rgba(0,0,0,.05);
-	@include box-sizing('border-box');
-	&:hover {
-		cursor: pointer;
-		box-shadow: 0 8px 11px 3px rgba(0,0,0,.05);
-	}
+    font-size: 1.2em;
+    line-height: 2;
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+    height: 200px;
+    padding: 15px 10px;
+    width: 100%;
+    background-color: #fefefe;
+    border: 1px solid #f1f1f1;
+    border-radius: 2px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.05);
+    @include box-sizing('border-box');
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 8px 11px 3px rgba(0,0,0,.05);
+    }
 
-	&.extra-height {
-		@media screen and (max-width: $breakpointSmartphone) {
-			height: 235px;
-		}
-	}
+    &.extra-height {
+        @media screen and (max-width: $breakpointSmartphone) {
+            height: 235px;
+        }
+    }
 
-	.title {
-		color: $mainGray
-	}
+    .title {
+        color: $mainGray
+    }
 
-	.description {
-		color: lighten($mainGray, 25%);
-		margin-top: 25px;
-	}
+    .description {
+        color: lighten($mainGray, 25%);
+        margin-top: 25px;
+    }
 
-	.contribution-container {
-		position: absolute;
-    	top: -10px;
-    	right: 15px;
-    	color:white;
+    .technologies {
+        position: absolute;
+        top: 150px;
 
-    	.contribution {
-    		padding: 0 5px;
-		    text-transform: uppercase;
-		    font-size: 11px;
-		    &.published {
-		    	background: $orange;
-		    	border: 1px solid darken($orange, 10%);
-		    }
-		    &.contributed {
-		    	background: $green;
-		    	border: 1px solid darken($green, 10%);
-		    }
-    	}
-	}
+        .technology {
+            display: inline-block;
+            min-width: 10px;
+            padding: 3px 7px;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            background-color: #999;
+        }
+    }
+}
 
-	.technologies {
-		position: absolute;
-		top: 150px;
+.contribution-container, .book_status-container {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    color:white;
 
-		.technology {
-			display: inline-block;
-			min-width: 10px;
-			padding: 3px 7px;
-			font-size: 12px;
-			font-weight: 700;
-			line-height: 1.5;
-			color: #fff;
-			text-align: center;
-			white-space: nowrap;
-			vertical-align: middle;
-			background-color: #999;
-		}
-	}
+    .contribution, .reading-status {
+        padding: 0 5px;
+        text-transform: uppercase;
+        font-size: 11px;
+        &.published, &.read {
+            background: $orange;
+            border: 1px solid darken($orange, 10%);
+        }
+        &.contributed, &.reading {
+            background: $green;
+            border: 1px solid darken($green, 10%);
+        }
+    }
 }
 
 #music, #books {
-	margin-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .music-artist__title, .book__title {
-	font-size: 17px;
+    font-size: 17px;
     margin: 10px 0 3px 0;
 }
 
 .book__when-read {
-	color: #777;
-	font-size: 13px;
+    color: #777;
+    font-size: 13px;
 }
 
-
-code {
-	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-	background-color: rgba(0, 0, 0, 0.04);
-	padding: 6px 3px;
-	font-size: 90%;
+.book__thumbnail {
+    height: 270px;
 }
 
 footer {
-	background-image: url(/assets/images/intro.jpg);
-	height: 410px;
-	padding: 50px 10%;
-	line-height: 310px;
-	text-align: center;
-	@include box-sizing('border-box');
+    background-image: url(/assets/images/intro.jpg);
+    height: 410px;
+    padding: 50px 10%;
+    line-height: 310px;
+    text-align: center;
+    @include box-sizing('border-box');
 
-	h1 {
-		display: inline-block;
-		vertical-align: middle;
-		line-height: normal;
-		color: white;
-	}
+    h1 {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        color: white;
+    }
 }
