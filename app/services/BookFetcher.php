@@ -16,7 +16,7 @@ class BookFetcher {
 
     public function forISBN($isbn)
     {
-        return $this->cache->remember('books:'.$isbn, 10, function() use ($isbn) {
+        return $this->cache->remember('books:'.$isbn, Carbon::now()->addHours(24), function() use ($isbn) {
             return $this->fetcher->forISBN($isbn);
         });
     }
