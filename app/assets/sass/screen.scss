@@ -11,7 +11,7 @@ $green:#27ae60;
 $orange:#e67e22;
 
 body {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Bitter', serif;
     font-weight: 400;
     height: 100%;
 }
@@ -180,10 +180,6 @@ header {
         }
     }
 
-    #mocking {
-        margin-bottom: 20px;
-    }
-
     .row {
         margin-bottom: 50px;
     }
@@ -281,7 +277,6 @@ header {
             min-width: 10px;
             padding: 3px 7px;
             font-size: 12px;
-            font-weight: 700;
             line-height: 1.5;
             color: #fff;
             text-align: center;

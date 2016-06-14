@@ -7,7 +7,7 @@
 
 	<meta name="description" content="Antoine Augusti, software engineering, machine learning, distributed systems." />
 
-	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
 	<link media="all" type="text/css" rel="stylesheet" href="{{ elixir('assets/css/styles.min.css') }}">
 	<link rel="shortcut icon" href="{{ get_gravatar($email, 24) }}"/>
 
@@ -34,6 +34,6 @@
 			<a href="#anchor-projects">Projects</a>
 			<a href="#anchor-contact">Contact</a>
 		</nav>
-		{{ HTML::image(get_gravatar($email, 500), "Antoine Augusti", ['height' => 160, 'width' => 160])}}
+		{{ HTML::image(get_gravatar($email, 500), "Antoine Augusti", ['height' => 160, 'width' => 160, 'class' => 'animated animate-delay fadeIn'])}}
 		<h1 class="fadeInUp animated animate-delay">Hello World, I'm Antoine Augusti</h1>
 	</header>

@@ -13,6 +13,7 @@ elixir(function(mix) {
         .styles([
             "bootstrap.min.css",
             "font-awesome.min.css",
+            "animate.css",
             "screen.css"
         ], 'public/assets/css/styles.min.css', 'app/assets/css')
         .version([
