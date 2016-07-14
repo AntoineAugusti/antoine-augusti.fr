@@ -8,7 +8,7 @@
 			<section class="card col-md-6">
 				<article>
 					<i class="fa fa-code"></i>
-					<span class="title">I'm a passionate software engineer.</span> I'm comfortable around and interested by distributed systems, REST APIs, automated testing tools, machine learning algorithms, system administration and networking. I have been involved at different levels in a lot of sectors: Internet service provider, customer service, fraud detection, inspiring quotes for teenagers, gaming servers, car rental, equity crowdfunding, bioinformatics... Did I mention that I'm French?
+					<span class="title">I'm a passionate software engineer.</span> I'm comfortable around and interested by distributed systems, REST APIs, automated testing tools, machine learning algorithms, system administration and networking. I have been involved at different levels in a lot of sectors: Internet service provider, car rental, customer service, fraud detection, inspiring quotes for teenagers, gaming servers, equity crowdfunding, bioinformatics... Did I mention that I'm French?
 				</article>
 			</section>
 
