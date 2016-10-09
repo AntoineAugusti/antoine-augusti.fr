@@ -323,7 +323,17 @@ header {
 }
 
 .book__thumbnail {
-    height: 270px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+}
+
+.book__cover_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
 }
 
 footer {

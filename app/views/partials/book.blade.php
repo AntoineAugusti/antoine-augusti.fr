@@ -1,6 +1,8 @@
 <div class="col-md-3">
     <div class="thumbnail book__thumbnail">
-        <img src="{{ $book->thumbnail }}" alt="{{ $book->title }}" clas="img-responsive">
+        <div class="book__cover_container">
+            <img src="{{ $book->thumbnail }}" alt="{{ $book->title }}" class="img-responsive">
+        </div>
         <div class="caption">
             <h3 class="book__title">{{ $book->title }}</h3>
             <div class="book_status-container">
@@ -10,9 +12,13 @@
                     <div class="reading-status read">Read</div>
                 @endif
             </div>
+            <span class="book__when-read">
             @if (!$book->isCurrentlyReading())
-                <span class="book__when-read">{{ $book->when->diffForHumans() }}</span>
+                {{ $book->when->diffForHumans() }}
+            @else
+                currently reading
             @endif
+            </span>
         </div>
     </div>
 </div>
