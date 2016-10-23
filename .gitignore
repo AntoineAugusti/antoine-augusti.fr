@@ -7,6 +7,7 @@ bootstrap/compiled.php
 composer.lock
 composer.phar
 public/assets/css/styles.min.css*
+public/assets/js/scripts.min.js
 public/assets/js/scripts.min.js*
 public/build/assets/css/styles.min.css.map
 public/build/assets/js/scripts.min.js.map
