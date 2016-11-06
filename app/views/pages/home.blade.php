@@ -31,7 +31,7 @@
               </a>
             </div>
             <article class="media-body">
-              I prepared and gave a class about NoSQL databases versus relational databases and did a practical session in networking about packet switching and VLANs to engineering students in their fourth year.
+              I prepared and gave a class about NoSQL databases versus relational databases and did practicals session in networking about packet switching, bridges, VLANs, DNS and DHCP to engineering students in their fourth year.
             </article>
           </div>
       </section>
