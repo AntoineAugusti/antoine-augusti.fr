@@ -31,13 +31,17 @@ class HomeController extends BaseController {
 
     private function getBooks()
     {
+        $pos = 1;
         return (new Collection(LaraSetting::get('books')))
-        ->take(4)->map(function($book) {
+        ->take(4)->map(function($book) use(&$pos) {
             $bookTransformed = $this->fetcher->forISBN($book['isbn']);
             $bookTransformed->thumbnail = str_replace('http://', 'https://', $bookTransformed->thumbnail);
             $when = new Carbon($book['when']);
+            $status = ($pos == 1) ? 'reading' : 'read';
 
-            return new Book($bookTransformed, $book['status'], $book['isbn'], $when);
+            $pos = $pos + 1;
+
+            return new Book($bookTransformed, $status, $book['isbn'], $when);
         });
     }
 
