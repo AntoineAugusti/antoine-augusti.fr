@@ -127,7 +127,7 @@
   <section id="contact" class="container">
     <h1 id="anchor-contact">Get in touch</h1>
     <p class="text">
-      So you want to do a little spying before contacting me? Here you are!
+      You can contact me or discover a bit more about me thanks to the following links.
     </p>
     <div class="row">
       <div class="col-xs-6 col-sm-3" data-wow-delay="0.5s">
