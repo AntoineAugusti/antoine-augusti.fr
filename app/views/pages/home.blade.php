@@ -15,7 +15,7 @@
       <section class="card col-md-6">
         <article>
           <i class="fa fa-book"></i>
-          <span class="title">I love to learn.</span> I'm a data engineer at <a href="https://en.drivy.com/">Drivy</a>, the leading car rental platform in Europe. I studied at the <a href="http://asi.insa-rouen.fr">INSA Rouen</a> and the <a href="http://masterstim.formations.univ-rouen.fr/">University of Rouen</a> with majors in software engineering, machine learning and data mining. In my free time I take classes on Coursera to discover new things. I try to keep my brain busy in my free time with <a href="https://github.com/AntoineAugusti/katas">code katas</a> and read a lot of technical books or articles. I also tried to wakeboard but you really don't want to know that.
+          <span class="title">I love to learn.</span> I'm a data engineer at <a href="https://en.drivy.com/">Drivy</a>, the leading car rental platform in Europe. I studied at the <a href="http://asi.insa-rouen.fr">INSA Rouen</a> and the <a href="http://masterstim.formations.univ-rouen.fr/">University of Rouen</a> with majors in software engineering, machine learning and data mining. I discover new things and keep me up-to-date by reading books, technical articles and browsing the Internet. I try to keep my brain busy in my free time with <a href="https://github.com/AntoineAugusti/katas">code katas</a>. I also tried to wakeboard but you really don't want to know that.
         </article>
       </section>
     </div>
@@ -31,7 +31,7 @@
               </a>
             </div>
             <article class="media-body">
-              I prepared and gave a class about NoSQL databases versus relational databases and did practicals session in networking about packet switching, bridges, VLANs, DNS and DHCP to engineering students in their fourth year.
+              I am giving classes about NoSQL databases versus relational databases and practicals session in networking about packet switching, bridges, VLANs, DNS and DHCP to engineering students in their fourth year.
             </article>
           </div>
       </section>
@@ -45,6 +45,19 @@
             </div>
             <article class="media-body">
               I am mentoring Premium students in order to help them obtain certifications and diplomas. I am mentoring around the following technologies: HTML5, CSS3, PHP, relational databases, object oriented design, web server administration and basic networking.
+            </article>
+          </div>
+      </section>
+
+      <section class="card col-md-6">
+        <div class="media">
+            <div class="media-left">
+              <a href="https://en.drivy.com">
+                <img class="media-object teaching__logo drivy__logo" src="assets/images/drivy.png" alt="Drivy">
+              </a>
+            </div>
+            <article class="media-body">
+              I am helping non-technical employees discovering databases and learning some bits of SQL to help them get the data they need to answer questions. This is also an opportunity to show what are the various components behind a typical web application.
             </article>
           </div>
       </section>
