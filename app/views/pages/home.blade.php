@@ -8,14 +8,14 @@
       <section class="card col-md-6">
         <article>
           <i class="fa fa-code"></i>
-          <span class="title">I'm a passionate software engineer.</span> I'm comfortable around and interested by distributed systems, REST APIs, automated testing tools, machine learning algorithms, system administration and networking. I have been involved at different levels in a lot of sectors: Internet service provider, car rental, customer service, fraud detection, inspiring quotes for teenagers, gaming servers, equity crowdfunding, bioinformatics... Did I mention that I'm French?
+          <span class="title">I am a passionate software engineer.</span> I'm comfortable around and interested by distributed systems, API design, automated testing tools, machine learning algorithms, system administration and networking. I have been involved at different levels in a lot of sectors: Internet service provider, car rental, customer service, fraud detection, inspiring quotes for teenagers, gaming servers, equity crowdfunding, bioinformatics... Did I mention that I'm French?
         </article>
       </section>
 
       <section class="card col-md-6">
         <article>
           <i class="fa fa-book"></i>
-          <span class="title">I love to learn.</span> I'm a data engineer at <a href="https://en.drivy.com/">Drivy</a>, the leading car rental platform in Europe. I studied at the <a href="http://asi.insa-rouen.fr">INSA Rouen</a> and the <a href="http://masterstim.formations.univ-rouen.fr/">University of Rouen</a> with majors in software engineering, machine learning and data mining. I discover new things and keep me up-to-date by reading books, technical articles and browsing the Internet. I try to keep my brain busy in my free time with <a href="https://github.com/AntoineAugusti/katas">code katas</a>. I also tried to wakeboard but you really don't want to know that.
+          <span class="title">I love to learn.</span> I'm a data engineer at <a href="https://en.drivy.com/">Drivy</a>, the leading car rental platform in Europe. I studied at the <a href="http://asi.insa-rouen.fr">INSA Rouen</a> and the <a href="http://masterstim.formations.univ-rouen.fr">University of Rouen</a> with majors in software engineering, machine learning and data mining. I discover new things and keep me up-to-date by reading books and technical articles. I try to improve my skills in my free time with <a href="https://github.com/AntoineAugusti/katas">code katas</a> and by contributing to <a href="#anchor-open-source">open-source</a> projects. I also tried to wakeboard, but I'd rather not discuss that.
         </article>
       </section>
     </div>
@@ -31,7 +31,7 @@
               </a>
             </div>
             <article class="media-body">
-              I am giving classes about NoSQL databases versus relational databases and practicals session in networking about packet switching, bridges, VLANs, DNS and DHCP to engineering students in their fourth year.
+              I am giving some classes about NoSQL databases versus relational databases and practicals session in networking about packet switching, bridges, VLANs, DNS and DHCP to engineering students in their fourth year.
             </article>
           </div>
       </section>
@@ -44,7 +44,7 @@
               </a>
             </div>
             <article class="media-body">
-              I am mentoring Premium students in order to help them obtain certifications and diplomas. I am mentoring around the following technologies: HTML5, CSS3, PHP, relational databases, object oriented design, web server administration and basic networking.
+              I am mentoring online students in order to help them obtain certifications and diplomas. I help them learn the following technologies: HTML5, CSS3, PHP, relational databases, object oriented design, web server administration and basic networking.
             </article>
           </div>
       </section>
@@ -73,7 +73,7 @@
             <span class="title">Teen Quotes lets teenagers share their daily thoughts and feelings.</span> With more than 3M followers on Twitter and 2.5M visitors on the website, Teen Quotes is quite popular.
           </p>
           <p>
-            I'm the lead developer and I have coded the responsive website and the API. The entire source code is available <a href="https://github.com/TeenQuotes">on GitHub</a>. I also moderate quotes so if you want to know what a 15 years old teenager thinks, ask me!
+            I'm the founder of the website. For this project, I implemented the responsive website and the API. The entire source code is available <a href="https://github.com/TeenQuotes">on GitHub</a>. I also moderate quotes so if you want to know what a 15 year-old teenager thinks, ask me!
           </p>
           <div class="wow bounceInUp" data-wow-delay="1s">
             <a class="button" href="http://teen-quotes.com">&raquo; teen-quotes.com</a>
@@ -98,7 +98,7 @@
     </div>
 
     <!-- Open source -->
-    <h1>Open source projects</h1>
+    <h1 id="anchor-open-source">Open source projects</h1>
     <section class="card">
       <article>
         <p>
