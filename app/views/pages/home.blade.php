@@ -70,7 +70,7 @@
         <article>
           {{ HTML::image("assets/images/teen-quotes.png", "Teen Quotes", ['id' => 'teen-quotes']) }}
           <p>
-            <span class="title">Teen Quotes lets teenagers share their daily thoughts and feelings.</span> With more than 3M followers on Twitter and 2.5M visitors on the website, Teen Quotes is quite popular.
+            <span class="title">Teen Quotes lets teenagers share their daily thoughts and feelings.</span> With more than 4M followers on Twitter and 2.5M visitors on the website since the beginning, Teen Quotes is quite popular.
           </p>
           <p>
             I'm the founder of the website. For this project, I implemented the responsive website and the API. The entire source code is available <a href="https://github.com/TeenQuotes">on GitHub</a>. I also moderate quotes so if you want to know what a 15 year-old teenager thinks, ask me!
@@ -85,7 +85,7 @@
         <article>
           {{ HTML::image("assets/images/quantic-telecom.png", "Quantic Télécom", ['id' => 'quantic-telecom']) }}
           <p>
-            <span class="title">Quantic Télécom is an Internet Service Provider for students.</span> Since the beginning in 2011, I took part of the implementation of our network in datacenters and residences by installing some servers and antennas.
+            <span class="title">Quantic Télécom is an Internet Service Provider for students.</span> At the beginning in 2011, I took part of the implementation of our network in datacenters and residences by installing some servers and antennas. Today, Quantic Telecom is now an established company.
           </p>
           <p>
             As part of a three-member team we developed a complete public website and some advanced administration tools: billing, support, statistics, security.
@@ -116,7 +116,7 @@
 
       <article>
         <p>
-          And countless other projects I have used and where I have just sent 1 or 2 pull requests. Many thanks to all the amazing open source contributors and projects. I owe you.
+          And many other projects I have used and where I have just sent 1 or 2 pull requests. Many thanks to all the amazing open source contributors and projects. I owe you.
         </p>
       </article>
 
@@ -126,12 +126,11 @@
     <section class="card">
       <article>
         <p>
-          I try to write an article every month or so.
-          If I don't respect this, it means that I'm usually busy with an interesting project, worth a blog post at the end of the day.
+          I try to write an article every now and then. If I didn't write in the last month or so, I probably should have done so.
         </p>
       </article>
       @foreach ($lastArticles as $article)
-      @include('blog.singleArticle')
+        @include('blog.singleArticle')
       @endforeach
     </section>
 
@@ -140,7 +139,7 @@
   <section id="contact" class="container">
     <h1 id="anchor-contact">Get in touch</h1>
     <p class="text">
-      You can contact me or discover a bit more about me thanks to the following links.
+      Feel free to get in touch or find out more with these links.
     </p>
     <div class="row">
       <div class="col-xs-6 col-sm-3" data-wow-delay="0.5s">
