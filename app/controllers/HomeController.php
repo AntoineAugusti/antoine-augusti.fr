@@ -28,8 +28,15 @@ class HomeController extends BaseController {
      */
     private function getLastBlogArticles()
     {
-        $feed = FeedReader::read('https://blog.antoine-augusti.fr/feed/');
-        return $feed->get_items(0, 5);
+        $personal_feed = FeedReader::read('https://blog.antoine-augusti.fr/feed/');
+        $drivy_feed = FeedReader::read('https://drivy.engineering/feed.xml');
+
+        $merged = new Collection(SimplePie::merge_items([$personal_feed, $drivy_feed]));
+
+        return $merged->filter(function($e) {
+            $author = $e->get_author();
+            return !is_null($author) && $author->get_name() == 'Antoine Augusti';
+        })->take(10);
     }
 
     /**
