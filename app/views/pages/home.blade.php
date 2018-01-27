@@ -8,14 +8,14 @@
       <section class="card col-md-6">
         <article>
           <i class="fa fa-code"></i>
-          <span class="title">I am a passionate software engineer.</span> I'm comfortable around and interested by distributed systems, API design, automated testing tools, machine learning algorithms, system administration and networking. I have been involved at different levels in a lot of sectors: Internet service provider, car rental, customer service, fraud detection, inspiring quotes for teenagers, gaming servers, equity crowdfunding, bioinformatics... Did I mention that I'm French?
+          <span class="title">I am a passionate software engineer.</span> I'm comfortable around and interested by distributed systems, API design, automated testing tools, machine learning algorithms, system administration and networking. I have been involved at different levels in a lot of sectors: Internet service provider, car rental, sea rescue operations, customer service, fraud detection, inspiring quotes for teenagers, gaming servers, equity crowdfunding, bioinformatics... Did I mention that I'm French?
         </article>
       </section>
 
       <section class="card col-md-6">
         <article>
           <i class="fa fa-book"></i>
-          <span class="title">I love to learn.</span> I'm a data engineer at <a href="https://en.drivy.com/">Drivy</a>, the leading car rental platform in Europe. I studied at the <a href="http://asi.insa-rouen.fr">INSA Rouen</a> and the <a href="http://masterstim.formations.univ-rouen.fr">University of Rouen</a> with majors in software engineering, machine learning and data mining. I discover new things and keep me up-to-date by reading books and technical articles. I try to improve my skills in my free time with <a href="https://github.com/AntoineAugusti/katas">code katas</a> and by contributing to <a href="#anchor-open-source">open-source</a> projects. I also tried to wakeboard, but I'd rather not discuss that.
+          <span class="title">I love to learn.</span> As part of the Entrepreneur of General Interest program started by <a href="https://www.etalab.gouv.fr/">Etalab</a>, I'm working at <a href="https://entrepreneur-interet-general.etalab.gouv.fr/defi/2017/09/26/donneesauvetagemaritime/">the Maritime Affairs</a> around data related questions for sea rescue operations. I studied at the <a href="http://asi.insa-rouen.fr">INSA Rouen</a> and the <a href="http://masterstim.formations.univ-rouen.fr">University of Rouen</a> with majors in software engineering, machine learning and data mining. I discover new things and keep me up-to-date by reading books and technical articles. I try to improve my skills in my free time with <a href="https://github.com/AntoineAugusti/katas">code katas</a> and by contributing to <a href="#anchor-open-source">open-source</a> projects. I also tried to wakeboard, but I'd rather not discuss that.
         </article>
       </section>
     </div>
@@ -44,7 +44,7 @@
               </a>
             </div>
             <article class="media-body">
-              I am mentoring online students in order to help them obtain certifications and diplomas. I help them learn the following technologies: HTML5, CSS3, PHP, relational databases, object oriented design, web server administration and basic networking.
+              I mentored online students in order to help them obtain certifications and diplomas. I helped them learn the following technologies: HTML5, CSS3, PHP, relational databases, object oriented design, web server administration and basic networking.
             </article>
           </div>
       </section>
@@ -57,7 +57,7 @@
               </a>
             </div>
             <article class="media-body">
-              I am helping non-technical employees discovering databases and learning some bits of SQL to help them get the data they need to answer questions. This is also an opportunity to show what are the various components behind a typical web application.
+              I helped non-technical employees discover databases and learn some bits of SQL to help them get the data they need to answer questions. This was also an opportunity to show what are the various components behind a typical web application.
             </article>
           </div>
       </section>
