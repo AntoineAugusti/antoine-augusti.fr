@@ -26,6 +26,19 @@
       <section class="card col-md-6">
         <div class="media">
             <div class="media-left">
+              <a href="https://www.sciencespo.fr/en">
+                <img class="media-object teaching__logo" src="assets/images/sciences-po.png" alt="Sciences Po Paris">
+              </a>
+            </div>
+            <article class="media-body">
+              I am giving classes about web technologies and numerical arts at Sciences Po Paris and Reims. <a href="https://culture-numerique.antoine-augusti.fr" title="Cours de culture numérique à Sciences Po">Topics covered</a> are: algorithms, HTML, CSS, Internet architecture, history of the Web, writing small programs and web pages.
+            </article>
+          </div>
+      </section>
+
+      <section class="card col-md-6">
+        <div class="media">
+            <div class="media-left">
               <a href="http://asi.insa-rouen.fr">
                 <img class="media-object teaching__logo" src="assets/images/insa-rouen.png" alt="INSA Rouen">
               </a>
