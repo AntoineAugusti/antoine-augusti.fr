@@ -1,12 +1,13 @@
 name: CD
 
-on: push
+on: [push]
 
 jobs:
   build:
+    name: Trigger Netlify Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: AntoineAugusti/trigger-netlify-action@master
-        with:
-          netlifyHookKey: ${{ secrets.NETLIFY_HOOK_KEY }}
+    - uses: actions/checkout@master
+    - uses: AntoineAugusti/trigger-netlify-action@master
+      with:
+        netlifyHookKey: ${{ secrets.NETLIFY_HOOK_KEY }}
