@@ -1,0 +1,12 @@
+name: CD
+
+on:
+ push:
+   branches:
+     - master
+
+steps:
+- uses: actions/checkout@master
+- uses: AntoineAugusti/trigger-netlify-action@master
+  with:
+    netlifyHookKey: ${{ secrets.NETLIFY_HOOK_KEY }}
