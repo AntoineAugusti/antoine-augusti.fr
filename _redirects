@@ -1,2 +1,3 @@
 /blog/*  https://blog.antoine-augusti.fr/:splat 301
 /webinaire https://webinaire.numerique.gouv.fr//meeting/signin/2248/creator/1365/hash/64aeaaca9058d6475bb00fb2d897f6a433113922
+/redis-tutorial https://gist.github.com/AntoineAugusti/25282bab5002fc6521ff7f95cf08839d
