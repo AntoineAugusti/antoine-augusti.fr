@@ -18,72 +18,163 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@AntoineAugusti">
     <meta name="twitter:creator" content="@AntoineAugusti">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="./assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/cormorant-garamond.woff2" as="font" type="font/woff2" crossorigin>
     <link media="all" type="text/css" rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="https://www.gravatar.com/avatar/bd9d5a56cb260e00c6d1963f9ba430b351227b65fe02ab535960d3b70ff35075/?s=24" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://www.antoine-augusti.fr/#website",
+          "url": "https://www.antoine-augusti.fr/",
+          "name": "Antoine Augusti",
+          "inLanguage": "en",
+          "publisher": {
+            "@id": "https://www.antoine-augusti.fr/#person"
+          }
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://www.antoine-augusti.fr/#profilepage",
+          "url": "https://www.antoine-augusti.fr/",
+          "name": "Antoine Augusti — Software engineer and independent financial advisor",
+          "inLanguage": "en",
+          "isPartOf": {
+            "@id": "https://www.antoine-augusti.fr/#website"
+          },
+          "mainEntity": {
+            "@id": "https://www.antoine-augusti.fr/#person"
+          },
+          "about": {
+            "@id": "https://www.antoine-augusti.fr/#person"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://www.antoine-augusti.fr/#avatar"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.antoine-augusti.fr/#person",
+          "name": "Antoine Augusti",
+          "givenName": "Antoine",
+          "familyName": "Augusti",
+          "url": "https://www.antoine-augusti.fr/",
+          "mainEntityOfPage": {
+            "@id": "https://www.antoine-augusti.fr/#profilepage"
+          },
+          "image": {
+            "@type": "ImageObject",
+            "@id": "https://www.antoine-augusti.fr/#avatar",
+            "url": "https://www.gravatar.com/avatar/bd9d5a56cb260e00c6d1963f9ba430b351227b65fe02ab535960d3b70ff35075/?s=500",
+            "contentUrl": "https://www.gravatar.com/avatar/bd9d5a56cb260e00c6d1963f9ba430b351227b65fe02ab535960d3b70ff35075/?s=500",
+            "width": 500,
+            "height": 500,
+            "caption": "Antoine Augusti"
+          },
+          "description": "Senior Software Engineer at beta.gouv.fr (Choisir le service public) and independent financial advisor (CGPI) at Augusti Conseil, based in Rouen, France.",
+          "gender": "https://schema.org/Male",
+          "jobTitle": [
+            "Senior Software Engineer",
+            "Independent financial advisor"
+          ],
+          "hasOccupation": [
+            {
+              "@type": "Occupation",
+              "name": "Senior Software Engineer",
+              "occupationLocation": {
+                "@type": "Country",
+                "name": "France"
+              },
+              "skills": "Software engineering, API design, distributed systems, open data, open source"
+            },
+            {
+              "@type": "Occupation",
+              "name": "Independent financial advisor (CGPI)",
+              "occupationLocation": {
+                "@type": "Country",
+                "name": "France"
+              },
+              "skills": "Tax optimisation, investments, retirement planning, estate planning"
+            }
+          ],
+          "worksFor": [
+            {
+              "@type": "GovernmentOrganization",
+              "name": "beta.gouv.fr",
+              "url": "https://beta.gouv.fr"
+            },
+            {
+              "@type": "FinancialService",
+              "name": "Augusti Conseil",
+              "url": "https://augusti-conseil.fr/",
+              "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "ORIAS",
+                "value": "26011368"
+              }
+            }
+          ],
+          "alumniOf": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "INSA Rouen Normandie",
+              "url": "https://www.insa-rouen.fr"
+            },
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Université de Rouen Normandie",
+              "url": "https://www.univ-rouen.fr"
+            }
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Rouen",
+            "addressRegion": "Normandie",
+            "addressCountry": "FR"
+          },
+          "homeLocation": {
+            "@type": "Place",
+            "name": "Rouen, Normandy, France"
+          },
+          "nationality": {
+            "@type": "Country",
+            "name": "France",
+            "sameAs": "https://www.wikidata.org/wiki/Q142"
+          },
+          "knowsLanguage": [
+            "fr",
+            "en"
+          ],
+          "knowsAbout": [
+            "Software engineering",
+            "Open data",
+            "Open source",
+            "Public sector technology",
+            "Transport data",
+            "Elixir",
+            "Python",
+            "Go",
+            "Wealth management",
+            "Financial advice"
+          ],
+          "email": "mailto:hi@antoine-augusti.fr",
+          "sameAs": [
+            "https://github.com/AntoineAugusti",
+            "https://www.linkedin.com/in/antoineaugusti",
+            "https://twitter.com/AntoineAugusti",
+            "https://x.com/AntoineAugusti",
+            "https://blog.antoine-augusti.fr"
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org/",
-    "@type": "Person",
-    "name": "Antoine Augusti",
-    "givenName": "Antoine",
-    "familyName": "Augusti",
-    "url": "https://www.antoine-augusti.fr",
-    "mainEntityOfPage": "https://www.antoine-augusti.fr",
-    "description": "Senior Software Engineer at beta.gouv.fr and independent financial advisor at Augusti Conseil",
-    "image": "https://www.gravatar.com/avatar/bd9d5a56cb260e00c6d1963f9ba430b351227b65fe02ab535960d3b70ff35075/?s=500",
-    "gender": "http://schema.org/Male",
-    "jobTitle": ["Senior Software Engineer", "Independent financial advisor"],
-    "worksFor": [
-      {
-        "@type": "GovernmentOrganization",
-        "name": "beta.gouv.fr",
-        "url": "https://beta.gouv.fr"
-      },
-      {
-        "@type": "FinancialService",
-        "name": "Augusti Conseil",
-        "url": "https://augusti-conseil.fr"
-      }
-    ],
-    "alumniOf": [
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "INSA Rouen Normandie",
-        "url": "https://www.insa-rouen.fr"
-      },
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "Université de Rouen Normandie",
-        "url": "https://www.univ-rouen.fr"
-      }
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Rouen",
-      "addressRegion": "Normandie",
-      "addressCountry": "FR"
-    },
-    "nationality": {
-      "@type": "Country",
-      "name": "France",
-      "url": "https://www.wikidata.org/wiki/Q142"
-    },
-    "knowsAbout": ["Software engineering", "Open data", "Open source", "Public sector technology", "Transport data", "Wealth management"],
-    "sameAs": [
-      "https://github.com/AntoineAugusti",
-      "https://linkedin.com/in/antoineaugusti",
-      "https://twitter.com/AntoineAugusti",
-      "https://blog.antoine-augusti.fr"
-    ],
-    "email": "hi@antoine-augusti.fr"
-  }
-  </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -93,201 +184,251 @@
       ga('create', 'UA-12045924-3', 'auto');
       ga('send', 'pageview');
     </script>
-    <header>
-      <nav class="animated animate-delay-big">
-        <a href="#anchor-presentation">About</a>
-        <a href="#anchor-contact">Contact</a>
-      </nav>
-      <img src="https://www.gravatar.com/avatar/bd9d5a56cb260e00c6d1963f9ba430b351227b65fe02ab535960d3b70ff35075/?s=160" height="160" width="160" class="animated animate-delay fadeIn" alt="Antoine Augusti">
-      <h1 class="fadeInUp animated animate-delay">Hello World, I'm Antoine Augusti</h1>
+
+    <!-- Navigation -->
+    <nav class="topbar">
+      <div class="container topbar__inner">
+        <a href="#top" class="topbar__logo">Antoine <span>Augusti</span></a>
+        <div class="topbar__links">
+          <a href="#anchor-presentation">About</a>
+          <a href="#anchor-teaching">Teaching</a>
+          <a href="#anchor-open-source">Open source</a>
+          <a href="#anchor-blog">Articles</a>
+          <a href="#anchor-contact" class="topbar__cta">Get in touch</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="top">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__text">
+            <p class="eyebrow eyebrow--light">Hello World, I'm</p>
+            <h1 class="hero__title">Antoine<br><span>Augusti</span></h1>
+            <p class="hero__subtitle">
+              Senior Software Engineer at <a href="https://beta.gouv.fr">beta.gouv.fr</a> and independent financial advisor
+              at <a href="https://augusti-conseil.fr/">Augusti Conseil</a>. Based in Rouen, Normandy.
+            </p>
+            <ul class="hero__tags">
+              <li><i class="fa-solid fa-code" aria-hidden="true"></i> Software engineering</li>
+              <li><i class="fa-solid fa-landmark" aria-hidden="true"></i> Public sector tech</li>
+              <li><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Wealth management</li>
+            </ul>
+            <div class="hero__buttons">
+              <a href="#anchor-contact" class="btn btn--light">Get in touch <span class="arrow" aria-hidden="true">→</span></a>
+              <a href="#anchor-presentation" class="btn btn--ghost">About me</a>
+            </div>
+          </div>
+          <div class="hero__visual">
+            <div class="portrait">
+              <div class="portrait__ring"></div>
+              <div class="portrait__arc"></div>
+              <img src="https://www.gravatar.com/avatar/bd9d5a56cb260e00c6d1963f9ba430b351227b65fe02ab535960d3b70ff35075/?s=640" width="320" height="320" alt="Antoine Augusti">
+            </div>
+          </div>
+        </div>
+
+        <ul class="stats" aria-label="Key figures">
+          <li class="stat"><div class="stat__num"><span data-count="60">60</span>k</div><div class="stat__label">Job offers on Choisir le service public</div></li>
+          <li class="stat"><div class="stat__num"><span data-count="13">13</span>M</div><div class="stat__label">Visitors per year on the platform</div></li>
+          <li class="stat"><div class="stat__num">Top <span data-count="100">100</span></div><div class="stat__label">Open source contributors in France since 2019</div></li>
+          <li class="stat"><div class="stat__num"><span data-count="6">6</span></div><div class="stat__label">Institutions where I taught or mentored</div></li>
+        </ul>
+      </div>
     </header>
-    <div class="container">
-      <h2 id="anchor-presentation">Cool facts about me</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <section class="card">
-            <article>
-              <i class="fa-solid fa-code"></i>
-              <span class="title">I am a passionate software engineer.</span> I'm comfortable around and interested by distributed systems, API design, automated testing tools, machine learning algorithms, system administration, recruiting tech profiles and laws (regulations, public sector transparency, data privacy). I have been involved at different levels in a lot of sectors: Internet service provider, car rental, sea rescue operations, customer service, fraud detection, inspiring quotes for teenagers, gaming servers, equity crowdfunding, mobility services... Did I mention that I'm French? Sorry, I don't live in Paris: I live in Rouen, Normandy. You should visit both.
+
+    <main>
+      <!-- About -->
+      <section class="section" id="anchor-presentation">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow">About</p>
+            <h2>Cool facts <em>about me</em></h2>
+          </div>
+          <div class="grid grid--2 reveal-group">
+            <article class="card">
+              <div class="icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+              <h3>I am a passionate software engineer.</h3>
+              <p>I'm comfortable around and interested by distributed systems, API design, automated testing tools, machine learning algorithms, system administration, recruiting tech profiles and laws (regulations, public sector transparency, data privacy). I have been involved at different levels in a lot of sectors: Internet service provider, car rental, sea rescue operations, customer service, fraud detection, inspiring quotes for teenagers, gaming servers, equity crowdfunding, mobility services... Did I mention that I'm French? Sorry, I don't live in Paris: I live in Rouen, Normandy. You should visit both.</p>
+              <p>I studied at the <a href="https://www.insa-rouen.fr/en">INSA Rouen</a> and the University of Rouen with majors in software engineering, machine learning and data mining. My day job is spent on <a href="#anchor-open-source">open-source</a> projects and open data resources. I also tried to wakeboard, but I'd rather not discuss that.</p>
             </article>
-          </section>
-        </div>
-        <div class="col-md-6">
-          <section class="card">
-            <article>
-              <i class="fa-solid fa-graduation-cap"></i>
-              <span class="title">I love to learn.</span> I'm a Senior Software Engineer at <a href="https://beta.gouv.fr">beta.gouv.fr</a>, working for <a href="https://choisirleservicepublic.gouv.fr">Choisir le service public</a>, the hiring platform of the French public administration: 60k job offers and 13M visitors per year. I'm also an independent financial advisor (CGPI) at <a href="https://augusti-conseil.fr/">Augusti Conseil</a>, registered as a CIF with the ORIAS (n° 26011368) and paid by fees only, with no commissions. I help executives, business owners and liberal professions with tax optimisation, investments, retirement and estate planning. Previously, I worked on the <a href="https://transport.data.gouv.fr/?locale=en">French national access point to transport data</a>, at the <a href="https://digital.canada.ca">Canadian Digital Service</a> in the federal government of Canada, where I was Tech Lead for <a href="https://notification.canada.ca">GC Notify</a>, at the French maritime affairs administration on search and rescue at sea, and at <a href="https://etalab.gouv.fr">Etalab</a>, in charge of the French government data policy and data-driven transformation for public administrations. I studied at the <a href="https://www.insa-rouen.fr/en">INSA Rouen</a> and the University of Rouen with majors in software engineering, machine learning and data mining. My day job is spent on <a href="#anchor-open-source">open-source</a> projects and open data resources. I also tried to wakeboard, but I'd rather not discuss that.
+            <article class="card">
+              <div class="icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
+              <h3>I love to learn.</h3>
+              <p>I'm a Senior Software Engineer at <a href="https://beta.gouv.fr">beta.gouv.fr</a>, working for <a href="https://choisirleservicepublic.gouv.fr">Choisir le service public</a>, the hiring platform of the French public administration: 60k job offers and 13M visitors per year. I'm also an independent financial advisor (CGPI) at <a href="https://augusti-conseil.fr/">Augusti Conseil</a>, registered as a CIF with the ORIAS (n° 26011368) and paid by fees only, with no commissions. I help executives, business owners and liberal professions with tax optimisation, investments, retirement and estate planning.</p>
+              <p>Previously, I worked on the <a href="https://transport.data.gouv.fr/?locale=en">French national access point to transport data</a>, at the <a href="https://digital.canada.ca">Canadian Digital Service</a> in the federal government of Canada, where I was Tech Lead for <a href="https://notification.canada.ca">GC Notify</a>, at the French maritime affairs administration on search and rescue at sea, and at <a href="https://etalab.gouv.fr">Etalab</a>, in charge of the French government data policy and data-driven transformation for public administrations.</p>
             </article>
-          </section>
-        </div>
-      </div>
-      <h2>Teaching</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <section class="card">
-            <div class="media">
-              <div class="media-left">
-                <a href="https://www.sciencespo.fr/en">
-                <img class="media-object teaching__logo" src="./assets/sciences-po.png" alt="Sciences Po Paris">
-                </a>
-              </div>
-              <article class="media-body">
-                I taught classes about web technologies and numerical arts at Sciences Po Paris and Reims. <a href="https://culture-numerique.antoine-augusti.fr/" title="Cours de culture numérique à Sciences Po">Topics covered</a> are: algorithms, HTML, CSS, Internet architecture, history of the Web, writing small programs and web pages.
-              </article>
-            </div>
-          </section>
-        </div>
-        <div class="col-md-6">
-          <section class="card">
-            <div class="media">
-              <div class="media-left">
-                <a href="https://www.hec.edu/en">
-                <img class="media-object teaching__logo" src="./assets/hec.svg" alt="HEC Paris">
-                </a>
-              </div>
-              <article class="media-body">
-                I mentored students in the Polytechnique-HEC entrepreneurship program. I helped them navigate the tech sector, how to start a startup, how to hire talents, understand technologies and costs.
-              </article>
-            </div>
-          </section>
-        </div>
-        <div class="col-md-6">
-          <section class="card">
-            <div class="media">
-              <div class="media-left">
-                <a href="https://esirem.u-bourgogne.fr">
-                <img class="media-object teaching__logo" src="./assets/universite-bourgogne.jpg" alt="Burgundy University">
-                </a>
-              </div>
-              <article class="media-body">
-                I taught classes about relational and NoSQL databases and mentored end-of-year projects related to real-time transport systems.
-              </article>
-            </div>
-          </section>
-        </div>
-        <div class="col-md-6">
-          <section class="card">
-            <div class="media">
-              <div class="media-left">
-                <a href="https://www.insa-rouen.fr/en">
-                <img class="media-object teaching__logo" src="./assets/insa-rouen.png" alt="INSA Rouen">
-                </a>
-              </div>
-              <article class="media-body">
-                I taught classes about NoSQL databases versus relational databases and practicals session in networking about packet switching, bridges, VLANs, DNS and DHCP to engineering students in their fourth year.
-              </article>
-            </div>
-          </section>
-        </div>
-        <div class="col-md-6">
-          <section class="card">
-            <div class="media">
-              <div class="media-left">
-                <a href="https://openclassrooms.com/">
-                <img class="media-object teaching__logo" src="./assets/openclassrooms.svg" alt="OpenClassrooms">
-                </a>
-              </div>
-              <article class="media-body">
-                I mentored online students in order to help them obtain certifications and diplomas. I helped them learn the following technologies: HTML5, CSS3, PHP, relational databases, object oriented design, web server administration and basic networking.
-              </article>
-            </div>
-          </section>
-        </div>
-        <div class="col-md-6">
-          <section class="card">
-            <div class="media">
-              <div class="media-left">
-                <a href="https://en.drivy.com/">
-                <img class="media-object teaching__logo drivy__logo" src="./assets/drivy.png" alt="Drivy">
-                </a>
-              </div>
-              <article class="media-body">
-                I helped non-technical employees discover databases and learn some bits of SQL to help them get the data they need to answer questions. This was also an opportunity to show what are the various components behind a typical web application.
-              </article>
-            </div>
-          </section>
-        </div>
-      </div>
-      <h2 id="anchor-open-source">Open source projects</h2>
-      <div class="row">
-        <div class="col-md-6 text-center">
-          <img src="./assets/coding.svg" alt="" height="150">
-        </div>
-        <div class="col-md-6">
-          <section class="card">
-            <p>
-              I write and contribute to projects on GitHub. My main languages are Elixir, Python, Golang, PHP and HTML/CSS/JavaScript. I write most of my professional and personal code with open source licenses.
-            </p>
-            <p>
-              I have been in the top 100 of the most active open source contributors on GitHub in France every year since 2019.
-            </p>
-          </section>
-        </div>
-      </div>
-      <h2 id="anchor-open-data">Open data</h2>
-      <div class="row">
-        <div class="col-md-6 text-center">
-          <img src="./assets/data.svg" alt="" height="150">
-        </div>
-        <div class="col-md-6">
-          <section class="card">
-            <p>
-              I publish datasets online. My main contributions are <a href="https://www.data.gouv.fr/fr/datasets/operations-coordonnees-par-les-cross/" title="Opérations coordonnées par les CROSS">search and rescue operations at sea</a>, <a href="https://www.data.gouv.fr/fr/datasets/avis-urgents-aux-navigateurs-en-vigueur-en-eaux-francaises-metropolitaines/" title="Avis urgents aux navigateurs en vigueur en eaux françaises métropolitaine">navigational warnings in metropolitan France</a>, <a href="https://www.data.gouv.fr/fr/datasets/vacances-scolaires-par-zones/">school holidays</a> and <a href="https://www.data.gouv.fr/fr/datasets/radars-automatiques/" title="Radars automatiques">speed cameras</a>.
-            </p>
-          </section>
-        </div>
-      </div>
-      <h2 id="anchor-blog">Latest articles</h2>
-      <div class="row">
-        <div class="col-md-6 text-center">
-          <img src="./assets/blog.svg" alt="" height="150">
-        </div>
-        <div class="col-md-6">
-          <section class="card">
-            <p>
-              I write articles <a href="https://blog.antoine-augusti.fr">on my blog</a>, every now and then. I blog about technical topics, tech in the public sector, data-related subjects: collecting, transforming and publishing data.
-            </p>
-            <p>My recent articles:</p>
-            <!-- BLOG_RECENT_ARTICLES -->
-          </section>
-        </div>
-      </div>
-      <h2 id="anchor-contact">Get in touch</h2>
-      <section id="contact" class="container">
-        <p class="text">
-          Feel free to get in touch or find out more with these links.
-        </p>
-        <div class="row">
-          <div class="col-xs-6 col-sm-3">
-            <a href="https://twitter.com/AntoineAugusti" title="Twitter">
-              <i class="fa-brands fa-x-twitter"></i>
-              <span class="username">@AntoineAugusti</span>
-            </a>
-          </div>
-          <div class="col-xs-6 col-sm-3">
-            <a href="https://github.com/AntoineAugusti" title="GitHub">
-              <i class="fa-brands fa-github"></i>
-              <span class="username">AntoineAugusti</span>
-            </a>
-          </div>
-          <div class="col-xs-6 col-sm-3">
-            <a href="https://linkedin.com/in/antoineaugusti" title="LinkedIn">
-              <i class="fa-brands fa-linkedin"></i>
-              <span class="username">antoineaugusti</span>
-            </a>
-          </div>
-          <div class="col-xs-6 col-sm-3">
-            <a href="mailto:hi@antoine-augusti.fr" title="Email">
-              <i class="fa-solid fa-envelope"></i>
-              <span class="username">hi@antoine-augusti.fr</span>
-            </a>
           </div>
         </div>
       </section>
-      <footer>
-        Antoine Augusti EI<br>
-        SIREN 800919359 — TVA FR92800919359
-      </footer>
-    </div>
+
+      <!-- Teaching -->
+      <section class="section section--tint" id="anchor-teaching">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow">Teaching &amp; mentoring</p>
+            <h2>Sharing <em>what I know</em></h2>
+          </div>
+          <div class="grid grid--3 reveal-group">
+            <article class="card card--compact">
+              <a class="logo" href="https://www.sciencespo.fr/en"><img src="./assets/sciences-po.png" alt="Sciences Po Paris"></a>
+              <h3>Sciences Po</h3>
+              <p>I taught classes about web technologies and numerical arts at Sciences Po Paris and Reims. <a href="https://culture-numerique.antoine-augusti.fr/" title="Cours de culture numérique à Sciences Po">Topics covered</a> are: algorithms, HTML, CSS, Internet architecture, history of the Web, writing small programs and web pages.</p>
+            </article>
+            <article class="card card--compact">
+              <a class="logo" href="https://www.hec.edu/en"><img src="./assets/hec.svg" alt="HEC Paris"></a>
+              <h3>HEC Paris</h3>
+              <p>I mentored students in the Polytechnique-HEC entrepreneurship program. I helped them navigate the tech sector, how to start a startup, how to hire talents, understand technologies and costs.</p>
+            </article>
+            <article class="card card--compact">
+              <a class="logo" href="https://esirem.u-bourgogne.fr"><img src="./assets/universite-bourgogne.jpg" alt="Burgundy University"></a>
+              <h3>Burgundy University</h3>
+              <p>I taught classes about relational and NoSQL databases and mentored end-of-year projects related to real-time transport systems.</p>
+            </article>
+            <article class="card card--compact">
+              <a class="logo" href="https://www.insa-rouen.fr/en"><img src="./assets/insa-rouen.png" alt="INSA Rouen"></a>
+              <h3>INSA Rouen</h3>
+              <p>I taught classes about NoSQL databases versus relational databases and practicals session in networking about packet switching, bridges, VLANs, DNS and DHCP to engineering students in their fourth year.</p>
+            </article>
+            <article class="card card--compact">
+              <a class="logo" href="https://openclassrooms.com/"><img src="./assets/openclassrooms.svg" alt="OpenClassrooms"></a>
+              <h3>OpenClassrooms</h3>
+              <p>I mentored online students in order to help them obtain certifications and diplomas. I helped them learn the following technologies: HTML5, CSS3, PHP, relational databases, object oriented design, web server administration and basic networking.</p>
+            </article>
+            <article class="card card--compact">
+              <a class="logo" href="https://en.drivy.com/"><img src="./assets/drivy.png" alt="Drivy"></a>
+              <h3>Drivy</h3>
+              <p>I helped non-technical employees discover databases and learn some bits of SQL to help them get the data they need to answer questions. This was also an opportunity to show what are the various components behind a typical web application.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Open source & open data -->
+      <section class="section" id="anchor-open-source">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow">Open source &amp; open data</p>
+            <h2>Building <em>in the open</em></h2>
+          </div>
+          <div class="grid grid--2 reveal-group">
+            <article class="card">
+              <div class="icon"><i class="fa-brands fa-github" aria-hidden="true"></i></div>
+              <h3>Open source projects</h3>
+              <p>I write and contribute to projects on GitHub. My main languages are Elixir, Python, Golang, PHP and HTML/CSS/JavaScript. I write most of my professional and personal code with open source licenses.</p>
+              <p>I have been in the top 100 of the most active open source contributors on GitHub in France every year since 2019.</p>
+            </article>
+            <article class="card" id="anchor-open-data">
+              <div class="icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+              <h3>Open data</h3>
+              <p>I publish datasets online. My main contributions are <a href="https://www.data.gouv.fr/fr/datasets/operations-coordonnees-par-les-cross/" title="Opérations coordonnées par les CROSS">search and rescue operations at sea</a>, <a href="https://www.data.gouv.fr/fr/datasets/avis-urgents-aux-navigateurs-en-vigueur-en-eaux-francaises-metropolitaines/" title="Avis urgents aux navigateurs en vigueur en eaux françaises métropolitaine">navigational warnings in metropolitan France</a>, <a href="https://www.data.gouv.fr/fr/datasets/vacances-scolaires-par-zones/">school holidays</a> and <a href="https://www.data.gouv.fr/fr/datasets/radars-automatiques/" title="Radars automatiques">speed cameras</a>.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section class="section section--tint" id="anchor-blog">
+        <div class="container">
+          <div class="blog">
+            <div class="blog__intro">
+              <p class="eyebrow">Writing</p>
+              <h2>Latest <em>articles</em></h2>
+              <p>I write articles <a href="https://blog.antoine-augusti.fr">on my blog</a>, every now and then. I blog about technical topics, tech in the public sector, data-related subjects: collecting, transforming and publishing data.</p>
+              <a href="https://blog.antoine-augusti.fr" class="btn btn--dark">Visit the blog <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+            <div class="blog__list card">
+              <!-- BLOG_RECENT_ARTICLES -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Contact -->
+    <section class="contact" id="anchor-contact">
+      <div class="container">
+        <div class="contact__head">
+          <p class="eyebrow eyebrow--light">Contact</p>
+          <h2>Get <em>in touch</em></h2>
+          <p>Feel free to get in touch or find out more with these links.</p>
+        </div>
+        <ul class="contact__links">
+          <li>
+            <a href="mailto:hi@antoine-augusti.fr" title="Email">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span class="contact__label">Email</span>
+              <span class="contact__value">hi@antoine-augusti.fr</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/antoineaugusti" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              <span class="contact__label">LinkedIn</span>
+              <span class="contact__value">antoineaugusti</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/AntoineAugusti" title="GitHub">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span class="contact__label">GitHub</span>
+              <span class="contact__value">AntoineAugusti</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/AntoineAugusti" title="Twitter">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              <span class="contact__label">X / Twitter</span>
+              <span class="contact__value">@AntoineAugusti</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="footer__name">Antoine <span>Augusti</span></span>
+        <span>Antoine Augusti EI — SIREN 800919359 — TVA FR92800919359</span>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        // Light reveal of card grids
+        if (!reduceMotion && 'IntersectionObserver' in window) {
+          var groups = document.querySelectorAll('.reveal-group');
+          var obs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                obs.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+          groups.forEach(function (g) { g.classList.add('reveal'); obs.observe(g); });
+        }
+
+        // Count-up for key figures
+        if (!reduceMotion) {
+          document.querySelectorAll('[data-count]').forEach(function (el, i) {
+            var target = +el.getAttribute('data-count');
+            el.textContent = '0';
+            setTimeout(function () {
+              var t0 = performance.now();
+              var tick = function (now) {
+                var p = Math.min((now - t0) / 1400, 1);
+                el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+                if (p < 1) requestAnimationFrame(tick);
+              };
+              requestAnimationFrame(tick);
+            }, 400 + i * 120);
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
