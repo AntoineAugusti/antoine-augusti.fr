@@ -393,9 +393,26 @@
     <footer class="footer">
       <div class="container footer__inner">
         <span class="footer__name">Antoine <span>Augusti</span></span>
-        <span>Antoine Augusti EI — SIREN 800919359 — TVA FR92800919359</span>
+        <span>Antoine Augusti EI — SIREN 800919359 · <a href="#legal-notice" class="footer__legal">Legal notice</a></span>
       </div>
     </footer>
+
+    <dialog id="legal-notice" class="legal-dialog" aria-labelledby="legal-title">
+      <form method="dialog" class="legal-close-form">
+        <button class="legal-close" aria-label="Close">×</button>
+      </form>
+      <h2 id="legal-title">Legal notice</h2>
+      <h3>Publisher</h3>
+      <p>Antoine Augusti, entrepreneur individuel (EI)<br>
+        SIREN 800 919 359 — Rouen, France<br>
+        Contact: <a href="mailto:hi@antoine-augusti.fr">hi@antoine-augusti.fr</a></p>
+      <h3>Publication director</h3>
+      <p>Antoine Augusti</p>
+      <h3>Hosting</h3>
+      <p>Netlify, Inc.<br>512 2nd Street, Suite 200<br>San Francisco, CA 94107, USA</p>
+      <h3>Personal data</h3>
+      <p>This site has no contact form and does not collect personal data directly. Audience is measured with Google Analytics. Under the GDPR, you can exercise your rights of access, rectification and deletion by email at the address above.</p>
+    </dialog>
 
     <script>
       (function () {
@@ -415,6 +432,15 @@
           a.addEventListener('click', function () { toggleMenu(false); });
         });
         document.addEventListener('keydown', function (e) { if (e.key === 'Escape') toggleMenu(false); });
+
+        // Legal notice dialog
+        var legal = document.getElementById('legal-notice');
+        document.querySelector('.footer__legal').addEventListener('click', function (e) {
+          if (typeof legal.showModal !== 'function') return;
+          e.preventDefault();
+          legal.showModal();
+        });
+        legal.addEventListener('click', function (e) { if (e.target === legal) legal.close(); });
 
         // Light reveal of card grids
         if (!reduceMotion && 'IntersectionObserver' in window) {
