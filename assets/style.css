@@ -157,23 +157,56 @@ section[id], header[id] { scroll-margin-top: 72px; }
   display: flex; flex-direction: column; justify-content: center;
   padding: 8rem 0 0;
   color: var(--white);
-  background:
-    radial-gradient(ellipse 55% 60% at 78% 38%, rgba(59, 130, 246, .28), transparent 70%),
-    radial-gradient(ellipse 50% 50% at 8% 100%, rgba(37, 99, 235, .22), transparent 70%),
-    linear-gradient(135deg, var(--navy-ink) 0%, var(--navy) 100%);
+  background: linear-gradient(135deg, var(--navy-ink) 0%, var(--navy) 100%);
 }
+/* Drifting light halos */
+.hero__bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+.hero__bg span {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+  animation: drift 22s ease-in-out infinite alternate;
+}
+.hero__bg span:nth-child(1) {
+  width: 70vmax; height: 70vmax; top: -20vmax; right: -18vmax;
+  background: radial-gradient(circle, rgba(59, 130, 246, .32), transparent 65%);
+}
+.hero__bg span:nth-child(2) {
+  width: 60vmax; height: 60vmax; bottom: -32vmax; left: -22vmax;
+  background: radial-gradient(circle, rgba(37, 99, 235, .26), transparent 65%);
+  animation-duration: 26s; animation-delay: -8s;
+}
+.hero__bg span:nth-child(3) {
+  width: 38vmax; height: 38vmax; top: 30%; left: 35%;
+  background: radial-gradient(circle, rgba(147, 197, 253, .12), transparent 65%);
+  animation-name: drift-alt; animation-duration: 30s; animation-delay: -12s;
+}
+@keyframes drift {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(-6vmax, 4vmax, 0) scale(1.08); }
+  100% { transform: translate3d(3vmax, -3vmax, 0) scale(.96); }
+}
+@keyframes drift-alt {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(10vmax, -6vmax, 0) scale(1.15); }
+  100% { transform: translate3d(-8vmax, 5vmax, 0) scale(.9); }
+}
+/* Slowly scrolling grid */
 .hero::before {
   content: '';
   position: absolute; inset: 0;
+  z-index: 1;
   background-image:
     linear-gradient(rgba(255, 255, 255, .035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, .035) 1px, transparent 1px);
   background-size: 64px 64px;
   -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 30%, transparent 85%);
   mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 30%, transparent 85%);
+  animation: grid-pan 12s linear infinite;
   pointer-events: none;
 }
-.hero > .container { position: relative; width: 100%; }
+@keyframes grid-pan { to { background-position: 64px 64px; } }
+.hero > .container { position: relative; z-index: 2; width: 100%; }
 .hero__grid {
   display: grid;
   grid-template-columns: 1.1fr .9fr;
