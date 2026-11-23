@@ -189,13 +189,16 @@
     <nav class="topbar">
       <div class="container topbar__inner">
         <a href="#top" class="topbar__logo">Antoine <span>Augusti</span></a>
-        <div class="topbar__links">
+        <div class="topbar__links" id="topbar-links">
           <a href="#anchor-presentation">About</a>
           <a href="#anchor-teaching">Teaching</a>
           <a href="#anchor-open-source">Open source</a>
           <a href="#anchor-blog">Articles</a>
           <a href="#anchor-contact" class="topbar__cta">Get in touch</a>
         </div>
+        <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="topbar-links">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
 
@@ -205,7 +208,7 @@
         <div class="hero__grid">
           <div class="hero__text">
             <p class="eyebrow eyebrow--light">Hello World, I'm</p>
-            <h1 class="hero__title">Antoine<br><span>Augusti</span></h1>
+            <h1 class="hero__title">Antoine<br class="hero__title-br"> <span>Augusti</span></h1>
             <p class="hero__subtitle">
               Senior Software Engineer at <a href="https://beta.gouv.fr">beta.gouv.fr</a> and independent financial advisor
               at <a href="https://augusti-conseil.fr/">Augusti Conseil</a>. Based in Rouen, Normandy.
@@ -397,6 +400,21 @@
     <script>
       (function () {
         var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        // Mobile menu
+        var menu = document.getElementById('topbar-links');
+        var burger = document.querySelector('.hamburger');
+        var toggleMenu = function (force) {
+          var open = typeof force === 'boolean' ? force : !menu.classList.contains('is-open');
+          menu.classList.toggle('is-open', open);
+          burger.setAttribute('aria-expanded', open);
+          burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        };
+        burger.addEventListener('click', function () { toggleMenu(); });
+        menu.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () { toggleMenu(false); });
+        });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') toggleMenu(false); });
 
         // Light reveal of card grids
         if (!reduceMotion && 'IntersectionObserver' in window) {
